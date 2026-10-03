@@ -11,40 +11,41 @@ const SCHEDULE_FAQS = [
   {
     question: "How accurate are the Katakolon cruise ship schedules?",
     answer:
-      "Schedules are compiled from published cruise timetables and updated periodically. Times, terminals and dates can change, so always confirm your arrival and departure with your cruise line before booking shore excursions.",
+      "Schedules are compiled from published cruise timetables and updated periodically. Times, berths and dates can change, so always confirm your arrival and departure with your cruise line before booking shore excursions.",
   },
   {
-    question: "Where do cruise ships dock in Katakolon, Spain?",
+    question: "Where do cruise ships dock in Katakolon?",
     answer:
-      "Most ships berth at Muelle Alfonso XII on the naval port waterfront, within walking distance of the old town and Roman Theatre. Your cruise documents confirm the exact berth.",
+      "Cruise ships berth along the Katakolon waterfront, steps from the village centre. The port is the gateway to Ancient Olympia — see our Katakolon Cruise Port Guide for transfer times.",
   },
   {
-    question: "Why check ship schedules before booking Katakolon excursions?",
+    question: "When is Katakolon cruise season?",
     answer:
-      "Multi-ship days increase queues at the Roman Theatre and popular restaurants. Knowing how many vessels share your port day helps you choose between a guided tour, an early DIY start or a relaxed walking day.",
+      "Most calls run from April through November, with peak traffic in June, July and August. Spring and autumn offer milder temperatures for Olympia walking.",
   },
 ];
 
 const SCHEDULE_TIPS = [
-  "Check how many ships are in port before booking Roman Theatre tickets",
-  "Confirm your berth at Muelle Alfonso XII or secondary quays",
-  "Book Murcia excursions only on longer port days (8+ hours ashore)",
-  "Compare your time in port before choosing kayaking or coastal tours",
+  "Check how many ships are in port before booking Olympia coaches — busy days mean crowded site gates",
+  "Confirm your berth so taxis and tours meet you at the correct gangway",
+  "Depart for Olympia early on hot summer days to beat midday heat on exposed paths",
+  "Compare your time in port before choosing Olympia plus winery or beach combinations",
 ];
 
 export const schedulePorts: ShipSchedulePort[] = [
   {
     slug: "katakolon",
     name: "Katakolon",
-    country: "Spain",
-    seoTitle: "Katakolon Cruise Ship Schedule 2026 & 2027",
+    country: "Greece",
+    seoTitle: "Katakolon Cruise Ship Schedule 2026",
     metaDescription:
-      "Katakolon cruise ship schedule hub. See which ships are in port and plan Roman Theatre visits, old-town walks and Murcia excursions around published arrival and departure times.",
+      "Katakolon cruise ship schedule hub. See which ships are in port and plan Ancient Olympia, museum and Peloponnese shore excursions around published arrival and departure times.",
     intro:
-      "Katakolon is a major Western Mediterranean port of call with year-round cruise traffic. Check which ships are scheduled before you book Roman archaeology tours, tapas experiences or Murcia day trips.",
-    description: "Walkable Roman port on Spain's Costa Cálida — one of the Mediterranean's easiest cruise calls.",
+      "Katakolon is the cruise gateway to Ancient Olympia — one of the Mediterranean's great heritage ports. Check which vessels are scheduled before you book excursions or plan your port day.",
+    description:
+      "Ionian cruise port — Ancient Olympia, Greek food and Peloponnese wine from the quay.",
     scheduleOverview:
-      "Katakolon sees peak cruise traffic from March through November, with winter calls from repositioning and Mediterranean itineraries.",
+      "Katakolon sees cruise traffic from April through November, concentrated at the village waterfront with occasional multi-ship days in peak summer.",
     planningTips: SCHEDULE_TIPS,
     faqs: SCHEDULE_FAQS,
   },

@@ -1,3 +1,6 @@
+export const SCHEDULE_BASE = "/katakolon-cruise-ship-schedule";
+export const SCHEDULE_PORT_SLUG = "katakolon";
+
 import type { ScheduleEntry } from "@/data/types";
 
 export const SCHEDULE_YEARS = [2026, 2027] as const;
@@ -14,15 +17,15 @@ export function parseScheduleYear(value: string): ScheduleYear | null {
 }
 
 export function yearHubPath(year: ScheduleYear): string {
-  return `/ship-schedules/${year}`;
+  return `${SCHEDULE_BASE}/${year}`;
 }
 
-export function portHubPath(slug: string): string {
-  return `/ship-schedules/${slug}`;
+export function portHubPath(_slug?: string): string {
+  return SCHEDULE_BASE;
 }
 
-export function portYearPath(slug: string, year: ScheduleYear): string {
-  return `/ship-schedules/${slug}/${year}`;
+export function portYearPath(_slug: string, year: ScheduleYear): string {
+  return `${SCHEDULE_BASE}/${year}`;
 }
 
 export function monthKeyToSlug(monthKey: string): string {
@@ -45,8 +48,8 @@ export function isMonthSlugParam(value: string): boolean {
   return parseMonthSlug(value) !== null;
 }
 
-export function portMonthPath(slug: string, monthKey: string): string {
-  return `/ship-schedules/${slug}/${monthKeyToSlug(monthKey)}`;
+export function portMonthPath(_slug: string, monthKey: string): string {
+  return `${SCHEDULE_BASE}/${monthKeyToSlug(monthKey)}`;
 }
 
 export function getMonthName(monthKey: string): string {

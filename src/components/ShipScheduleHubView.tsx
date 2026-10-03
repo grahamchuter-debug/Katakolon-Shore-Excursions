@@ -44,7 +44,7 @@ export function ShipScheduleHubView({ port }: { port: ShipSchedulePort }) {
           <p className="mt-2 text-sm text-amber-900">
             Verified ship calls for {port.name} are being imported. Browse {SCHEDULE_YEARS.join(" and ")}{" "}
             schedule pages below, confirm times with your cruise line, and explore our{" "}
-            <Link href="/cruise-port-guide" className="font-medium underline">
+            <Link href="/katakolon-cruise-port-guide" className="font-medium underline">
               cruise port guide
             </Link>{" "}
             for planning.
@@ -153,9 +153,9 @@ export function ShipScheduleHubView({ port }: { port: ShipSchedulePort }) {
       {port.faqs && port.faqs.length > 0 && <FAQSection faqs={port.faqs} title={`${port.name} Schedule FAQs`} />}
 
       <div className="mt-8 flex flex-wrap gap-3">
-        <Link href="/cruise-port-guide" className="btn-secondary text-sm">Cruise Port Guide</Link>
+        <Link href="/katakolon-cruise-port-guide" className="btn-secondary text-sm">Cruise Port Guide</Link>
         <Link href="/shore-excursions" className="btn-secondary text-sm">Shore Excursions</Link>
-        <Link href="/cruise-planner" className="btn-secondary text-sm">Cruise Planner</Link>
+        <Link href="/katakolon-cruise-planner" className="btn-secondary text-sm">Cruise Planner</Link>
       </div>
     </>
   );

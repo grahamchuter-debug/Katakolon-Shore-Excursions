@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
 import { SITE } from "./site";
 import { absoluteUrl } from "./paths";
-import {
-  siteImages,
-  getExcursionImage,
-  getGuideImage,
-  getComparisonImage,
-} from "./images";
+import { siteImages, getExcursionImage, getGuideImage } from "./images";
 
 export interface PageSEO {
   title: string;
@@ -40,16 +35,10 @@ export function buildMetadata({
     title: path === "/" ? { absolute: ogTitle } : title,
     description,
     keywords: [
-      "Cartagena shore excursions",
-      "Cartagena cruise excursions",
-      "Cartagena cruise port",
-      "Cartagena cruise port guide",
-      "Roman Theatre Cartagena",
-      "Cartagena Roman ruins",
-      "Cartagena walking tour",
-      "Cartagena from cruise ship",
-      "Murcia from Cartagena",
-      "Cartagena tapas tour",
+      "Katakolon shore excursions",
+      "Ancient Olympia from Katakolon",
+      "Katakolon cruise port",
+      "Olympia shore excursion",
       ...keywords,
     ],
     metadataBase: new URL(SITE.url),
@@ -86,24 +75,13 @@ export function excursionPageMetadata(slug: string, title: string, description: 
   });
 }
 
-export function guidePageMetadata(slug: string, title: string, description: string) {
-  const image = getGuideImage(slug);
+export function guidePageMetadata(imageKey: string, path: string, title: string, description: string) {
+  const image = getGuideImage(imageKey);
   return buildMetadata({
     title,
     description,
-    path: `/${slug}`,
-    image: image?.src,
-    imageAlt: image?.alt,
-  });
-}
-
-export function comparisonPageMetadata(slug: string, title: string, description: string) {
-  const image = getComparisonImage(slug);
-  return buildMetadata({
-    title,
-    description,
-    path: `/${slug}`,
-    image: image?.src,
-    imageAlt: image?.alt,
+    path,
+    image: image.src,
+    imageAlt: image.alt,
   });
 }

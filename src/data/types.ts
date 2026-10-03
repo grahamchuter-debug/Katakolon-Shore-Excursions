@@ -4,16 +4,17 @@ export interface FAQ {
 }
 
 export type Pace = "Relaxed" | "Moderate" | "Active";
-
-export interface TimingPhase {
-  phase: string;
-  time: string;
-  detail: string;
-}
+export type FitnessLevel = "Easy" | "Moderate" | "Active";
+export type ReturnConfidence = "High" | "Medium" | "Variable";
 
 export interface CruiseSnapshot {
-  label: string;
-  value: string;
+  duration: string;
+  distanceFromPort: string;
+  walkingRequired: string;
+  fitnessLevel: FitnessLevel;
+  bestFor: string;
+  returnConfidence: ReturnConfidence;
+  weather: string;
 }
 
 export interface ExcursionPage {
@@ -34,18 +35,51 @@ export interface ExcursionPage {
   tips: string[];
   faqs: FAQ[];
   relatedExcursionSlugs: string[];
-  relatedGuideSlugs?: string[];
+  relatedGuideSlug?: string;
+  snapshot: CruiseSnapshot;
   featured?: boolean;
-  editorsChoice?: boolean;
-  availability?: "coming-soon" | "register-interest" | "available";
-  whyWeRecommend?: string[];
-  whoItSuits?: string[];
-  cruisePassengerSnapshot?: CruiseSnapshot[];
-  returnToShipReassurance?: string;
-  whatMakesDifferent?: string[];
-  smallGroupBenefits?: string[];
-  practicalTimings?: TimingPhase[];
-  scenicRouteHighlights?: string[];
+}
+
+export interface GettingThereStep {
+  method: string;
+  detail: string;
+  time: string;
+  cost: string;
+}
+
+export interface ContentTable {
+  title: string;
+  headers: string[];
+  rows: string[][];
+}
+
+export interface GuidePage {
+  slug: string;
+  path: string;
+  title: string;
+  seoTitle: string;
+  metaDescription: string;
+  eyebrow: string;
+  tagline: string;
+  overview: string;
+  body: string[];
+  tier?: 1 | 2;
+  distanceFromPort?: string;
+  travelTime?: string;
+  timeNeeded?: string;
+  gettingThere?: GettingThereStep[];
+  highlights?: string[];
+  tips?: string[];
+  returnToShip?: string;
+  didYouKnow?: string[];
+  photographyTips?: string[];
+  planningTables?: ContentTable[];
+  comparisonTables?: ContentTable[];
+  faqs: FAQ[];
+  relatedGuideSlugs: string[];
+  relatedExcursionSlug?: string;
+  imageKey: string;
+  breadcrumbParent?: { name: string; path: string };
 }
 
 export interface ScheduleEntry {
@@ -82,55 +116,8 @@ export interface VisitorType {
   cta: string;
 }
 
-export interface GuideRecommendation {
+export interface ItineraryPlan {
   title: string;
-  description: string;
-  excursionSlug?: string;
-  guideSlug?: string;
-  bestFor?: string;
-}
-
-export interface GuidePage {
-  slug: string;
-  title: string;
-  seoTitle: string;
-  metaDescription: string;
-  eyebrow: string;
-  tagline: string;
-  overview: string;
-  body: string[];
-  sections?: { heading: string; paragraphs: string[] }[];
-  highlights?: string[];
-  tips?: string[];
-  recommendations?: GuideRecommendation[];
-  faqs: FAQ[];
-  relatedGuideSlugs: string[];
-  relatedExcursionSlugs?: string[];
-  imageKey?: string;
-}
-
-export interface ComparisonRow {
-  category: string;
-  optionA: string;
-  optionB: string;
-}
-
-export interface ComparisonPage {
-  slug: string;
-  title: string;
-  seoTitle: string;
-  metaDescription: string;
-  eyebrow: string;
-  optionA: string;
-  optionB: string;
-  summary: string;
-  verdict: string;
-  overview: string[];
-  comparisonTable: ComparisonRow[];
-  whenChooseA: string[];
-  whenChooseB: string[];
-  faqs: FAQ[];
-  relatedGuideSlugs: string[];
-  relatedExcursionSlugs?: string[];
-  imageKey?: string;
+  steps: string[];
+  note: string;
 }

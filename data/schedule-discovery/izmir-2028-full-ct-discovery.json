@@ -1,0 +1,282 @@
+{
+  "port": "izmir",
+  "year": 2028,
+  "wave": "wave-2",
+  "filterDecision": "HOLD",
+  "filterReason": "validated 8 < MIN_PUBLISH_ROWS 15 — HOLD; restricted rows NOT reintroduced",
+  "total": 30,
+  "validatedCount": 0,
+  "path": "HOLD",
+  "calls": [
+    {
+      "date": "2028-01-04",
+      "ship": "MSC Orchestra",
+      "cruiseLine": "MSC Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-01-11",
+      "ship": "MSC Orchestra",
+      "cruiseLine": "MSC Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-01-18",
+      "ship": "MSC Orchestra",
+      "cruiseLine": "MSC Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-01-25",
+      "ship": "MSC Orchestra",
+      "cruiseLine": "MSC Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-02-01",
+      "ship": "MSC Orchestra",
+      "cruiseLine": "MSC Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-02-08",
+      "ship": "MSC Orchestra",
+      "cruiseLine": "MSC Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-02-15",
+      "ship": "MSC Orchestra",
+      "cruiseLine": "MSC Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-02-22",
+      "ship": "MSC Orchestra",
+      "cruiseLine": "MSC Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-02-29",
+      "ship": "MSC Orchestra",
+      "cruiseLine": "MSC Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-03-07",
+      "ship": "MSC Orchestra",
+      "cruiseLine": "MSC Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-03-14",
+      "ship": "MSC Orchestra",
+      "cruiseLine": "MSC Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-03-21",
+      "ship": "MSC Orchestra",
+      "cruiseLine": "MSC Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-03-26",
+      "ship": "Oceania Vista",
+      "cruiseLine": "Oceania Cruises",
+      "arrival": "07:00",
+      "departure": "18:00",
+      "timeInPort": "11h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-03-28",
+      "ship": "MSC Orchestra",
+      "cruiseLine": "MSC Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-04-10",
+      "ship": "Costa Pacifica",
+      "cruiseLine": "Costa Cruises",
+      "arrival": "13:00",
+      "departure": "19:00",
+      "timeInPort": "6h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-04-17",
+      "ship": "Costa Pacifica",
+      "cruiseLine": "Costa Cruises",
+      "arrival": "13:00",
+      "departure": "19:00",
+      "timeInPort": "6h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-04-24",
+      "ship": "Costa Pacifica",
+      "cruiseLine": "Costa Cruises",
+      "arrival": "13:00",
+      "departure": "19:00",
+      "timeInPort": "6h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-05-01",
+      "ship": "Costa Pacifica",
+      "cruiseLine": "Costa Cruises",
+      "arrival": "13:00",
+      "departure": "19:00",
+      "timeInPort": "6h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-05-03",
+      "ship": "Oceania Marina",
+      "cruiseLine": "Oceania Cruises",
+      "arrival": "09:00",
+      "departure": "19:00",
+      "timeInPort": "10h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-05-08",
+      "ship": "Costa Pacifica",
+      "cruiseLine": "Costa Cruises",
+      "arrival": "13:00",
+      "departure": "19:00",
+      "timeInPort": "6h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-05-15",
+      "ship": "Costa Pacifica",
+      "cruiseLine": "Costa Cruises",
+      "arrival": "13:00",
+      "departure": "19:00",
+      "timeInPort": "6h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-05-22",
+      "ship": "Costa Pacifica",
+      "cruiseLine": "Costa Cruises",
+      "arrival": "13:00",
+      "departure": "19:00",
+      "timeInPort": "6h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-06-21",
+      "ship": "Seven Seas Explorer",
+      "cruiseLine": "Regent Seven Seas Cruises",
+      "arrival": "07:00",
+      "departure": "18:00",
+      "timeInPort": "11h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-07-03",
+      "ship": "Oceania Allura",
+      "cruiseLine": "Oceania Cruises",
+      "arrival": "10:00",
+      "departure": "20:00",
+      "timeInPort": "10h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-09-26",
+      "ship": "Seven Seas Explorer",
+      "cruiseLine": "Regent Seven Seas Cruises",
+      "arrival": "07:00",
+      "departure": "18:00",
+      "timeInPort": "11h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-09-28",
+      "ship": "Oceania Allura",
+      "cruiseLine": "Oceania Cruises",
+      "arrival": "07:00",
+      "departure": "17:00",
+      "timeInPort": "10h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-09-29",
+      "ship": "AIDAstella",
+      "cruiseLine": "AIDA",
+      "arrival": "08:00",
+      "departure": "18:00",
+      "timeInPort": "10h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-10-13",
+      "ship": "Oceania Marina",
+      "cruiseLine": "Oceania Cruises",
+      "arrival": "08:00",
+      "departure": "18:00",
+      "timeInPort": "10h",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-10-26",
+      "ship": "AIDAstella",
+      "cruiseLine": "AIDA",
+      "arrival": "11:30",
+      "departure": "19:00",
+      "timeInPort": "7h 30m",
+      "callType": "Port of call"
+    },
+    {
+      "date": "2028-12-17",
+      "ship": "Seven Seas Voyager",
+      "cruiseLine": "Regent Seven Seas Cruises",
+      "arrival": "07:00",
+      "departure": "17:00",
+      "timeInPort": "10h",
+      "callType": "Port of call"
+    }
+  ]
+}

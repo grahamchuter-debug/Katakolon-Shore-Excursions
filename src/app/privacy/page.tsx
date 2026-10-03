@@ -9,7 +9,7 @@ const path = "/privacy";
 
 export const metadata = buildMetadata({
   title: "Privacy Policy",
-  description: "Privacy policy for Cartagena Shore Excursions — how we handle information submitted through our enquiry form and site analytics.",
+  description: "Privacy policy for Katakolon Shore Excursions — how we handle information submitted through our enquiry form and site analytics.",
   path,
   noindex: true,
 });
@@ -22,7 +22,7 @@ const breadcrumbs = [
 export default function PrivacyPage() {
   return (
     <>
-      <JsonLd data={[breadcrumbSchema(breadcrumbs), webPageSchema({ title: "Privacy Policy", description: "Privacy policy for Cartagena Shore Excursions.", path })]} />
+      <JsonLd data={[breadcrumbSchema(breadcrumbs), webPageSchema({ title: "Privacy Policy", description: "Privacy policy for Katakolon Shore Excursions.", path })]} />
       <PageHero title="Privacy Policy" subtitle="How we handle your information." compact />
       <section className="section-padding">
         <div className="container-wide max-w-3xl">
@@ -30,7 +30,7 @@ export default function PrivacyPage() {
           <div className="prose-body">
             <p>Last updated: {new Date().getFullYear()}</p>
             <h2>Who we are</h2>
-            <p>{SITE.name} ({SITE.url}) is an independent Cartagena cruise planning resource. This policy explains what information we collect and how we use it.</p>
+            <p>{SITE.name} ({SITE.url}) is an independent Katakolon cruise planning resource. This policy explains what information we collect and how we use it.</p>
             <h2>Information we collect</h2>
             <p>If you contact us through our enquiry form, we collect the name, email address and any details you choose to provide so we can respond. We may use privacy-respecting analytics to understand how the site is used in aggregate.</p>
             <h2>How we use information</h2>

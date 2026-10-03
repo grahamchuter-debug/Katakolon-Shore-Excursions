@@ -75,6 +75,7 @@ export function articleSchema({
   };
 }
 
+/** TravelAgency / LocalBusiness for the Katakolon cruise planning brand. */
 export function travelAgencySchema() {
   return {
     "@context": "https://schema.org",
@@ -85,27 +86,31 @@ export function travelAgencySchema() {
     email: SITE.email,
     areaServed: {
       "@type": "City",
-      name: "Cartagena",
+      name: "Katakolon",
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Cartagena",
-        addressRegion: "Murcia",
-        addressCountry: "ES",
+        addressLocality: "Katakolon",
+        addressRegion: "Elis",
+        addressCountry: "GR",
       },
     },
     knowsAbout: [
-      "Cartagena shore excursions",
-      "Cartagena cruise port guide",
-      "Roman Theatre Cartagena",
-      "Cartagena walking tours",
-      "Murcia from Cartagena cruise port",
+      "Katakolon shore excursions",
+      "Ancient Olympia from cruise port",
+      "Olympic Stadium",
+      "Temple of Zeus",
+      "Archaeological Museum of Olympia",
+      "Greek food tours",
+      "Peloponnese wine and olive oil",
+      "Katakolon cruise terminal",
+      "Greek cruise ports",
     ],
     contactPoint: {
       "@type": "ContactPoint",
       email: SITE.email,
       contactType: "customer service",
-      areaServed: "ES",
-      availableLanguage: ["English", "Spanish"],
+      areaServed: "GR",
+      availableLanguage: ["English", "Greek"],
     },
   };
 }

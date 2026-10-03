@@ -26,7 +26,7 @@ function collectRoutes(dir, base = "") {
     const p = join(dir, name);
     if (statSync(p).isDirectory()) {
       if (name.startsWith("_") || name === "api") continue;
-      const segment = name.startsWith("(") ? "" : name.startsWith("[") ? "" : `/${name}`;
+      const segment = name.startsWith("(") ? "" : `/${name}`;
       collectRoutes(p, `${base}${segment}`);
     } else if (name === "page.tsx" || name === "page.ts") {
       validPaths.add(base || "/");
@@ -36,33 +36,46 @@ function collectRoutes(dir, base = "") {
 
 collectRoutes(appDir);
 
-function loadSlugsFromTs(relativePath, arrayName) {
+function loadSlugsFromTs(relativePath, exportName) {
   const text = readFileSync(join(ROOT, relativePath), "utf8");
-  const slugMatches = [...text.matchAll(/slug:\s*"([^"]+)"/g)];
+  const fnMatch = text.match(
+    new RegExp(`export function ${exportName}\\(\\)[^{]*\\{[^]*?return ([^;]+);`, "m"),
+  );
+  if (!fnMatch) return [];
+  const arrayMatch = fnMatch[1].match(/\.map\(\([^)]*\) => [^.]+\.(\w+)\)/);
+  if (!arrayMatch) return [];
+  const field = arrayMatch[1];
+  const slugMatches = [...text.matchAll(new RegExp(`${field}:\\s*"([^"]+)"`, "g"))];
   return [...new Set(slugMatches.map((m) => m[1]))];
 }
 
-const excursionSlugs = loadSlugsFromTs("src/data/excursions.ts", "excursions");
-const guideSlugs = loadSlugsFromTs("src/data/guides.ts", "guides");
-const comparisonSlugs = loadSlugsFromTs("src/data/comparisons.ts", "comparisons");
-const schedulePortSlugs = loadSlugsFromTs("src/data/schedules.ts", "schedulePorts");
+const excursionSlugs = loadSlugsFromTs("src/data/excursions.ts", "getAllExcursionSlugs");
+const guidePaths = loadSlugsFromTs("src/data/guides.ts", "getAllGuideSlugs").map((slug) => {
+  const text = readFileSync(join(ROOT, "src/data/guides.ts"), "utf8");
+  const m = text.match(new RegExp(`slug:\\s*"${slug}"[\\s\\S]*?path:\\s*"([^"]+)"`));
+  return m ? m[1] : `/${slug}`;
+});
+
+for (const slug of excursionSlugs) validPaths.add(`/shore-excursions/${slug}`);
+for (const path of guidePaths) validPaths.add(path);
+
+const scheduleBase = "/katakolon-cruise-ship-schedule";
+validPaths.add(scheduleBase);
+for (const year of ["2026", "2027"]) {
+  validPaths.add(`${scheduleBase}/${year}`);
+}
+const months = [
+  "april", "may", "june", "july", "august", "september", "october", "november",
+];
+for (const month of months) {
+  validPaths.add(`${scheduleBase}/${month}-2026`);
+}
 
 const dynamicPatterns = [
   /^\/shore-excursions\/[\w-]+$/,
-  /^\/ship-schedules\/[\w-]+$/,
-  /^\/ship-schedules\/[\w-]+\/(2026|2027)$/,
-  /^\/ship-schedules\/[\w-]+\/(january|february|march|april|may|june|july|august|september|october|november|december)-20(26|27)$/,
+  /^\/katakolon-cruise-ship-schedule\/(2026|2027)$/,
+  /^\/katakolon-cruise-ship-schedule\/(january|february|march|april|may|june|july|august|september|october|november|december)-20(26|27)$/,
 ];
-
-for (const slug of excursionSlugs) validPaths.add(`/shore-excursions/${slug}`);
-for (const slug of guideSlugs) validPaths.add(`/${slug}`);
-for (const slug of comparisonSlugs) validPaths.add(`/${slug}`);
-for (const slug of schedulePortSlugs) {
-  validPaths.add(`/ship-schedules/${slug}`);
-  for (const year of ["2026", "2027"]) {
-    validPaths.add(`/ship-schedules/${slug}/${year}`);
-  }
-}
 
 function isValidPath(path) {
   if (validPaths.has(path)) return true;

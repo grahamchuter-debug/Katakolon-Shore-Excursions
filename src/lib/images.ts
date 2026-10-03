@@ -8,39 +8,99 @@ const B = "/images";
 export const siteImages = {
   hero: {
     src: `${B}/hero-home.jpg`,
-    alt: "Cartagena Roman Theatre, harbour and old town from the cruise port, Spain",
+    alt: "The ancient Olympic Stadium at Olympia — starting line and stone seating in the Peloponnese",
   },
   ogDefault: {
     src: `${B}/og-default.jpg`,
-    alt: "Cartagena cruise planning — Roman Theatre, harbour and historic old town, Spain",
+    alt: "Ancient Olympia and the Olympic Stadium — Katakolon shore excursion planning",
   },
   logo: {
     src: `${B}/logo-mark.svg`,
-    alt: "Cartagena Shore Excursions",
+    alt: "Katakolon Shore Excursions",
   },
   port: {
     src: `${B}/cruise-port.jpg`,
-    alt: "Cruise ships at Cartagena cruise port, Muelle Alfonso XII, Spain",
+    alt: "Katakolon cruise port village on the Ionian coast of the Peloponnese",
   },
 } as const;
 
 export const subjectImages: Record<string, SiteImage> = {
-  cartagena: { src: `${B}/cartagena.jpg`, alt: "Cartagena old town and harbour from the cruise port" },
-  "roman-theatre": { src: `${B}/roman-theatre.jpg`, alt: "Roman Theatre of Cartagena, Spain" },
-  "roman-forum": { src: `${B}/roman-forum.jpg`, alt: "Roman Forum archaeological quarter in Cartagena" },
-  "punic-wall": { src: `${B}/punic-wall.jpg`, alt: "Punic Wall archaeological experience, Cartagena" },
-  castle: { src: `${B}/castle.jpg`, alt: "Castle of the Conception overlooking Cartagena harbour" },
-  "old-town": { src: `${B}/old-town.jpg`, alt: "Cartagena historic old town lanes near the cruise port" },
-  harbour: { src: `${B}/harbour.jpg`, alt: "Cartagena naval harbour and waterfront promenade" },
-  murcia: { src: `${B}/murcia.jpg`, alt: "Murcia cathedral and city centre from Cartagena cruise port day trip" },
-  tapas: { src: `${B}/tapas.jpg`, alt: "Cartagena tapas and local Spanish food for cruise passengers" },
-  market: { src: `${B}/market.jpg`, alt: "Mercado de Santa Florentina and Cartagena market culture" },
-  maritime: { src: `${B}/maritime.jpg`, alt: "Cartagena maritime history and naval port heritage" },
-  beach: { src: `${B}/beach.jpg`, alt: "Cartagena beaches and Costa Cálida coastline" },
-  kayaking: { src: `${B}/kayaking.jpg`, alt: "Coastal kayaking adventures near Cartagena, Spain" },
-  family: { src: `${B}/family.jpg`, alt: "Family-friendly Cartagena sights near the cruise port" },
-  private: { src: `${B}/private.jpg`, alt: "Private Cartagena experience for cruise passengers" },
-  planner: { src: `${B}/cartagena.jpg`, alt: "Planning a Cartagena cruise port day in Spain" },
+  "ancient-olympia": {
+    src: `${B}/olympia-site.jpg`,
+    alt: "Panoramic view of the Ancient Olympia archaeological site in the Peloponnese",
+  },
+  "olympia-stadium": {
+    src: `${B}/hero-home.jpg`,
+    alt: "The ancient Olympic Stadium at Olympia with the vaulted entrance and starting line",
+  },
+  "temple-zeus": {
+    src: `${B}/temple-zeus.jpg`,
+    alt: "Ruins of the Temple of Zeus at Ancient Olympia",
+  },
+  museum: {
+    src: `${B}/museum.jpg`,
+    alt: "Artefacts in the Archaeological Museum of Olympia",
+  },
+  "olympic-games-house": {
+    src: `${B}/museum.jpg`,
+    alt: "House of the Olympic Games museum near Ancient Olympia",
+  },
+  "katakolon-village": {
+    src: `${B}/katakolon-village.jpg`,
+    alt: "Shops and cafés along the waterfront in Katakolon village",
+  },
+  food: {
+    src: `${B}/food.jpg`,
+    alt: "Greek meze and local dishes in the Peloponnese",
+  },
+  "olive-grove": {
+    src: `${B}/olive-grove.jpg`,
+    alt: "Olive groves in the Elis region near Katakolon",
+  },
+  winery: {
+    src: `${B}/winery.jpg`,
+    alt: "Vineyards and winery estate in the Peloponnese near Olympia",
+  },
+  "one-day": {
+    src: `${B}/olympia-site.jpg`,
+    alt: "Planning one day in Katakolon from a cruise ship",
+  },
+  "worth-it": {
+    src: `${B}/hero-home.jpg`,
+    alt: "Ancient Olympia for cruise passengers — is it worth the drive from Katakolon",
+  },
+  "olympia-vs-katakolon": {
+    src: `${B}/katakolon-village.jpg`,
+    alt: "Comparing Ancient Olympia and Katakolon village for cruise passengers",
+  },
+  highlights: {
+    src: `${B}/olympia-site.jpg`,
+    alt: "Katakolon shore excursion highlights — Ancient Olympia and the Peloponnese",
+  },
+  coast: {
+    src: `${B}/coast.jpg`,
+    alt: "Ionian coast scenery near Katakolon",
+  },
+  "private-tour": {
+    src: `${B}/private-tour.jpg`,
+    alt: "Private guided tour from Katakolon cruise port to Ancient Olympia",
+  },
+  planner: {
+    src: `${B}/olympia-site.jpg`,
+    alt: "Planning a Katakolon cruise port day",
+  },
+  "best-time": {
+    src: `${B}/olympia-site.jpg`,
+    alt: "Best time to visit Katakolon and Ancient Olympia on a cruise",
+  },
+  independent: {
+    src: `${B}/olympia-site.jpg`,
+    alt: "Independent versus cruise line shore excursions from Katakolon",
+  },
+  beach: {
+    src: `${B}/coast.jpg`,
+    alt: "Kourouta Beach on the Ionian coast near Katakolon",
+  },
 };
 
 function pick(key: string): SiteImage {
@@ -48,62 +108,41 @@ function pick(key: string): SiteImage {
 }
 
 const excursionImageKeys: Record<string, string> = {
-  "cartagena-roman-highlights": "roman-theatre",
-  "roman-walking-tour": "roman-forum",
-  "cartagena-murcia": "murcia",
-  "tapas-local-food-experience": "tapas",
-  "coastal-kayaking": "kayaking",
-  "harbour-panoramic-tour": "harbour",
-  "private-cartagena-experience": "private",
-  "family-friendly-cartagena": "family",
+  "ancient-olympia-tour": "ancient-olympia",
+  "ancient-olympia-and-museum-tour": "museum",
+  "olympia-and-winery-tour": "winery",
+  "katakolon-highlights-tour": "katakolon-village",
+  "olympia-small-group-tour": "olympia-stadium",
+  "private-olympia-tour": "private-tour",
+  "olympia-and-beach-tour": "beach",
+  "olympia-and-olive-oil-experience": "olive-grove",
+  "greek-food-experience": "food",
+  "katakolon-scenic-tour": "coast",
 };
 
 export function getExcursionImage(slug: string): SiteImage {
-  return pick(excursionImageKeys[slug] ?? "cartagena");
+  return pick(excursionImageKeys[slug] ?? "ancient-olympia");
 }
 
-export const excursionsHubImage = pick("roman-theatre");
+export const excursionsHubImage = pick("olympia-stadium");
 
 const guideImageKeys: Record<string, string> = {
-  "why-roman-highlights-is-our-editors-choice": "roman-theatre",
-  "roman-theatre-cartagena": "roman-theatre",
-  "roman-forum-archaeological-quarter": "roman-forum",
-  "punic-wall-experience": "punic-wall",
-  "castle-of-the-conception": "castle",
-  "cartagena-old-town-walking-guide": "old-town",
-  "cartagena-harbour-walking-route": "harbour",
-  "best-things-to-do-in-cartagena-from-a-cruise-ship": "cartagena",
-  "one-day-in-cartagena-from-a-cruise-ship": "cartagena",
-  "murcia-from-cartagena-cruise-port": "murcia",
-  "cartagena-food-tapas-guide": "tapas",
-  "cartagena-market-guide": "market",
-  "cartagena-maritime-history": "maritime",
-  "cartagena-beaches": "beach",
-  "kayaking-coastal-adventures": "kayaking",
-  "independent-vs-cruise-line-excursions": "harbour",
-  "best-cartagena-excursions-for-first-time-visitors": "roman-theatre",
-  "best-cartagena-excursions-for-history-lovers": "roman-forum",
-  "best-cartagena-excursions-for-families": "family",
-  "best-cartagena-excursions-for-food-lovers": "tapas",
+  "ancient-olympia-from-katakolon": "ancient-olympia",
+  "is-ancient-olympia-worth-visiting-from-a-cruise-ship": "worth-it",
+  "olympia-vs-katakolon-which-is-best-for-cruise-passengers": "olympia-vs-katakolon",
+  "one-day-in-katakolon-from-a-cruise-ship": "one-day",
+  "olympic-stadium-guide": "olympia-stadium",
+  "temple-of-zeus-guide": "temple-zeus",
+  "archaeological-museum-guide": "museum",
+  "house-of-the-olympic-games-guide": "olympic-games-house",
+  "katakolon-guide": "katakolon-village",
+  "greek-food-guide": "food",
+  "olive-oil-guide": "olive-grove",
+  "local-winery-guide": "winery",
+  "best-time-to-visit-katakolon": "best-time",
+  "independent-vs-cruise-line-excursions": "independent",
 };
 
-export function getGuideImage(slug: string): SiteImage {
-  const key = guideImageKeys[slug] ?? "cartagena";
-  return pick(key);
+export function getGuideImage(key: string): SiteImage {
+  return pick(guideImageKeys[key] ?? key);
 }
-
-export function getComparisonImage(_slug: string): SiteImage {
-  return pick("cartagena");
-}
-
-export function getComparisonOgImage(slug: string): SiteImage {
-  return getComparisonImage(slug);
-}
-
-/** Hero showcase tiles for homepage */
-export const heroShowcaseImages = [
-  pick("roman-theatre"),
-  pick("harbour"),
-  pick("old-town"),
-  pick("castle"),
-] as const;

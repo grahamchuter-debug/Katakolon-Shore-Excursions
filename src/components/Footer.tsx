@@ -8,33 +8,33 @@ export function Footer() {
       <div className="px-4 py-12 sm:px-6 lg:px-8">
         <div className="container-wide grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="font-display text-xl font-semibold">Cartagena Shore Excursions</div>
-            <p className="mt-3 text-sm text-coastal-100/70 leading-relaxed">The definitive Cartagena cruise planning authority — Roman archaeology, shore excursions, port guidance and honest passenger-first advice for Mediterranean cruise days.</p>
+            <div className="font-display text-xl font-semibold">Katakolon Shore Excursions</div>
+            <p className="mt-3 text-sm text-coastal-100/70 leading-relaxed">Gateway to Ancient Olympia. The leading independent Katakolon cruise planning resource — Olympic Stadium, Temple of Zeus, museum, Greek food and Peloponnese wine for cruise passengers.</p>
           </div>
           <div>
-            <h3 className="mb-3 text-sm font-medium text-white/90">Plan your day</h3>
+            <h3 className="mb-3 text-sm font-medium text-white/90">Plan your port day</h3>
             <ul className="space-y-1.5 text-sm text-coastal-100/70">
-              <li><Link href="/cruise-planner" className="hover:text-white">Cruise Planner</Link></li>
+              <li><Link href="/katakolon-cruise-planner" className="hover:text-white">Cruise Planner</Link></li>
               <li><Link href="/shore-excursions" className="hover:text-white">Shore Excursions</Link></li>
-              <li><Link href="/one-day-in-cartagena-from-a-cruise-ship" className="hover:text-white">One Day in Cartagena</Link></li>
-              <li><Link href="/ship-schedules" className="hover:text-white">Ship Schedules</Link></li>
+              <li><Link href="/one-day-in-katakolon-from-a-cruise-ship" className="hover:text-white">One Day in Katakolon</Link></li>
+              <li><Link href="/katakolon-cruise-ship-schedule" className="hover:text-white">Ship Schedule</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="mb-3 text-sm font-medium text-white/90">Roman &amp; history</h3>
+            <h3 className="mb-3 text-sm font-medium text-white/90">Olympia &amp; Peloponnese</h3>
             <ul className="space-y-1.5 text-sm text-coastal-100/70">
-              <li><Link href="/shore-excursions/cartagena-roman-highlights" className="hover:text-white">Roman Highlights (Editor&apos;s Choice)</Link></li>
-              <li><Link href="/roman-theatre-cartagena" className="hover:text-white">Roman Theatre Guide</Link></li>
-              <li><Link href="/cartagena-old-town-walking-guide" className="hover:text-white">Old Town Walking Guide</Link></li>
-              <li><Link href="/cruise-port-guide" className="hover:text-white">Cruise Port Guide</Link></li>
+              <li><Link href="/ancient-olympia-from-katakolon" className="hover:text-white">Ancient Olympia Guide</Link></li>
+              <li><Link href="/olympic-stadium-guide" className="hover:text-white">Olympic Stadium</Link></li>
+              <li><Link href="/temple-of-zeus-guide" className="hover:text-white">Temple of Zeus</Link></li>
+              <li><Link href="/archaeological-museum-guide" className="hover:text-white">Archaeological Museum</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="mb-3 text-sm font-medium text-white/90">Food &amp; beyond</h3>
+            <h3 className="mb-3 text-sm font-medium text-white/90">Essential planning</h3>
             <ul className="space-y-1.5 text-sm text-coastal-100/70">
-              <li><Link href="/cartagena-food-tapas-guide" className="hover:text-white">Food &amp; Tapas Guide</Link></li>
-              <li><Link href="/murcia-from-cartagena-cruise-port" className="hover:text-white">Murcia from Cartagena</Link></li>
-              <li><Link href="/independent-vs-cruise-line-excursions" className="hover:text-white">Independent vs Ship Tours</Link></li>
+              <li><Link href="/katakolon-cruise-port-guide" className="hover:text-white">Cruise Port Guide</Link></li>
+              <li><Link href="/best-katakolon-shore-excursions" className="hover:text-white">Best Shore Excursions</Link></li>
+              <li><Link href="/greek-food-guide" className="hover:text-white">Greek Food Guide</Link></li>
               <li><Link href="/enquire" className="hover:text-white">Enquire</Link></li>
             </ul>
           </div>
@@ -48,7 +48,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 px-4 py-4 text-center text-xs text-coastal-300/75">
-        &copy; {year} {SITE.name}. Independent Cartagena cruise planning resource — not affiliated with any cruise line or the Port of Cartagena.
+        &copy; {year} {SITE.name}. Independent Katakolon cruise planning resource — not affiliated with any cruise line or the Port of Katakolon.
       </div>
     </footer>
   );

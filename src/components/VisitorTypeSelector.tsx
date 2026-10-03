@@ -6,8 +6,8 @@ export function VisitorTypeSelector() {
     <section className="section-padding bg-coastal-50 border-b border-coastal-100">
       <div className="container-wide">
         <p className="section-eyebrow">Start here</p>
-        <h2 className="section-title mt-2">What kind of Cartagena cruise passenger are you?</h2>
-        <p className="section-subtitle">Choose the option that fits your Mediterranean port day and we&apos;ll point you to the right planning resources.</p>
+        <h2 className="section-title mt-2">Which kind of Katakolon cruise passenger are you?</h2>
+        <p className="section-subtitle">Choose the option that fits your trip and we&apos;ll point you straight to the planning that matters most.</p>
         <div className="mt-10 grid gap-5 md:grid-cols-2">
           {visitorTypes.map((v) => (
             <Link key={v.id} href={v.href} className="nav-card group flex h-full flex-col">

@@ -1,1254 +1,1537 @@
 import type { GuidePage } from "./types";
 
+const PORT_GUIDE_PARENT = {
+  name: "Katakolon Cruise Port Guide",
+  path: "/katakolon-cruise-port-guide",
+};
+
 export const guides: GuidePage[] = [
   {
-    slug: "why-roman-highlights-is-our-editors-choice",
-    title: "Why Roman Highlights Is Our Editor's Choice",
-    seoTitle: "Why Roman Highlights Is Our Editor's Choice — Cartagena Shore Excursions",
+    slug: "ancient-olympia-from-katakolon",
+    path: "/ancient-olympia-from-katakolon",
+    title: "Ancient Olympia from Katakolon",
+    seoTitle: "Ancient Olympia from Katakolon — Drive Times, Tours & Cruise Day Guide",
     metaDescription:
-      "Our editorial team compared every Cartagena shore excursion and chose Roman Highlights — honest reasoning, trade-offs and who it suits on a Mediterranean port day.",
-    eyebrow: "Editor's Choice",
+      "Visit Ancient Olympia from Katakolon cruise port — 35 km transfer times, what to see at the birthplace of the Olympics, museum tips and return-to-ship advice for Peloponnese cruise passengers.",
+    eyebrow: "Ancient Olympia",
     tagline:
-      "The shore excursion we would book ourselves at Muelle de Alfonso XII — and why we say that without overselling a compact Roman city.",
+      "Walk where the Olympic flame was first lit — the Peloponnese sanctuary that makes Katakolon one of the Mediterranean's most meaningful cruise calls.",
     overview:
-      "Roman Highlights earned Editor's Choice after we compared ship excursions, DIY walking routes and independent tours from Cartagena's cruise terminal. Cartagena is one of the Mediterranean's easiest ports — walkable, compact and layered with 3,000 years of history — but first-time visitors still waste time if they scatter between the Roman Theatre, Forum and Punic Wall without sequencing. This excursion solves that honestly.",
+      "Ancient Olympia is the reason cruise ships anchor at Katakolon. The archaeological park sits roughly 35 km inland in the valley of the Alpheios River — typically 35–45 minutes by coach through olive groves and low hills. A focused visit covers the Temple of Zeus ruins, the original Olympic Stadium, the Philippeion and the Archaeological Museum, with return timing built around your ship's all-aboard in the Ionian port village.",
     body: [
-      "Cartagena's cruise terminal at Muelle de Alfonso XII sits roughly 10–15 minutes on foot from the old town. That proximity tempts passengers to assume everything fits in a casual stroll. In practice, the Roman Theatre, Forum quarter and Castle of the Conception sit on different levels connected by lifts, tunnels and uphill lanes. Roman Highlights sequences those sites with a guide who understands gangway timing — not a coach marathon to Murcia when you have never seen the theatre.",
-      "What separates it from a typical cruise-line coach is scale and focus. Groups run smaller than ship tours, with time protected at the Roman Theatre — Spain's largest Roman theatre after Merida — and the Forum archaeological zone rather than generic city drive-bys. The Castle of the Conception viewpoint rounds out the day with harbour panoramas that explain why Carthaginians, Romans and Bourbons all wanted this bay.",
-      "We recommend it because return-to-ship confidence is treated seriously. Operators plan a 45–60 minute margin before all-aboard, routing back via the cruise port promenade rather than leaving you to navigate lifts and tunnels alone after a long inland transfer. Browse our shore excursions hub and cruise port guide before booking — then use the Cruise Planner if you are unsure whether a full Roman day or a DIY old-town walk suits your window.",
+      "Most passengers reach Olympia on a shore excursion that collects you at the Katakolon pier and follows the coastal road east before turning inland toward the sanctuary. The site is compact compared with Ephesus or Pompeii, but emotionally enormous — this is where athletes competed for olive wreaths from 776 BC until the games were banned in 393 AD. Guides who work the Western Greece route understand cruise pacing: early arrival beats midday heat, and the museum offers welcome shade when summer temperatures push past 35°C.",
+      "The walking circuit moves through sacred precincts, training grounds and civic buildings that once hosted tens of thousands of pilgrims. The vaulted entrance to the stadium still frames the starting line where sprinters dug their toes into the stone sill — one of the few moments in archaeology that needs almost no imagination. Allow 90 minutes to two hours for the outdoor ruins; add another 60–75 minutes if you include the Archaeological Museum, where the Hermes of Praxiteles and pediment sculptures from the Temple of Zeus reward unhurried viewing.",
+      "Return-to-ship confidence depends on how your day is structured. A dedicated Olympia excursion typically needs five to six usable hours ashore including transfers — workable on standard seven- to eight-hour port calls if you disembark promptly. Combined Olympia plus winery, olive mill or beach stops need longer windows. Independent travellers can hire taxis in Katakolon village, but organised tours remove the stress of matching rural road timing to a fixed sailing.",
     ],
-    sections: [
+    tier: 1,
+    distanceFromPort: "Approx. 35 km (22 miles) east to Ancient Olympia",
+    travelTime: "35–45 min by coach | 40–50 min by taxi",
+    timeNeeded: "2–3.5 hours on site (ruins + museum)",
+    returnToShip:
+      "Budget 35–45 minutes from Olympia back to Katakolon pier on a coach, plus 30–45 minutes buffer before all-aboard. Summer traffic on the Olympia–Pyrgos road is usually manageable, but afternoon departures from the site can coincide with tour-coach convoys. If your itinerary adds a winery or beach, confirm total return time — add-ons push six-hour calls into risky territory.",
+    gettingThere: [
+      { method: "Ship excursion coach", detail: "Pickup at Katakolon pier → inland road through Pyrgos toward Olympia", time: "35–45 min each way", cost: "Excursion price" },
+      { method: "Private transfer + guide", detail: "Door-to-door from port; flexible pacing and early arrival", time: "40–50 min each way", cost: "€120–200+ per vehicle" },
+      { method: "Taxi from Katakolon village", detail: "Negotiate round-trip wait time; confirm museum entry coordination", time: "40–55 min each way", cost: "€80–120 round trip" },
+      { method: "Rental car", detail: "Parking near the site entrance; independent only — watch all-aboard", time: "40–50 min each way", cost: "Rental + fuel" },
+    ],
+    highlights: [
+      "Olympic Stadium — original starting line and earthen track",
+      "Temple of Zeus ruins — once home to the gold-and-ivory statue",
+      "Archaeological Museum — Hermes of Praxiteles and temple sculptures",
+      "Philippeion — circular memorial of Philip II of Macedon",
+      "Temple of Hera — among the oldest structures in the sanctuary",
+      "Early-morning light before midday coach crowds",
+    ],
+    tips: [
+      "Wear sun protection — much of the sanctuary is exposed with limited shade",
+      "Comfortable walking shoes essential; paths mix gravel and uneven stone",
+      "Carry bottled water; refill points are limited inside the archaeological zone",
+      "Buy the combined ruins-and-museum ticket if your tour does not include entry",
+      "Disembark in the first wave when two ships share the port",
+      "Visit the museum during peak midday heat — air-conditioned galleries help pacing",
+    ],
+    didYouKnow: [
+      "The ancient Olympic Games ran every four years for nearly twelve centuries before Emperor Theodosius banned them in 393 AD.",
+      "The Temple of Zeus once housed a 13-metre chryselephantine statue — gold and ivory — counted among the Seven Wonders of the Ancient World.",
+      "Winners received olive wreaths cut from a sacred tree near the Temple of Zeus, not medals.",
+      "Women were barred from competing and, for much of antiquity, from attending the games themselves.",
+      "The Olympic truce (ekecheiria) allowed athletes and spectators safe passage across warring city-states.",
+    ],
+    photographyTips: [
+      "The stadium entrance arch frames the track beautifully — shoot from inside the tunnel facing the finish line.",
+      "Temple of Zeus columns reward a low angle in morning light before harsh midday shadows.",
+      "Museum sculptures need higher ISO and no flash — respect posted restrictions near marble pieces.",
+      "Wide shots from the terrace above the Altis show the sanctuary layout with the surrounding pine-clad hills.",
+    ],
+    planningTables: [
       {
-        heading: "How we evaluated Cartagena excursion options",
-        paragraphs: [
-          "We scored every option against five criteria: time at Roman sites (not just exterior photos), group size, walking intensity, return-to-ship confidence and honesty about what fits a standard port day. Ship excursions scored well on the delay guarantee but often lost points on crowd size and filler shopping. DIY walking works for confident travellers but underestimates vertical geography between the theatre district and the castle.",
-          "Roman Highlights won on balance. It does not carry the ship's delay guarantee — you must respect all-aboard — but focused Roman sequencing and realistic pacing outweighed that trade-off for most first-time visitors. If the guarantee is non-negotiable, read our independent versus cruise-line comparison before booking.",
+        title: "Typical shore excursion day — Olympia core visit",
+        headers: ["Time", "Activity", "Notes"],
+        rows: [
+          ["0:00", "Disembark, board coach at Katakolon pier", "Allow 15–25 min after clearance"],
+          ["0:30", "Drive inland to Olympia archaeological park", "Olive groves and village scenery"],
+          ["1:15", "Ruins circuit — stadium, temples, Philippeion", "90 min minimum; guide-led pacing"],
+          ["2:45", "Archaeological Museum (if included)", "60–75 min for highlights"],
+          ["4:00", "Coach pickup, return to Katakolon", "Traffic usually light"],
+          ["4:45", "Buffer before all-aboard", "30–45 min recommended"],
+        ],
+      },
+      {
+        title: "On-site pacing — what to prioritise",
+        headers: ["Priority", "Sight", "Time needed"],
+        rows: [
+          ["Must-see", "Olympic Stadium", "25–35 min"],
+          ["Must-see", "Temple of Zeus area", "20–30 min"],
+          ["Must-see", "Archaeological Museum", "60–75 min"],
+          ["If time allows", "Philippeion and Temple of Hera", "20–30 min"],
+          ["If time allows", "Palaestra and workshop ruins", "15–20 min"],
+          ["Skip on tight days", "Modern Olympia village shopping", "Save for port day"],
         ],
       },
     ],
-    highlights: [
-      "Editor's Choice based on editorial comparison, not marketing",
-      "Roman Theatre, Forum quarter and Castle of the Conception in one paced day",
-      "Smaller groups than typical cruise-line coaches",
-      "45–60 minute return buffer built into standard port days",
-      "Designed for the walkable cruise port — no unnecessary Murcia transfer",
-      "Guides who understand Muelle de Alfonso XII gangway timing",
-    ],
-    tips: [
-      "Book on port days with at least 6 usable hours ashore",
-      "Wear comfortable shoes — Cartagena's Roman sites involve slopes and steps",
-      "Morning departures beat midday heat in summer sailings",
-      "Check ship-schedules if multiple vessels share the port — queues affect your buffer",
-      "Compare with Roman Walking Tour if you want maximum archaeological depth",
-    ],
-    recommendations: [
+    comparisonTables: [
       {
-        title: "Roman Highlights Shore Excursion",
-        description:
-          "Our Editor's Choice — theatre, forum and castle viewpoints in one small-group day with cruise-timed returns from Muelle de Alfonso XII.",
-        excursionSlug: "cartagena-roman-highlights",
-        bestFor: "First-time visitors",
-      },
-      {
-        title: "Independent vs Cruise-Line Excursions",
-        description: "Understand the ship-waits guarantee trade-off before you choose any independent tour.",
-        guideSlug: "independent-vs-cruise-line-excursions",
-        bestFor: "Risk-conscious planners",
+        title: "Olympia visit styles for cruise passengers",
+        headers: ["Style", "Hours ashore", "Transfer risk", "Best for"],
+        rows: [
+          ["Ship excursion — ruins only", "5–6", "Low", "First-timers, peace of mind"],
+          ["Ship excursion — ruins + museum", "6–7", "Low", "History enthusiasts"],
+          ["Private guide + driver", "5–7", "Low–medium", "Families, photographers"],
+          ["Independent taxi", "6+", "Medium", "Experienced travellers"],
+          ["Olympia + winery combo", "7–8", "Low", "Longer port days"],
+        ],
       },
     ],
     faqs: [
       {
-        question: "Does Editor's Choice mean Roman Highlights is right for everyone?",
+        question: "How far is Ancient Olympia from Katakolon cruise port?",
         answer:
-          "No. It is our top pick for first-time visitors wanting Cartagena's Roman essentials on a standard port day. Food-focused passengers, families needing beach time or travellers on calls under 5 hours should consider alternatives in our audience-specific guides.",
+          "About 35 km inland — roughly 35–45 minutes by coach or taxi through the Elis countryside. Organised shore excursions handle the transfer and timed return so you are not watching the clock on rural roads.",
       },
       {
-        question: "How is this different from booking through my cruise line?",
+        question: "How long should cruise passengers spend at Olympia?",
         answer:
-          "Roman Highlights uses smaller groups and tighter Roman site sequencing, but independent tours require you to respect all-aboard — the ship will not wait. Our comparison guide explains when each approach makes sense.",
+          "Allow two to three and a half hours for a meaningful visit: 90 minutes to two hours for the outdoor ruins and another 60–75 minutes for the Archaeological Museum. Rushing the museum defeats much of the reason to come.",
       },
       {
-        question: "Can I see the Roman sites independently instead?",
+        question: "Is Olympia suitable for visitors with limited mobility?",
         answer:
-          "Yes — the old town is walkable from the cruise terminal. DIY works if you are confident with maps, lift schedules and ticket queues. Roman Highlights is for passengers who prefer guided sequencing without route-finding stress.",
+          "The main paths are manageable with assistance, but surfaces are uneven gravel and stone with some slopes. The museum is fully accessible. Inform your tour operator in advance if you use a wheelchair or walking aid.",
+      },
+      {
+        question: "What is the best time of day to arrive?",
+        answer:
+          "Morning arrivals beat midday heat and the largest coach groups. First tours leaving Katakolon around 08:00–08:30 typically reach the sanctuary before temperatures peak in July and August.",
+      },
+      {
+        question: "Are entrance tickets included on shore excursions?",
+        answer:
+          "Most reputable Katakolon excursions include archaeological site entry. Confirm whether the museum ticket is bundled — it is worth having. Combined tickets are sold at the entrance if you are touring independently.",
+      },
+      {
+        question: "Can I visit Olympia on a short port call?",
+        answer:
+          "You need at least five to six usable hours ashore for a comfortable Olympia loop with transfers. On tighter windows, consider a highlights tour focused on the stadium and Temple of Zeus, or stay in Katakolon village instead.",
       },
     ],
     relatedGuideSlugs: [
-      "independent-vs-cruise-line-excursions",
-      "roman-theatre-cartagena",
-      "best-things-to-do-in-cartagena-from-a-cruise-ship",
+      "olympic-stadium-guide",
+      "archaeological-museum-guide",
+      "one-day-in-katakolon-from-a-cruise-ship",
+      "is-ancient-olympia-worth-visiting-from-a-cruise-ship",
     ],
-    relatedExcursionSlugs: ["cartagena-roman-highlights", "roman-walking-tour", "private-cartagena-experience"],
-    imageKey: "roman-theatre",
+    relatedExcursionSlug: "ancient-olympia-tour",
+    imageKey: "ancient-olympia",
+    breadcrumbParent: PORT_GUIDE_PARENT,
   },
   {
-    slug: "roman-theatre-cartagena",
-    title: "Roman Theatre of Cartagena — Cruise Passenger Guide",
-    seoTitle: "Roman Theatre Cartagena — Guide for Cruise Passengers",
+    slug: "is-ancient-olympia-worth-visiting-from-a-cruise-ship",
+    path: "/is-ancient-olympia-worth-visiting-from-a-cruise-ship",
+    title: "Is Ancient Olympia Worth Visiting from a Cruise Ship?",
+    seoTitle: "Is Ancient Olympia Worth It from Katakolon? — Honest Cruise Passenger Guide",
     metaDescription:
-      "Visit Cartagena's Roman Theatre on a cruise port day — history, tickets, walking time from Muelle de Alfonso XII and how to combine with the Forum quarter.",
-    eyebrow: "Roman Cartagena",
-    tagline: "A 2,000-year-old auditorium rediscovered beneath the old town — the essential Cartagena sight for cruise passengers.",
+      "Should you leave the ship for Ancient Olympia from Katakolon? Honest pros, cons, timing and alternatives for cruise passengers weighing the 35 km drive against a port village day.",
+    eyebrow: "Planning",
+    tagline:
+      "The birthplace of the Olympic Games is extraordinary — but only if your port time, mobility and heat tolerance align with the inland drive.",
     overview:
-      "The Roman Theatre of Cartagena is the headline archaeological site on Spain's Costa Cálida cruise circuit. Built in the 1st century BC and expanded under Emperor Augustus, it seated around 7,000 spectators before centuries of burial beneath medieval streets. Fully excavated and restored, it now anchors every serious Cartagena port day — whether you join Roman Highlights or walk independently from the cruise terminal.",
+      "Katakolon exists because of Ancient Olympia. Roughly 35 km and 35–45 minutes separate the cruise pier from the sanctuary where the Olympic flame tradition began — a distance short enough for a half-day excursion, yet long enough that tight port calls and summer heat can make the decision genuinely difficult. This guide weighs the honest trade-offs so you can choose with confidence before your gangway opens.",
     body: [
-      "Enter via the modern interpretation centre on Calle Gisbert, where exhibits explain Carthaginian origins, Roman expansion and the theatre's disappearance under later construction. The auditorium itself opens below street level — semicircular tiers, reconstructed stage wall and views that make the scale immediately obvious. Allow 60–90 minutes including the museum galleries; rushed 30-minute visits miss the layering that makes Cartagena special.",
-      "From Muelle de Alfonso XII, the theatre sits approximately 10–12 minutes on foot through the port promenade and into the old town. The route is flat until the final approach, where a lift connects upper streets to the entrance. Summer sailings bring heat and queues — morning visits from early gangway times work best.",
-      "Pair the theatre with the Roman Forum archaeological quarter a few minutes away on foot, or with the Punic Wall for a fuller ancient timeline. Our Roman Highlights excursion sequences all three with return timing built in; history lovers may prefer the deeper Roman Walking Tour. See our one-day itinerary for hour-by-hour planning.",
+      "Olympia rewards passengers who care about athletic history, classical archaeology or the emotional weight of standing on a 2,700-year-old starting line. The site is smaller than Pompeii or Ephesus, but its significance is unmatched: every modern Olympics traces a lineage to this pine-shaded valley. If that idea moves you, the drive from Katakolon is almost certainly worthwhile on a standard seven- to eight-hour port day. If you prefer beaches, shopping and a relaxed waterfront lunch without a 70-minute round trip in a coach, Katakolon village may serve you better.",
+      "The practical calculus matters as much as the history. You lose roughly 70–90 minutes to transfers alone, plus two to three hours on site for a visit that feels complete rather than rushed. Summer afternoons regularly exceed 35°C on exposed ruins; the museum helps, but walking the sanctuary in August demands hydration, a hat and realistic pacing. Mobility limitations also count — gravel paths and uneven stone are manageable for most active adults but challenging for anyone unsteady on their feet.",
+      "Return-to-ship confidence is high on reputable organised excursions, which track your vessel and build buffers into the schedule. Independent taxis work for experienced travellers who negotiate wait times clearly. On port calls under six usable hours, Olympia becomes a gamble unless you book a tightly scoped highlights tour. The bottom line: Olympia is worth it for most first-time visitors to Katakolon with adequate time; it is skippable only when your priorities are purely coastal relaxation or your window is genuinely short.",
     ],
-    sections: [
+    tier: 1,
+    distanceFromPort: "Approx. 35 km to Ancient Olympia",
+    travelTime: "35–45 min each way by coach or taxi",
+    timeNeeded: "2–3.5 hours on site plus transfers",
+    returnToShip:
+      "Organised excursions typically deliver High return confidence on seven-hour-plus calls. Independent travel is Medium — taxis can be delayed at peak departure times. Build 30–45 minutes before all-aboard regardless of how you travel.",
+    gettingThere: [
+      { method: "Organised shore excursion", detail: "Best balance of timing, guiding and return assurance", time: "35–45 min each way", cost: "Excursion price" },
+      { method: "Private tour", detail: "Flexible pacing; ideal if you want museum depth without crowds", time: "40–50 min each way", cost: "€120–200+" },
+      { method: "Taxi round trip", detail: "Works if you agree wait time and fare upfront in Katakolon", time: "40–55 min each way", cost: "€80–120" },
+      { method: "Stay in port", detail: "Waterfront cafés, shops and optional beach — zero transfer risk", time: "0 min", cost: "Minimal" },
+    ],
+    highlights: [
+      "Emotional payoff — the original Olympic Stadium starting line",
+      "World-class museum pieces including Hermes of Praxiteles",
+      "Compact site — achievable in a half-day from the pier",
+      "Gateway to Ancient Olympia — the reason your ship calls here",
+      "Licensed guides who narrate athletic and religious history vividly",
+    ],
+    tips: [
+      "Check your ship's time in port before booking — under six hours is tight",
+      "Prefer morning departures in summer to avoid peak heat and crowds",
+      "If mobility is limited, confirm accessibility with your tour operator",
+      "A village-only day is a valid choice — do not feel obliged to inland ruins",
+      "Combined museum-and-ruins tickets maximise a single visit",
+    ],
+    didYouKnow: [
+      "The modern Olympic flame is lit here every two years using a parabolic mirror and the sun's rays.",
+      "Ancient Olympia was a religious sanctuary first — athletics were offerings to Zeus, not entertainment for tourists.",
+      "Nero competed in the 67 AD games and famously fell from his chariot but was declared winner anyway.",
+      "The site was buried by river silt and earthquakes before German excavations revived it in the 19th century.",
+      "Katakolon village grew as a railway and cruise gateway once Olympia became a major heritage destination.",
+    ],
+    photographyTips: [
+      "If Olympia is worth it for you, the stadium tunnel shot alone justifies bringing a proper camera.",
+      "Morning side-light on the Temple of Zeus columns beats flat midday exposure.",
+      "Museum galleries favour quiet, slow photography — avoid rush-hour coach arrivals.",
+      "Skip ambitious drone plans — the archaeological zone restricts aerial filming.",
+    ],
+    planningTables: [
       {
-        heading: "Practical timing from the cruise port",
-        paragraphs: [
-          "Standard port calls offer 6–9 hours ashore after immigration. The Roman Theatre alone needs 1–1.5 hours plus 20–25 minutes round-trip walking from the terminal. Adding the Forum and Castle of the Conception fills a moderate full day without leaving the city.",
-          "Build 45–60 minutes before all-aboard for the walk back to Muelle de Alfonso XII, especially when two ships share the port. Check ship-schedules for your sailing week — crowded gangways eat into usable time.",
+        title: "Minimum time budget — is your port day long enough?",
+        headers: ["Port time", "Olympia feasible?", "Notes"],
+        rows: [
+          ["4–5 hours", "No", "Stay in Katakolon or nearby beach"],
+          ["6 hours", "Marginal", "Highlights only; no museum depth"],
+          ["7–8 hours", "Yes", "Standard excursion sweet spot"],
+          ["9+ hours", "Yes", "Room for museum, lunch or winery add-on"],
+        ],
+      },
+      {
+        title: "Who tends to love Olympia — and who might skip",
+        headers: ["Traveller type", "Verdict", "Why"],
+        rows: [
+          ["History and sports fans", "Worth it", "Unmatched heritage payoff"],
+          ["First-time Greece visitors", "Worth it", "One of the Peloponnese's defining sites"],
+          ["Beach-and-shop prioritisers", "Maybe skip", "Katakolon village delivers that locally"],
+          ["Limited mobility", "Consider carefully", "Uneven terrain on ruins paths"],
+          ["Very short port calls", "Skip", "Transfer time eats the experience"],
         ],
       },
     ],
-    highlights: [
-      "1st-century BC Roman auditorium — among Spain's finest",
-      "Modern interpretation centre with layered history exhibits",
-      "10–12 minute walk from Cartagena cruise terminal",
-      "Natural pairing with Roman Forum quarter on foot",
-      "Included in Roman Highlights — our Editor's Choice excursion",
-      "Lift access available from upper old-town streets",
-    ],
-    tips: [
-      "Buy tickets online on busy summer cruise days if available",
-      "Visit before noon to avoid peak heat and coach groups",
-      "Combine with Forum quarter in the same morning block",
-      "Wear sun protection — open-air tiers reflect heat",
-      "Allow extra time if using the panoramic lift from the port area",
-    ],
-    faqs: [
+    comparisonTables: [
       {
-        question: "How far is the Roman Theatre from the Cartagena cruise port?",
-        answer:
-          "Roughly 800 metres and 10–12 minutes on foot from Muelle de Alfonso XII through the port promenade into the old town. A public lift can shorten the climb from lower streets.",
-      },
-      {
-        question: "Do I need a guided tour to visit the Roman Theatre?",
-        answer:
-          "No — independent entry works well with an audio guide or our walking guides. Guided tours add sequencing and context, which matters if you are also visiting the Forum and Punic Wall the same day.",
-      },
-      {
-        question: "Is the Roman Theatre suitable for passengers with limited mobility?",
-        answer:
-          "The interpretation centre is accessible; the ancient tiers involve steps and uneven stone. Contact the site ahead on mobility needs, or choose a private tour that paces the visit to your ability.",
-      },
-    ],
-    relatedGuideSlugs: ["roman-forum-archaeological-quarter", "why-roman-highlights-is-our-editors-choice", "one-day-in-cartagena-from-a-cruise-ship"],
-    relatedExcursionSlugs: ["cartagena-roman-highlights", "roman-walking-tour"],
-    imageKey: "roman-theatre",
-  },
-  {
-    slug: "roman-forum-archaeological-quarter",
-    title: "Roman Forum & Archaeological Quarter — Cartagena Guide",
-    seoTitle: "Roman Forum Cartagena — Archaeological Quarter for Cruise Passengers",
-    metaDescription:
-      "Explore Cartagena's Roman Forum and archaeological quarter on a port day — baths, streets and temples minutes from the Roman Theatre and cruise terminal.",
-    eyebrow: "Roman Cartagena",
-    tagline: "Open-air Roman streets beneath modern Cartagena — the forum district every history-minded cruiser should walk.",
-    overview:
-      "Cartagena's Roman Forum district preserves colonnaded streets, thermal baths and temple foundations in situ — not behind glass in a single building but woven through the living old town. For cruise passengers, it is the natural second stop after the Roman Theatre, reachable in minutes on foot through pedestrian lanes that drop you directly onto 2,000-year-old paving.",
-    body: [
-      "The archaeological quarter covers several interconnected sites along and below Calle San Fernando and adjacent streets. Roman baths, the forum portico and domestic foundations illustrate daily life in Colonia Urbs Nova Carthago — the city Augustus refounded after Rome's victory over Carthage. Interpretation panels explain the urban grid; guided commentary adds the Punic-Roman transition that textbooks skim.",
-      "Walking from the Roman Theatre takes 3–5 minutes. From Muelle de Alfonso XII, allow 15–18 minutes total if you visit the Forum after the theatre. The terrain is gentler than the climb to Castle of the Conception but still involves cobbles — comfortable footwear matters.",
-      "History lovers often prefer the Roman Walking Tour, which lingers here longer than standard highlights packages. First-timers on Roman Highlights still receive meaningful Forum time without sacrificing the castle viewpoint. Link to our shore excursions page to compare pacing, or use the cruise-planner for a personalised shortlist.",
-    ],
-    highlights: [
-      "In-situ Roman streets, baths and temple remains",
-      "3–5 minute walk from the Roman Theatre",
-      "Interpretation woven through the pedestrian old town",
-      "Essential second stop on any Roman-focused port day",
-      "Featured on Roman Walking Tour and Roman Highlights",
-      "No long transfer — entirely walkable from the cruise port",
-    ],
-    tips: [
-      "Visit immediately after the Roman Theatre while orientation is fresh",
-      "Read panels in the shade — summer sun on stone is intense",
-      "Pair with Punic Wall for Carthaginian context before Roman layers",
-      "Guided tours unlock details easy to miss on self-guided walks",
-      "Keep 45–60 minutes before all-aboard for the return walk to the ship",
-    ],
-    faqs: [
-      {
-        question: "Is the Roman Forum a separate ticket from the Roman Theatre?",
-        answer:
-          "Cartagena's archaeological sites use combined and separate ticket options that change seasonally. Check current pricing before port day — many visitors buy a multi-site pass covering theatre, Forum and Punic Wall.",
-      },
-      {
-        question: "How long should I spend in the archaeological quarter?",
-        answer:
-          "Allow 45–60 minutes for a self-guided walk with panels. Guided tours may extend to 90 minutes when combined with the theatre and Punic Wall.",
-      },
-      {
-        question: "Can I visit the Forum on a short port call?",
-        answer:
-          "On calls under 5 hours, prioritise either the theatre or a harbour walk. The Forum deserves at least 45 minutes — rushing it on a tight window creates frustration rather than discovery.",
-      },
-    ],
-    relatedGuideSlugs: ["roman-theatre-cartagena", "punic-wall-experience", "best-cartagena-excursions-for-history-lovers"],
-    relatedExcursionSlugs: ["roman-walking-tour", "cartagena-roman-highlights"],
-    imageKey: "roman-forum",
-  },
-  {
-    slug: "punic-wall-experience",
-    title: "Punic Wall Experience — Cartagena Cruise Guide",
-    seoTitle: "Punic Wall Cartagena — Carthaginian Heritage for Cruise Passengers",
-    metaDescription:
-      "Visit the Punic Wall in Cartagena on a cruise port day — Carthaginian defences, interpretation centre and how it fits with Roman sites near the cruise terminal.",
-    eyebrow: "Ancient Cartagena",
-    tagline: "Before Rome, there was Carthage — the defensive wall that explains Cartagena's strategic Mediterranean story.",
-    overview:
-      "The Punic Wall Experience preserves a section of Carthaginian defensive wall from the 3rd century BC — rare visible evidence of Punic Cartagena before Scipio Africanus and Roman refoundation. For cruise passengers tracing Mediterranean history, it completes the narrative begun at the Roman Theatre and Forum: this harbour was contested long before Caesar's engineers arrived.",
-    body: [
-      "The interpretation centre on Calle San Diego presents the wall remains within a modern structure that protects fragile stonework. Exhibits cover Hannibal's connection to the region, siege archaeology and how Roman builders incorporated earlier defences into their own city grid. The visit is compact — typically 30–45 minutes — making it an efficient add-on rather than a half-day commitment.",
-      "The site sits on the edge of the old town, roughly 12–15 minutes on foot from Muelle de Alfonso XII. Combine it with the Roman Forum quarter in one morning circuit: Punic origins, Roman urban life, then theatre grandeur. Roman Walking Tour itineraries usually include all three with commentary linking the layers.",
-      "Do not confuse this Cartagena with Cartagena, Colombia — this is Spain's Murcia region, one of the Mediterranean's most walkable cruise ports. Our cruise-port-guide covers terminal layout; ship-schedules help you judge whether a layered ancient-history morning fits before all-aboard.",
-    ],
-    highlights: [
-      "3rd-century BC Carthaginian wall remains",
-      "Compact 30–45 minute visit — efficient on port days",
-      "Interpretation centre protecting fragile archaeology",
-      "Completes the Punic-to-Roman story with theatre and Forum",
-      "12–15 minute walk from Cartagena cruise terminal",
-      "Included on Roman Walking Tour deep-history itineraries",
-    ],
-    tips: [
-      "Visit before the Roman Theatre if you prefer chronological storytelling",
-      "Ask about combined tickets with other archaeological sites",
-      "Morning slots avoid overlap with large coach groups",
-      "Pair with our maritime history guide for naval strategic context",
-      "Allow flat walking time back to the port — do not cut all-aboard close",
-    ],
-    faqs: [
-      {
-        question: "Is the Punic Wall worth it on a first Cartagena call?",
-        answer:
-          "If you have 6+ hours ashore and interest in ancient history, yes — it distinguishes Cartagena from generic Mediterranean old towns. On very short calls, prioritise the Roman Theatre instead.",
-      },
-      {
-        question: "How far is the Punic Wall from the cruise ship?",
-        answer:
-          "Approximately 1 km and 12–15 minutes on foot from Muelle de Alfonso XII through the old town edge.",
-      },
-      {
-        question: "Is this the same Cartagena as in Colombia?",
-        answer:
-          "No. This guide covers Cartagena, Spain — Murcia region, Costa Cálida — a major Western Mediterranean cruise port with Roman and Carthaginian heritage.",
-      },
-    ],
-    relatedGuideSlugs: ["roman-forum-archaeological-quarter", "cartagena-maritime-history", "best-cartagena-excursions-for-history-lovers"],
-    relatedExcursionSlugs: ["roman-walking-tour", "cartagena-roman-highlights"],
-    imageKey: "punic-wall",
-  },
-  {
-    slug: "castle-of-the-conception",
-    title: "Castle of the Conception — Cartagena Viewpoint Guide",
-    seoTitle: "Castle of the Conception Cartagena — Harbour Views for Cruise Passengers",
-    metaDescription:
-      "Visit the Castle of the Conception on a Cartagena cruise port day — panoramic harbour views, lift access and realistic timing from Muelle de Alfonso XII.",
-    eyebrow: "Cartagena viewpoints",
-    tagline: "The hilltop fortress that surveys Cartagena's harbour, cruise terminal and 3,000 years of Mediterranean ambition.",
-    overview:
-      "The Castle of the Conception crowns the hill above Cartagena's old town — a strategic viewpoint used by Carthaginians, Romans, Moors and Bourbons. For cruise passengers, it delivers the single best panorama of your ship at berth, the naval base, residential hills and the curved bay that made this port indispensable. It rounds out Roman-focused days with geographic context.",
-    body: [
-      "The castle complex combines medieval and modern military history with open terraces facing the harbour. Exhibits inside cover Cartagena's naval tradition — useful context before or after our maritime history guide. The ascent from the old town can be on foot through Parque Torres or via the Panoramic Lift from Calle Gisbert, which saves legs after a morning of Roman archaeology.",
-      "Allow 45–60 minutes including lift queues in peak season. The view toward Muelle de Alfonso XII helps you judge walking distance back to the gangway — typically 15–20 minutes downhill from the castle area to the cruise terminal via old-town lanes or the lift.",
-      "Roman Highlights includes the castle as a finale precisely because it orients you geographically before return. Harbour Panoramic Tour excursions approach from the waterfront if you prefer minimal climbing. Independent visitors should monitor time — the view is seductive and all-aboard waits for no one.",
-    ],
-    sections: [
-      {
-        heading: "Getting up — and getting back to the ship",
-        paragraphs: [
-          "The Panoramic Lift from near the Roman Theatre district carries passengers toward the castle with minimal climbing. On foot, paths through Parque Torres are scenic but involve steps. Factor your mobility and the afternoon heat into the choice.",
-          "From the castle terrace, allow 20–25 minutes to reach Muelle de Alfonso XII on foot including lift wait. Build 45–60 minutes total buffer before all-aboard on standard port days.",
+        title: "Olympia versus staying in Katakolon village",
+        headers: ["Factor", "Ancient Olympia", "Katakolon port day"],
+        rows: [
+          ["Transfer time", "70–90 min round trip", "None"],
+          ["Cultural depth", "Exceptional", "Light — shops and cafés"],
+          ["Summer heat exposure", "High on ruins", "Moderate; sea breeze"],
+          ["Return-to-ship risk", "Low on tours", "Very low"],
+          ["Best for", "Heritage-focused passengers", "Relaxation and shopping"],
         ],
       },
     ],
-    highlights: [
-      "360-degree views over harbour and cruise terminal",
-      "Panoramic Lift access from the old town",
-      "Military and naval history exhibits inside the castle",
-      "Ideal finale after Roman Theatre and Forum visits",
-      "Included on Roman Highlights and harbour panoramic tours",
-      "Photogenic spot to see your ship at berth",
-    ],
-    tips: [
-      "Save the castle for after Roman sites — the climb makes more sense once orientation is set",
-      "Use the Panoramic Lift if you have already walked the Forum quarter",
-      "Late afternoon light is best for harbour photography",
-      "Bring water — the terrace is exposed in summer",
-      "Check ship-schedules — know your all-aboard before ascending",
-    ],
     faqs: [
       {
-        question: "Can I see the cruise port from the Castle of the Conception?",
+        question: "Is Ancient Olympia worth the drive from Katakolon?",
         answer:
-          "Yes — the terrace overlooks Muelle de Alfonso XII and the cruise berths clearly. It is one of the best ways to grasp how compact and walkable this port really is.",
+          "For most cruise passengers with seven or more usable hours ashore, yes. The sanctuary is uniquely significant and the transfer is shorter than many famous ruin days in the Mediterranean. Skip it only on very short calls or if you strongly prefer a coastal relaxation day.",
       },
       {
-        question: "Is the castle suitable for passengers who avoid steep walks?",
+        question: "What if I am not interested in ancient history?",
         answer:
-          "The Panoramic Lift reduces climbing significantly, though some steps remain at the castle itself. Harbour Panoramic Tour options minimise uphill walking if mobility is limited.",
+          "Katakolon village, nearby beaches and food-focused excursions may suit you better. Olympia's appeal is specifically historical and athletic — without that interest, the coach time may feel long.",
       },
       {
-        question: "How much time does the castle add to a Roman day?",
+        question: "Is it worth visiting in peak summer heat?",
         answer:
-          "Plan 45–60 minutes including lift and exhibits. Roman Highlights integrates this without compressing theatre time unsafely.",
+          "Yes, but pace yourself. Morning tours, hydration and using the air-conditioned museum during the hottest hours make summer visits workable. Afternoon-only arrivals in August are genuinely uncomfortable on exposed paths.",
+      },
+      {
+        question: "Do children find Olympia engaging?",
+        answer:
+          "Many do — especially the stadium and stories of ancient athletes. Attention spans vary; family-friendly guides who tell vivid stories help more than unstructured wandering in heat.",
+      },
+      {
+        question: "Is the museum essential or optional?",
+        answer:
+          "Essential if you want the full picture. The finest sculptures and context for the Temple of Zeus live indoors. Ruins-only visits still impress but feel incomplete for many visitors.",
+      },
+      {
+        question: "Can I see enough on a six-hour port call?",
+        answer:
+          "Barely. You can manage a highlights circuit with an efficient tour, but you will sacrifice museum time. Seven to eight hours is the comfortable minimum for ruins plus museum.",
       },
     ],
-    relatedGuideSlugs: ["cartagena-harbour-walking-route", "roman-theatre-cartagena", "cartagena-maritime-history"],
-    relatedExcursionSlugs: ["cartagena-roman-highlights", "harbour-panoramic-tour"],
-    imageKey: "castle",
+    relatedGuideSlugs: [
+      "ancient-olympia-from-katakolon",
+      "olympia-vs-katakolon-which-is-best-for-cruise-passengers",
+      "one-day-in-katakolon-from-a-cruise-ship",
+      "best-time-to-visit-katakolon",
+    ],
+    relatedExcursionSlug: "ancient-olympia-and-museum-tour",
+    imageKey: "worth-it",
+    breadcrumbParent: PORT_GUIDE_PARENT,
   },
   {
-    slug: "cartagena-old-town-walking-guide",
-    title: "Cartagena Old Town Walking Guide",
-    seoTitle: "Cartagena Old Town Walking Guide — DIY from the Cruise Port",
+    slug: "olympia-vs-katakolon-which-is-best-for-cruise-passengers",
+    path: "/olympia-vs-katakolon-which-is-best-for-cruise-passengers",
+    title: "Olympia vs Katakolon — Which Is Best for Cruise Passengers?",
+    seoTitle: "Olympia vs Katakolon Village — Which Should Cruise Passengers Choose?",
     metaDescription:
-      "Walk Cartagena's old town from the cruise port — self-guided route from Muelle de Alfonso XII through Roman sites, plazas and tapas bars with return-to-ship timing.",
-    eyebrow: "DIY port day",
-    tagline: "No coach required — Cartagena's compact core is built for confident cruise passengers on foot.",
+      "Ancient Olympia or Katakolon port village? Compare transfer times, sightseeing depth, heat, shopping and return-to-ship ease for your Peloponnese cruise day.",
+    eyebrow: "Compare",
+    tagline:
+      "Your ship docks at Katakolon — but the UNESCO-listed sanctuary inland is why the port exists. Here is how to choose where to spend your hours.",
     overview:
-      "Cartagena is one of the Mediterranean's easiest cruise ports for independent exploration. Muelle de Alfonso XII lies roughly 10–15 minutes on foot from the pedestrian old town, where Modernist facades sit beside Roman ruins and harbour-side promenades. This is our recommended DIY option when you prefer zero transfer cost and maximum flexibility.",
+      "Cruise passengers face a simple geography question at Katakolon: explore the waterfront village at the pier, or invest transfer time to Ancient Olympia 35 km inland. The two experiences share a postcode but little else — one is a compact cruise port with shops and seafood tavernas; the other is among Greece's most sacred archaeological landscapes. Most passengers with adequate port time do both via excursion; this guide helps you decide the balance.",
     body: [
-      "Exit the cruise terminal toward the port promenade and follow signs to the old town and Panoramic Lift. A sensible loop: Roman Theatre and interpretation centre, Forum archaeological quarter on foot, coffee on Plaza de San Francisco, then downhill toward Calle Mayor's shops and tapas lanes. Allow 3–4 hours for an unhurried circuit without the Castle of the Conception — add 45–60 minutes if you take the lift uphill.",
-      "Cartagena rewards wandering. Calle Mayor's Modernist architecture — Casa Cervantes, the casino building — needs no ticket. Mercado de Santa Florentina sits near the centre for a quick market look. Keep one eye on the clock: build 45–60 minutes before all-aboard for the walk back, longer if immigration queues are heavy on multi-ship days.",
-      "Use our cruise-port-guide for terminal maps and ship-schedules to confirm your window. The Cruise Planner suggests this walking day automatically when you select DIY style and moderate mobility. Compare with Roman Highlights if you want guided sequencing at the archaeological sites.",
+      "Katakolon village sits steps from the gangway. You can browse jewellery and souvenir lanes, drink iced freddo espresso overlooking fishing boats, and sample octopus or grilled sardines without ever boarding a coach. Return-to-ship confidence is maximal — you control every minute. The trade-off is depth: you will not stand on an ancient starting line or see classical sculpture in a world-class museum unless you head inland.",
+      "Ancient Olympia demands 70–90 minutes of round-trip driving plus two to three hours on site for a visit that feels complete. In return you walk the birthplace of the Olympic Games, explore the Temple of Zeus precinct and encounter masterpieces in the Archaeological Museum. Summer heat on exposed ruins is real; spring and autumn visits are more forgiving. Organised excursions make the logistics straightforward and align returns with your ship's schedule.",
+      "The best answer for many passengers is not either-or but sequenced: Olympia in the morning when temperatures are lower, then an hour in Katakolon before all-aboard if your tour returns early. On six-hour port calls, choose one focus. On eight-hour-plus calls, combine Olympia with a winery, olive mill or beach stop on the return leg. Your ship's time in port is the decisive variable — not marketing slogans about must-see lists.",
     ],
-    sections: [
+    tier: 1,
+    distanceFromPort: "Katakolon: at pier | Olympia: 35 km inland",
+    travelTime: "Village: 0 min | Olympia: 35–45 min each way",
+    timeNeeded: "Village: 1–2 hours | Olympia: 2–3.5 hours",
+    returnToShip:
+      "Katakolon village offers the highest return confidence — you are always minutes from the pier. Olympia excursions from reputable operators also score High on standard port days. Mixing both without a tour requires careful self-scheduling.",
+    gettingThere: [
+      { method: "On foot from pier", detail: "Katakolon shops and waterfront — immediate access", time: "2–5 min walk", cost: "Free" },
+      { method: "Olympia excursion coach", detail: "Guided inland transfer with timed return", time: "35–45 min each way", cost: "Excursion price" },
+      { method: "Highlights tour", detail: "Olympia morning plus village stop on return", time: "Full day structured", cost: "Excursion price" },
+      { method: "Taxi to Olympia", detail: "Independent round trip — negotiate wait time", time: "40–55 min each way", cost: "€80–120" },
+    ],
+    highlights: [
+      "Katakolon — waterfront dining, cruise-friendly shopping, zero transfer",
+      "Olympia — Olympic Stadium, Temple of Zeus, Archaeological Museum",
+      "Combined tours — heritage morning, village free time on return",
+      "Beach options near Katakolon on village-focused days",
+      "Gateway to Ancient Olympia — port identity at a glance",
+    ],
+    tips: [
+      "Match your choice to port hours — short calls favour the village",
+      "Book Olympia tours for morning departure in summer",
+      "Keep euros for Katakolon cafés even if your excursion is prepaid",
+      "Do not underestimate Olympia museum time when comparing options",
+      "Ask your tour operator whether village free time is included on return",
+    ],
+    didYouKnow: [
+      "Katakolon has only a few thousand permanent residents but can host thousands of cruise passengers in a single morning.",
+      "The railway from Pyrgos once brought land travellers to Olympia before cruise tourism dominated.",
+      "Modern Olympia village — near the ruins — is separate from Katakolon port on the coast.",
+      "Many shops in Katakolon close or slow once the last ship sails.",
+      "The Ionian sea at Katakolon is swimmable; Olympia is inland with no beach.",
+    ],
+    photographyTips: [
+      "Katakolon harbour shots work in soft morning light before crowds fill the quay.",
+      "Olympia's stadium tunnel is the inland counterpart — plan for both if you split the day.",
+      "Village storefronts and fishing boats suit quick smartphone photography between bites.",
+      "Avoid comparing your shots to midday harsh sun — schedule Olympia before noon when possible.",
+    ],
+    planningTables: [
       {
-        heading: "Suggested 4-hour self-guided loop",
-        paragraphs: [
-          "Hour 1: Terminal to Roman Theatre via port promenade — tickets and interpretation centre. Hour 2: Forum quarter and Plaza de San Francisco. Hour 3: Calle Mayor, Modernist facades and optional tapas stop. Hour 4: Return via harbour front or lift descent with buffer before all-aboard.",
-          "On calls under 5 hours, shorten to harbour promenade plus one Roman site rather than attempting the full loop.",
+        title: "Decision matrix by port call length",
+        headers: ["Hours ashore", "Recommended focus", "Rationale"],
+        rows: [
+          ["4–5", "Katakolon village", "Insufficient time for Olympia transfers"],
+          ["6", "Olympia highlights OR village", "Choose one; do not attempt both"],
+          ["7–8", "Olympia excursion", "Standard sweet spot for inland visit"],
+          ["9–10", "Olympia + village or winery", "Enough buffer for combination"],
+        ],
+      },
+      {
+        title: "Typical time split — combination day",
+        headers: ["Segment", "Duration", "Activity"],
+        rows: [
+          ["Transfer out", "40 min", "Coach to Olympia"],
+          ["Olympia ruins", "90 min", "Stadium, temples, Philippeion"],
+          ["Museum", "60 min", "Key sculptures and exhibits"],
+          ["Transfer back", "40 min", "Return toward coast"],
+          ["Katakolon free time", "45–60 min", "Shopping, coffee, harbour walk"],
         ],
       },
     ],
-    highlights: [
-      "10–15 minute walk from Muelle de Alfonso XII to old town",
-      "Roman Theatre and Forum reachable without a tour coach",
-      "Modernist architecture and plazas — no ticket required",
-      "Highest flexibility and lowest cost port-day option",
-      "Our recommended DIY approach for confident walkers",
-      "Natural link to tapas and market guides for lunch stops",
-    ],
-    tips: [
-      "Download offline maps — lanes branch unexpectedly",
-      "Carry euros for café stops and combined archaeological tickets",
-      "Start with Roman sites when gangway opens — heat builds by midday",
-      "Note the Panoramic Lift hours before planning the castle",
-      "Keep the ship's pier contact number and all-aboard time on paper",
-    ],
-    recommendations: [
+    comparisonTables: [
       {
-        title: "Cartagena Old Town Walking Guide",
-        description: "This DIY route — zero transfer, maximum flexibility for walkable port days.",
-        guideSlug: "cartagena-old-town-walking-guide",
-        bestFor: "DIY explorers",
+        title: "Olympia vs Katakolon at a glance",
+        headers: ["", "Ancient Olympia", "Katakolon village"],
+        rows: [
+          ["Distance from pier", "35 km", "0 km"],
+          ["Cultural significance", "World heritage", "Cruise port amenities"],
+          ["Walking intensity", "Moderate on ruins", "Easy"],
+          ["Summer heat", "High (exposed site)", "Moderate (sea breeze)"],
+          ["Shopping", "Limited near ruins", "Extensive near pier"],
+          ["Return confidence", "High on tours", "Very high"],
+        ],
       },
       {
-        title: "Roman Highlights",
-        description: "Prefer guided sequencing at the theatre, Forum and castle? Our Editor's Choice handles timing.",
-        excursionSlug: "cartagena-roman-highlights",
-        bestFor: "First-time visitors",
-      },
-    ],
-    faqs: [
-      {
-        question: "Is Cartagena safe to explore independently?",
-        answer:
-          "The old town and port promenade are well trafficked on cruise days. Standard urban awareness applies — watch bags in crowded lanes and respect all-aboard timing.",
-      },
-      {
-        question: "How much walking does the full old-town loop involve?",
-        answer:
-          "Expect 3–5 km over 3–4 hours with moderate cobbles and optional uphill lift to the castle. Flat harbour routes suit passengers avoiding climbs.",
-      },
-      {
-        question: "Should first-timers walk or book an excursion?",
-        answer:
-          "Confident walkers enjoy DIY Cartagena. First-timers who want archaeological context without research should consider Roman Highlights — see our first-time visitors guide.",
-      },
-    ],
-    relatedGuideSlugs: ["cartagena-harbour-walking-route", "one-day-in-cartagena-from-a-cruise-ship", "cartagena-food-tapas-guide"],
-    relatedExcursionSlugs: ["cartagena-roman-highlights", "harbour-panoramic-tour"],
-    imageKey: "old-town",
-  },
-  {
-    slug: "cartagena-harbour-walking-route",
-    title: "Cartagena Harbour Walking Route",
-    seoTitle: "Cartagena Harbour Walk — Cruise Port to Waterfront Route",
-    metaDescription:
-      "Walk Cartagena's harbour from the cruise terminal — port promenade, naval heritage, waterfront cafés and realistic timing from Muelle de Alfonso XII.",
-    eyebrow: "Waterfront route",
-    tagline: "Follow the bay from your ship to the old town — Cartagena's most scenic zero-cost port-day walk.",
-    overview:
-      "Cartagena's harbour defines the city — a deep natural bay that attracted Carthaginians, Romans and modern navies alike. The waterfront walking route from Muelle de Alfonso XII to the old town delivers sea breezes, yacht views and maritime context without a coach ticket. Ideal for short port calls, relaxed pacing or the first hour orienting before Roman sites.",
-    body: [
-      "From the cruise terminal, the port promenade curves along the waterfront toward the city centre. Passengers see working naval infrastructure, pleasure craft and the hills that frame the bay — the same geography visible from Castle of the Conception later if you climb. Interpretation panels and sculptures punctuate the route; our maritime history guide adds depth if you want background before walking.",
-      "The full promenade to the old-town edge takes 15–20 minutes one way at a leisurely pace. Harbour-side cafés offer rest stops with views back toward your ship — useful for couples and photographers. The route is flat and suits mixed mobility better than uphill castle paths.",
-      "Harbour Panoramic Tour excursions cover this waterfront by vehicle and foot with commentary if you prefer guided naval history. On independent days, combine the harbour walk with one Roman site rather than attempting Murcia — geography favours staying compact. Check ship-schedules when multiple cruise ships berth; promenade crowds peak mid-morning.",
-    ],
-    highlights: [
-      "Flat waterfront walk from Muelle de Alfonso XII",
-      "Views of your ship, naval base and pleasure harbour",
-      "15–20 minutes one way to old-town connection",
-      "Ideal for short port calls and relaxed pacing",
-      "Pairs with maritime history guide for context",
-      "Harbour Panoramic Tour adds guided naval commentary",
-    ],
-    tips: [
-      "Walk the harbour first for orientation — Roman sites make more sense afterward",
-      "Bring a light layer — sea breeze cools even hot summer days",
-      "Photograph your ship from the promenade early — afternoon sun angle shifts",
-      "Avoid cycling lanes where marked — stay on pedestrian side",
-      "Allow 45 minutes return buffer from old-town end of route",
-    ],
-    faqs: [
-      {
-        question: "Can I reach the Roman Theatre via the harbour walk?",
-        answer:
-          "Yes — the promenade connects to old-town lanes leading to the theatre district. Total walk from terminal to theatre is roughly 10–15 minutes via the waterfront route.",
-      },
-      {
-        question: "Is the harbour route suitable for wheelchairs?",
-        answer:
-          "The main port promenade is largely flat and paved. Some older-town connections involve cobbles — check current accessibility if mobility is limited.",
-      },
-      {
-        question: "How long should I spend on the harbour walk alone?",
-        answer:
-          "Allow 45–60 minutes out-and-back at a leisurely pace with a café stop. It can fill a short port call on its own or anchor a longer Roman day.",
-      },
-    ],
-    relatedGuideSlugs: ["cartagena-maritime-history", "cartagena-old-town-walking-guide", "castle-of-the-conception"],
-    relatedExcursionSlugs: ["harbour-panoramic-tour", "coastal-kayaking"],
-    imageKey: "harbour",
-  },
-  {
-    slug: "best-things-to-do-in-cartagena-from-a-cruise-ship",
-    title: "Best Things to Do in Cartagena from a Cruise Ship",
-    seoTitle: "Best Things to Do in Cartagena from a Cruise Ship — Port Day Guide",
-    metaDescription:
-      "The best things to do in Cartagena, Spain on a cruise port day — Roman sites, old town, tapas, beaches, Murcia trips and realistic timing from the cruise terminal.",
-    eyebrow: "Port day overview",
-    tagline: "Roman layers, walkable streets and optional Murcia — how to spend your hours ashore at one of the Mediterranean's easiest cruise ports.",
-    overview:
-      "Cartagena, Spain — not Colombia — rewards cruise passengers with compact geography and serious history. Ships berth at Muelle de Alfonso XII near the city centre, putting Roman archaeology, Modernist streets and harbour promenades within walking distance. This guide maps the best use of your port window without pretending you can see everything.",
-    body: [
-      "Priority one for most passengers: Roman Cartagena. The Roman Theatre, Forum quarter and Punic Wall form the essential ancient circuit; Castle of the Conception adds harbour panoramas. Roman Highlights remains our Editor's Choice for guided sequencing; confident walkers use our old-town walking guide independently.",
-      "Priority two depends on taste. Food lovers head to tapas lanes and Mercado de Santa Florentina. Beach passengers choose Cala Cortina or urban playas with taxi access. Active travellers consider coastal kayaking. Culture extenders drive to Murcia — 45–60 minutes each way — for cathedral and old-town contrast when the port window exceeds 8 hours.",
-      "Do not over-schedule. Cartagena's strength is density, not distance. Match activities to your all-aboard time using ship-schedules and the Cruise Planner. Our shore excursions hub compares organised options; the cruise-port-guide covers terminal logistics and walking distances.",
-    ],
-    sections: [
-      {
-        heading: "What fits a standard 7-hour port day",
-        paragraphs: [
-          "Full Roman circuit plus old-town lunch: yes. Roman sites plus Murcia round trip: tight but possible with an organised tour. Roman sites plus beach plus kayaking: only on the longest port windows — choose two themes, not three.",
-          "Short calls under 5 hours: harbour walk plus one Roman site, or tapas-focused old-town stroll. Skip Murcia entirely on short days.",
+        title: "Excursion types matched to preference",
+        headers: ["Preference", "Best fit", "Example focus"],
+        rows: [
+          ["Maximum history", "Olympia + museum tour", "Full sanctuary visit"],
+          ["Minimum stress", "Katakolon highlights", "Village and coast"],
+          ["Balanced day", "Olympia with village stop", "Morning ruins, afternoon pier"],
+          ["Food and culture", "Winery or food experience", "Peloponnese flavours inland"],
         ],
       },
     ],
-    highlights: [
-      "Roman Theatre — headline archaeological site",
-      "Old-town walking — 10–15 minutes from cruise terminal",
-      "Tapas and market culture — Calle Mayor and Santa Florentina",
-      "Castle harbour views — Panoramic Lift access",
-      "Murcia day trip — for 8+ hour port windows only",
-      "Coastal beaches and kayaking — active alternatives",
-    ],
-    tips: [
-      "Decide Roman-guided vs DIY before gangway — queues matter in summer",
-      "Murcia needs an organised tour or taxi — public transport eats the window",
-      "Check ship-schedules for shared-port days affecting gangway queues",
-      "Use the Cruise Planner to match interests to realistic timing",
-      "Build 45–60 minutes buffer before all-aboard regardless of plan",
-    ],
-    recommendations: [
-      {
-        title: "Roman Highlights",
-        description: "Editor's Choice — theatre, Forum and castle in one paced small-group day.",
-        excursionSlug: "cartagena-roman-highlights",
-        bestFor: "First-time visitors",
-      },
-      {
-        title: "Old Town Walking Guide",
-        description: "DIY loop from Muelle de Alfonso XII — our pick for independent explorers.",
-        guideSlug: "cartagena-old-town-walking-guide",
-        bestFor: "DIY explorers",
-      },
-    ],
     faqs: [
       {
-        question: "Is Cartagena, Spain worth a full port day?",
+        question: "Should I visit Olympia or stay in Katakolon?",
         answer:
-          "Absolutely — 3,000 years of layered history in a walkable compact city. It is one of the Mediterranean's most efficient cruise ports for sightseeing without long transfers.",
+          "If you have seven or more usable hours and any interest in ancient history or the Olympics, Olympia is the stronger choice. Stay in Katakolon on short port calls or if you want a relaxed shopping-and-lunch day without transfers.",
       },
       {
-        question: "Should I stay in Cartagena or go to Murcia?",
+        question: "Can I do both Olympia and Katakolon in one day?",
         answer:
-          "Stay in Cartagena on first calls and standard 6–7 hour windows. Murcia suits repeat visitors or 8+ hour calls — see our Murcia guide for timing.",
+          "Yes on eight-hour-plus port calls, usually via an excursion that returns with time to spare before all-aboard. Six-hour calls force you to pick one focus.",
       },
       {
-        question: "What is the single best thing to do from the cruise ship?",
+        question: "Is Katakolon village worth any time at all?",
         answer:
-          "The Roman Theatre and Forum quarter — either independently or via Roman Highlights. Everything else builds from that foundation.",
+          "Yes — even Olympia-focused passengers often enjoy 45–60 minutes at the harbour for coffee or souvenirs. The waterfront atmosphere is pleasant and genuinely local despite cruise traffic.",
+      },
+      {
+        question: "Which option is better for seniors?",
+        answer:
+          "Katakolon is easier — flat waterfront paths and nearby seating. Olympia is rewarding but involves uneven terrain and heat. Choose museum-heavy tours with paced walking if you go inland.",
+      },
+      {
+        question: "Which is better for families with young children?",
+        answer:
+          "Olympia can captivate kids at the stadium, but heat and walking challenge toddlers. Katakolon offers easier logistics; some families split — one parent inland, one at the pier.",
+      },
+      {
+        question: "Do I need a tour for Olympia?",
+        answer:
+          "Not strictly, but organised excursions deliver guiding, tickets and return timing that independent taxis require you to manage yourself. First-time visitors benefit from licensed commentary.",
       },
     ],
-    relatedGuideSlugs: ["one-day-in-cartagena-from-a-cruise-ship", "why-roman-highlights-is-our-editors-choice", "cartagena-food-tapas-guide"],
-    relatedExcursionSlugs: ["cartagena-roman-highlights", "tapas-local-food-experience", "cartagena-murcia"],
-    imageKey: "cartagena",
+    relatedGuideSlugs: [
+      "ancient-olympia-from-katakolon",
+      "katakolon-guide",
+      "one-day-in-katakolon-from-a-cruise-ship",
+      "is-ancient-olympia-worth-visiting-from-a-cruise-ship",
+    ],
+    relatedExcursionSlug: "katakolon-highlights-tour",
+    imageKey: "olympia-vs-katakolon",
+    breadcrumbParent: PORT_GUIDE_PARENT,
   },
   {
-    slug: "one-day-in-cartagena-from-a-cruise-ship",
-    title: "One Day in Cartagena from a Cruise Ship",
-    seoTitle: "One Day in Cartagena from a Cruise Ship — Hour-by-Hour Itinerary",
+    slug: "one-day-in-katakolon-from-a-cruise-ship",
+    path: "/one-day-in-katakolon-from-a-cruise-ship",
+    title: "One Day in Katakolon from a Cruise Ship",
+    seoTitle: "One Day in Katakolon — Sample Itineraries for 4, 6, 8 & 10 Hour Port Calls",
     metaDescription:
-      "Plan one day in Cartagena, Spain from your cruise ship — hour-by-hour itinerary from Muelle de Alfonso XII with Roman sites, lunch and return-to-ship timing.",
-    eyebrow: "Itinerary",
-    tagline: "From gangway to all-aboard — a realistic Cartagena port day built around your ship's schedule.",
+      "Plan one day in Katakolon from your cruise ship — sample itineraries for 4 to 10 hours covering Ancient Olympia, the museum, village, Greek food, wine, olive oil and shopping with return-to-ship buffers.",
+    eyebrow: "Itineraries",
+    tagline:
+      "From a quick harbour stroll to a full Peloponnese immersion — realistic hour-by-hour plans built around how long your ship actually stays.",
     overview:
-      "One day in Cartagena is enough to see the Roman essentials, eat well and walk the harbour — if you respect the clock. This hour-by-hour framework adapts to early or late gangway times and assumes a standard 7-hour usable window from Muelle de Alfonso XII. Adjust using ship-schedules and the Cruise Planner for your exact sailing.",
+      "No two Katakolon port calls are identical. A four-hour whistle-stop demands ruthless focus; a ten-hour luxury anchorage invites Olympia, museum depth, winery lunch and village shopping without panic. Ancient Olympia lies 35 km inland — 35–45 minutes each way — so every itinerary here builds transfers and a 30–45 minute pre-all-aboard buffer into the maths. Use these templates as starting points, then align them with your ship's published arrival and departure.",
     body: [
-      "Hour 1 (gangway + walk): Clear immigration, follow the port promenade to the old town. Buy combined archaeological tickets if available. Enter the Roman Theatre interpretation centre as it opens — beat coach crowds and heat.",
-      "Hours 2–3: Roman Theatre auditorium, Forum quarter on foot, optional Punic Wall if tickets include it. Coffee on Plaza de San Francisco. Panoramic Lift to Castle of the Conception for harbour views and a photograph of your ship.",
-      "Hour 4: Descend via lift or lanes to Calle Mayor — tapas lunch or market browse at Mercado de Santa Florentina. Slow shopping and Modernist facades need no rush if buffer is protected.",
-      "Final 45–60 minutes: Walk the harbour promenade back to Muelle de Alfonso XII. Do not shop after this point on tight schedules. Roman Highlights follows a similar arc with guided commentary — compare on our shore excursions page.",
+      "Short calls belong to Katakolon itself. The pier opens onto a lane of shops, jewellers and cafés where you can drink Greek coffee, buy olive oil soap and watch fishing boats within minutes of clearing the terminal. Attempting Olympia on a four-hour window is unwise — you would spend more time in a coach than at the sanctuary. Six-hour calls open the door to a compressed Olympia highlights tour: stadium, Temple of Zeus exterior and a brisk museum pass, with little margin for extras.",
+      "Eight hours is the classic Katakolon day. Morning coach to Olympia, two hours on the ruins, 75 minutes in the Archaeological Museum, return to the coast with time for grilled seafood on the waterfront or a quick shopping circuit before all-aboard. Ten-hour calls add Peloponnese flavour: a winery tasting or olive mill visit on the return route, a swim at nearby Kourouta beach, or an unhurried meze lunch that turns the port into a destination rather than a transit lounge.",
+      "Summer heat reshapes every plan. Schedule outdoor ruins before 11:00 when possible, retreat to the museum or an air-conditioned taverna at midday, and carry water regardless of itinerary. Organised excursions encode these rhythms; independent travellers should copy them. Gateway to Ancient Olympia is the port's identity — but a well-planned village day on a short call beats a rushed inland sprint that ends with you watching the stadium from a moving coach window.",
     ],
-    sections: [
+    tier: 1,
+    distanceFromPort: "Village: at pier | Olympia: 35 km | Wineries: 25–40 km",
+    travelTime: "Olympia: 35–45 min each way | Winery stops: 20–35 min from port",
+    timeNeeded: "Scales from 2 hours (village) to 9+ hours (full combo)",
+    returnToShip:
+      "Every itinerary below ends with a 30–45 minute buffer before all-aboard. Afternoon coach convoys from Olympia can add 10–15 minutes on peak summer days when multiple ships share the port. Never cut the buffer to squeeze in one more shop.",
+    gettingThere: [
+      { method: "Ship excursion", detail: "Pre-built itineraries matched to common port lengths", time: "Varies by tour", cost: "Excursion price" },
+      { method: "Private driver", detail: "Custom 6–10 hour loops — Olympia, food, wine", time: "Flexible", cost: "€150–280+" },
+      { method: "On foot", detail: "Village, shops, waterfront dining — no transfer", time: "Immediate", cost: "Low" },
+      { method: "Taxi + negotiation", detail: "Olympia round trip or beach run — agree fare first", time: "40–55 min to Olympia", cost: "€80–120+" },
+    ],
+    highlights: [
+      "Modular itineraries for 4h, 6h, 8h and 10h port calls",
+      "Ancient Olympia stadium and museum sequencing",
+      "Katakolon waterfront lunch and shopping windows",
+      "Optional winery, olive oil and beach extensions",
+      "Built-in return-to-ship buffers for every plan",
+    ],
+    tips: [
+      "Confirm your ship's all-aboard time before choosing an itinerary tier",
+      "Book excursions early when two large ships share Katakolon",
+      "Carry euros for village tavernas even on prepaid tours",
+      "Download offline maps — rural roads have patchy signal",
+      "Prefer morning Olympia slots June through September",
+    ],
+    didYouKnow: [
+      "Katakolon can receive more than one cruise ship on busy summer Tuesdays.",
+      "The Archaeological Museum at Olympia closes earlier than some passengers expect — check seasonal hours.",
+      "Peloponnese wines include Roditis and Mavrodaphne varieties rarely found on ship menus.",
+      "Kourouta beach is a popular add-on roughly 20 minutes west of Katakolon.",
+      "Olive oil from Elis province has PDO status — legitimate bottles make practical souvenirs.",
+    ],
+    photographyTips: [
+      "Four-hour days: focus on harbour morning light — you will not reach Olympia in time.",
+      "Six-hour Olympia sprints: prioritise the stadium tunnel over scattered minor ruins.",
+      "Eight-hour plans: shoot ruins before noon, museum pieces after lunch.",
+      "Ten-hour combos: golden-hour coast shots at Kourouta if your schedule allows beach time.",
+    ],
+    planningTables: [
       {
-        heading: "Variations by port window",
-        paragraphs: [
-          "5–6 hours ashore: Roman Theatre plus harbour walk — skip castle and Murcia. 8+ hours: add tapas tour or Cala Cortina beach taxi. 10+ hours: Murcia excursion becomes viable with Cartagena-Murcia organised tours.",
-          "Late departure ships can extend evening tapas — rare on Mediterranean itineraries but worth exploiting when schedules allow.",
+        title: "4-hour port call — Katakolon village focus",
+        headers: ["Time", "Activity", "Notes"],
+        rows: [
+          ["0:00", "Disembark and clear terminal", "15–20 min"],
+          ["0:20", "Waterfront walk and harbour photos", "Flat, easy paths"],
+          ["0:50", "Shopping lane — olive oil, jewellery, souvenirs", "Cards widely accepted"],
+          ["1:40", "Café or light lunch — souvlaki, seafood meze", "Sea breeze seating"],
+          ["2:30", "Optional quick swim nearby if walking pace allows", "Skip if ship departs early"],
+          ["3:15", "Return to pier, buffer before all-aboard", "30–45 min buffer"],
+        ],
+      },
+      {
+        title: "6-hour port call — Olympia highlights sprint",
+        headers: ["Time", "Activity", "Notes"],
+        rows: [
+          ["0:00", "Disembark, board coach immediately", "Every minute counts"],
+          ["0:30", "Drive to Ancient Olympia", "35–40 min"],
+          ["1:15", "Stadium, Temple of Zeus, Philippeion circuit", "90 min max outdoors"],
+          ["2:45", "Museum highlights — Hermes, pediments", "45 min brisk pace"],
+          ["3:30", "Coach return to Katakolon", "35–40 min"],
+          ["4:15", "Brief village stop or direct to pier", "Optional 20 min coffee"],
+          ["5:15", "All-aboard buffer", "Do not skip"],
+        ],
+      },
+      {
+        title: "8-hour port call — Olympia + museum + Katakolon",
+        headers: ["Time", "Activity", "Notes"],
+        rows: [
+          ["0:00", "Disembark, coach to Olympia", "Standard morning tour"],
+          ["1:00", "Ruins circuit — full sanctuary walk", "2 hours comfortable"],
+          ["3:00", "Archaeological Museum", "75 min unhurried"],
+          ["4:15", "Return drive to Katakolon", "40 min"],
+          ["5:00", "Waterfront lunch — grilled fish, Greek salad", "60 min"],
+          ["6:00", "Shopping and harbour stroll", "45 min"],
+          ["6:45", "Pier buffer before all-aboard", "30–45 min"],
+        ],
+      },
+      {
+        title: "10-hour port call — Olympia, food or wine, beach option",
+        headers: ["Time", "Activity", "Notes"],
+        rows: [
+          ["0:00", "Early coach to Olympia", "Beat heat and crowds"],
+          ["1:00", "Ruins and museum — full experience", "3–3.5 hours total"],
+          ["4:15", "Winery tasting or olive mill visit en route", "60–75 min"],
+          ["5:30", "Meze lunch with local wine", "60 min seated"],
+          ["6:30", "Kourouta beach swim OR Katakolon shopping", "60–90 min choice"],
+          ["8:00", "Return to pier, extended buffer", "45 min minimum"],
+        ],
+      },
+      {
+        title: "What to drop first when time shrinks",
+        headers: ["If shortened", "Cut this", "Keep this"],
+        rows: [
+          ["Lose 30 min", "Village shopping", "Olympia stadium"],
+          ["Lose 60 min", "Museum depth", "Ruins core circuit"],
+          ["Lose 2 hours", "Winery or beach", "Olympia highlights only"],
+          ["Lose 3+ hours", "Olympia entirely", "Katakolon village day"],
         ],
       },
     ],
-    highlights: [
-      "Hour-by-hour framework from gangway to all-aboard",
-      "Roman Theatre and Forum in the morning block",
-      "Castle viewpoint mid-day with lift access",
-      "Tapas or market lunch on Calle Mayor",
-      "Harbour promenade return to cruise terminal",
-      "Adaptable to 5-hour and 8+ hour port windows",
-    ],
-    tips: [
-      "Set a phone alarm 90 minutes before all-aboard",
-      "Pre-book Roman Highlights on peak summer sailings if not walking independently",
-      "Eat lunch by 14:30 — Spanish kitchen rhythms affect options",
-      "Skip the castle if gangway opened late — theatre matters more",
-      "Confirm terminal walking route in our cruise-port-guide",
-    ],
-    faqs: [
+    comparisonTables: [
       {
-        question: "Can I follow this itinerary independently?",
-        answer:
-          "Yes — this is our recommended DIY day. Substitute Roman Highlights for the Roman block if you prefer guided sequencing and return reassurance.",
-      },
-      {
-        question: "Where should I eat lunch on a one-day Cartagena itinerary?",
-        answer:
-          "Calle Mayor tapas bars or Mercado de Santa Florentina counters — see our food and market guides for specifics.",
-      },
-      {
-        question: "Is one day enough for Cartagena?",
-        answer:
-          "For Roman highlights, harbour and a meal — yes. Murcia or beach-plus-kayaking combinations need longer port windows or a second visit.",
-      },
-    ],
-    relatedGuideSlugs: ["cartagena-old-town-walking-guide", "best-things-to-do-in-cartagena-from-a-cruise-ship", "cartagena-food-tapas-guide"],
-    relatedExcursionSlugs: ["cartagena-roman-highlights", "tapas-local-food-experience"],
-    imageKey: "cartagena",
-  },
-  {
-    slug: "murcia-from-cartagena-cruise-port",
-    title: "Murcia from Cartagena Cruise Port — Day Trip Guide",
-    seoTitle: "Murcia from Cartagena Cruise Port — Day Trip for Cruise Passengers",
-    metaDescription:
-      "Visit Murcia from Cartagena on a cruise port day — cathedral, old town, transfer times from Muelle de Alfonso XII and when the day trip realistically fits.",
-    eyebrow: "Day trip",
-    tagline: "Inland cathedral city and tapas culture — Murcia when your Cartagena port window is long enough.",
-    overview:
-      "Murcia, capital of the region, sits 45–60 minutes inland from Cartagena's cruise terminal — a contrasting day of baroque cathedral architecture, shaded plazas and university-city energy. It is a worthwhile excursion on 8+ hour port calls but a mistake on short days when Cartagena's walkable Roman core deserves priority.",
-    body: [
-      "Murcia's headline is the Cathedral of Santa Maria — a baroque facade hiding centuries of Gothic and Renaissance layers inside. Plaza del Cardenal Belluga surrounds it with the Episcopal Palace and Ayuntamiento. Old-town lanes radiate outward with tapas bars that locals favour over tourist Cartagena prices — different rhythm, different scale.",
-      "Transfer from Muelle de Alfonso XII takes 45–60 minutes by road depending on traffic. Organised Cartagena-Murcia excursions protect return timing with 60-minute buffers before all-aboard. DIY taxi or train is possible for confident travellers but eats planning margin — we recommend organised tours for first attempts.",
-      "Do not attempt Murcia plus full Roman Cartagena on one standard 7-hour call. Choose one geography. Repeat cruisers who have seen the theatre may prefer Murcia; first-timers should stay in Cartagena — see our first-time visitors guide. Link to shore excursions for Cartagena-Murcia options and ship-schedules to confirm your window.",
-    ],
-    sections: [
-      {
-        heading: "When Murcia makes sense — and when it does not",
-        paragraphs: [
-          "Yes: 8+ usable hours ashore, repeat Cartagena visitors, strong interest in baroque architecture. No: first call, calls under 7 hours, passengers who have not yet seen the Roman Theatre.",
-          "Summer heat inland exceeds coastal breeze — hydrate and plan cathedral visits for mid-morning before the strongest afternoon sun.",
+        title: "Itinerary tier vs experience depth",
+        headers: ["Port hours", "Olympia", "Museum", "Food/wine", "Shopping"],
+        rows: [
+          ["4h", "No", "No", "Light café", "Brief"],
+          ["6h", "Highlights", "Brisk", "Snack", "Minimal"],
+          ["8h", "Full", "Full", "Lunch", "Moderate"],
+          ["10h", "Full", "Full", "Winery/lunch", "Generous"],
         ],
       },
     ],
-    highlights: [
-      "Cathedral of Santa Maria — baroque masterpiece",
-      "45–60 minute drive from Cartagena cruise port",
-      "Contrasting inland culture to coastal Roman Cartagena",
-      "Organised Cartagena-Murcia excursion with return buffer",
-      "Best on 8+ hour port windows only",
-      "Plaza del Cardenal Belluga and old-town tapas lanes",
-    ],
-    tips: [
-      "Book organised tours — DIY margin is tight on cruise days",
-      "Wear modest dress for cathedral entry",
-      "Morning departures from Muelle de Alfonso XII maximise Murcia time",
-      "Skip Murcia if gangway opened late — stay in walkable Cartagena",
-      "Compare Private Cartagena Experience if you want custom inland routing",
-    ],
     faqs: [
       {
-        question: "How far is Murcia from the Cartagena cruise port?",
+        question: "How many hours do I need for Olympia and Katakolon village?",
         answer:
-          "Approximately 50 km and 45–60 minutes by road from Muelle de Alfonso XII. Trains exist but port-day timing favours pre-booked road transfer.",
+          "Eight usable hours is the comfortable minimum for Olympia ruins, museum time and a relaxed village stop. Six hours works for highlights only; ten hours allows winery or beach add-ons.",
       },
       {
-        question: "Can I visit Murcia and Cartagena Roman sites on the same day?",
+        question: "Can I fit a winery visit on an eight-hour call?",
         answer:
-          "Not realistically on a standard 7-hour call. Choose one — Cartagena for first-timers, Murcia for repeat visitors with long windows.",
+          "Tight but possible with a private driver or a combined Olympia-and-winery excursion. You will compress shopping time. Ten-hour calls are better suited to wine tastings.",
       },
       {
-        question: "Is there an organised excursion to Murcia from Cartagena?",
+        question: "What should I do on a four-hour port call?",
         answer:
-          "Yes — Cartagena-Murcia shore excursions handle transfer and cathedral/old-town pacing with cruise-timed returns. See our shore excursions hub.",
+          "Stay in Katakolon: waterfront walk, lunch, shopping and coffee. Do not attempt Olympia — transfers alone consume most of your window.",
+      },
+      {
+        question: "Is lunch better in Olympia or Katakolon?",
+        answer:
+          "Katakolon waterfront tavernas offer better atmosphere for cruise schedules — you are closer to the pier after eating. Olympia village restaurants work on longer private tours with midday breaks.",
+      },
+      {
+        question: "Where should I shop for olive oil and wine?",
+        answer:
+          "Dedicated olive oil and winery excursions include tastings and purchase. Katakolon shops sell packaged bottles suited to luggage — confirm airline liquid rules for fly-cruise passengers.",
+      },
+      {
+        question: "How early should I book for a one-day plan?",
+        answer:
+          "As soon as your excursion window opens, especially on days when multiple ships share the port. Morning Olympia departures fill first in peak season.",
       },
     ],
-    relatedGuideSlugs: ["best-things-to-do-in-cartagena-from-a-cruise-ship", "one-day-in-cartagena-from-a-cruise-ship", "cartagena-food-tapas-guide"],
-    relatedExcursionSlugs: ["cartagena-murcia", "private-cartagena-experience"],
-    imageKey: "murcia",
+    relatedGuideSlugs: [
+      "ancient-olympia-from-katakolon",
+      "olympia-vs-katakolon-which-is-best-for-cruise-passengers",
+      "greek-food-guide",
+      "local-winery-guide",
+    ],
+    relatedExcursionSlug: "olympia-and-winery-tour",
+    imageKey: "one-day",
+    breadcrumbParent: PORT_GUIDE_PARENT,
   },
   {
-    slug: "cartagena-food-tapas-guide",
-    title: "Cartagena Food & Tapas Guide",
-    seoTitle: "Cartagena Tapas Guide — Best Food for Cruise Passengers",
+    slug: "olympic-stadium-guide",
+    path: "/olympic-stadium-guide",
+    title: "Olympic Stadium Guide — Ancient Olympia",
+    seoTitle: "Ancient Olympic Stadium Guide — Katakolon Cruise Visitors",
     metaDescription:
-      "Eat well in Cartagena on a cruise port day — tapas bars, Calle Mayor, regional Murcian dishes and lunch timing from Muelle de Alfonso XII.",
-    eyebrow: "Food guide",
-    tagline: "Marinera, michirones and harbour-side cañas — Cartagena's tapas culture fits cruise schedules better than you expect.",
+      "Visit the original Olympic Stadium at Ancient Olympia from Katakolon — vaulted entrance, starting line, history and practical tips for cruise passengers on a 35 km shore day.",
+    eyebrow: "Olympic Stadium",
+    tagline:
+      "Sprint barefoot on the same earthen track where ancient athletes competed for sacred olive wreaths — the emotional heart of any Olympia visit.",
     overview:
-      "Cartagena's food scene punches above its cruise-stop reputation. Murcian cuisine blends Mediterranean seafood, inland agriculture and North African spice traces — expressed in tapas bars clustered around Calle Mayor, the old port and plaza squares. For cruise passengers, lunch falls naturally between Roman morning sightseeing and the harbour walk back to Muelle de Alfonso XII.",
+      "The stadium at Ancient Olympia is not a reconstruction or a modern arena wearing antique makeup. It is the actual competition ground used for centuries of ancient Olympic foot races, with a stone starting sill (balbis) and a vaulted entrance tunnel that still frames the track exactly as athletes experienced it. Reached via a 35–45 minute drive from Katakolon, the stadium sits within the wider archaeological park and typically anchors the first or final segment of a ruins walk.",
     body: [
-      "Start with classics: michirones (broad bean stew), pulpo a la marinera, caldero rice dishes and espetos-style grilled fish where available. Tapas here are often generous — two or three plates plus bread satisfy lunch without a formal sit-down. Calle Mayor and adjacent lanes concentrate options within 12–15 minutes of the cruise terminal.",
-      "Timing matters on port days. Spanish lunch service peaks 13:00–15:30. Arrive before 14:00 if you want kitchen choice. Tapas Local Food Experience excursions sequence Roman morning sites with guided bar stops — our recommendation for food lovers who want context without restaurant roulette.",
-      "Pair this guide with our market guide for morning browsing before bars open. Use the Cruise Planner if food is your primary interest — it surfaces tapas tours over Roman coaches when you select culinary preferences. Shore excursions lists current Tapas Experience availability.",
+      "Ancient stadiums were practical, not ornamental. Olympia's course measures roughly 192 metres — the origin of the Olympic 'stadion' unit — with earthen banks where spectators stood or sat on grassy slopes rather than marble tiers. You enter through the Krypte, a stone-vaulted passage that once separated competitors from the roar of the crowd. Emerging onto the track, most visitors instinctively walk to the starting line and place their feet in the carved grooves. It is one of the rare archaeological moments that requires no explanatory plaque to land emotionally.",
+      "Foot races — stadion, diaulos and dolichos — dominated early Olympic programmes before chariot racing expanded the games. Athletes competed nude after oiling their bodies, a tradition tied to Greek ideals of physical perfection and divine offering. Women had separate festivals at Olympia but were largely barred from this stadium during the main games. Knowing that context transforms a simple photo stop into a encounter with how ancient Greeks understood honour, religion and bodily excellence.",
+      "For cruise passengers, the stadium is the non-negotiable sight within Olympia. Budget 25–35 minutes here if crowds are moderate; longer if you want photographs without strangers in frame. Morning light inside the tunnel is softer than midday glare on the open track. Combine the stadium with the nearby Temple of Hera and Philippeion on a looping path, then head to the museum when outdoor temperatures climb. Summer heat on the exposed track is intense — visit before 11:00 when your tour schedule allows.",
+    ],
+    tier: 1,
+    distanceFromPort: "35 km from Katakolon pier to Olympia stadium",
+    travelTime: "35–45 min by coach each way",
+    timeNeeded: "25–35 min at stadium; 2–3 hours for full Olympia site",
+    returnToShip:
+      "The stadium sits mid-visit within Olympia — it does not add separate transfer time. Your return confidence depends on the overall excursion schedule. Allow 35–45 minutes drive back to Katakolon plus standard pre-all-aboard buffer.",
+    gettingThere: [
+      { method: "Within Olympia ruins walk", detail: "Reached on foot from main archaeological entrance", time: "10–15 min walk from gate", cost: "Included in site ticket" },
+      { method: "Guided shore excursion", detail: "Coaches drop at site; guides lead stadium circuit", time: "35–45 min from Katakolon", cost: "Excursion price" },
+      { method: "Private tour", detail: "Flexible arrival time — aim for early slot", time: "40–50 min from port", cost: "€120–200+" },
+      { method: "From museum side", detail: "Some routes approach stadium from eastern paths", time: "5–10 min walk", cost: "Site ticket" },
     ],
     highlights: [
-      "Calle Mayor tapas cluster — walkable from cruise port",
-      "Murcian seafood and inland agricultural flavours",
-      "Lunch window 13:00–15:30 on typical port days",
-      "Tapas Local Food Experience — our food-lover pick",
-      "Natural fit between Roman morning and harbour return",
-      "Caña and wine culture without formal dining pressure",
+      "Krypte vaulted entrance tunnel",
+      "Original stone starting line (balbis)",
+      "Earthen track used for ancient foot races",
+      "Grass banks where spectators gathered",
+      "Views toward the Altis sacred precinct",
     ],
     tips: [
-      "Say 'para compartir' when ordering multiple tapas to share",
-      "Carry cash — some traditional bars prefer euros",
-      "Avoid starting lunch after 15:00 on tight all-aboard schedules",
-      "Tell guides about allergies when booking food excursions",
-      "Save heavy rice dishes for long port windows — they slow afternoon walking",
+      "Wear grippy shoes — the track is earth and can be dusty or slippery after rain",
+      "Arrive early to photograph the tunnel without tour groups inside",
+      "Respect roped areas — erosion control limits some bank access",
+      "Pair stadium visit with Temple of Hera nearby",
+      "Carry water — no shade on the track itself",
     ],
-    recommendations: [
+    didYouKnow: [
+      "The word 'stadium' derives from the ancient stadion foot race length.",
+      "Victors received olive wreaths, not gold medals — the honour was religious as much as athletic.",
+      "The stadium was remodelled and expanded several times across antiquity.",
+      "Herald trumpeters and judges (hellanodikai) swore oaths of fairness near the track.",
+      "The modern Olympic marathon distance is unrelated to this stadium's sprint course.",
+    ],
+    photographyTips: [
+      "Shoot from inside the Krypte tunnel toward the track for the classic symmetrical frame.",
+      "Low angles on the starting grooves emphasise the carved stone texture.",
+      "Mid-morning light reduces harsh shadows on the earthen banks.",
+      "Wide shots from the far end of the track capture the stadium's human scale.",
+    ],
+    planningTables: [
       {
-        title: "Tapas Local Food Experience",
-        description: "Guided tapas route with Roman morning context — our pick for food-focused port days.",
-        excursionSlug: "tapas-local-food-experience",
-        bestFor: "Food lovers",
+        title: "Stadium visit within a typical Olympia morning",
+        headers: ["Time", "Activity", "Notes"],
+        rows: [
+          ["0:00", "Enter archaeological site", "Ticket check at main gate"],
+          ["0:15", "Walk toward stadium via sacred precinct", "Guide context en route"],
+          ["0:25", "Krypte tunnel and starting line", "Peak photo window"],
+          ["0:55", "Continue to Temple of Zeus area", "Logical loop progression"],
+          ["1:30", "Philippeion and surrounding ruins", "Shade varies by season"],
+          ["2:00", "Move toward museum as heat builds", "Air-conditioned break"],
+        ],
       },
       {
-        title: "Cartagena Market Guide",
-        description: "Browse Mercado de Santa Florentina before bars open for lunch.",
-        guideSlug: "cartagena-market-guide",
-        bestFor: "Market mornings",
-      },
-    ],
-    faqs: [
-      {
-        question: "Where should cruise passengers eat lunch in Cartagena?",
-        answer:
-          "Calle Mayor and surrounding lanes — multiple tapas bars within walking distance of Roman sites and the cruise terminal.",
-      },
-      {
-        question: "Is a tapas tour worth it versus walking independently?",
-        answer:
-          "Independent works if you research bars ahead. Tapas Local Food Experience suits food lovers who want guided sequencing and language ease on a single port day.",
-      },
-      {
-        question: "Can I do a tapas lunch and Roman sites the same day?",
-        answer:
-          "Yes — this is the ideal Cartagena food day. Morning Roman sites, 13:00–14:30 tapas, harbour walk return. See our one-day itinerary.",
-      },
-    ],
-    relatedGuideSlugs: ["cartagena-market-guide", "one-day-in-cartagena-from-a-cruise-ship", "best-cartagena-excursions-for-food-lovers"],
-    relatedExcursionSlugs: ["tapas-local-food-experience"],
-    imageKey: "tapas",
-  },
-  {
-    slug: "cartagena-market-guide",
-    title: "Cartagena Market Guide — Mercado de Santa Florentina",
-    seoTitle: "Cartagena Market Guide — Mercado de Santa Florentina for Cruise Passengers",
-    metaDescription:
-      "Visit Mercado de Santa Florentina on a Cartagena cruise port day — stalls, timing, walking distance from Muelle de Alfonso XII and pairing with tapas lunch.",
-    eyebrow: "Market guide",
-    tagline: "Murcian produce, seafood counters and morning energy — Cartagena's market before the tapas bars open.",
-    overview:
-      "Mercado de Santa Florentina anchors Cartagena's daily food culture — a covered market where local shoppers buy produce, fish and cured meats steps from the old town. For cruise passengers, a morning market browse slots between gangway exit and Roman Theatre visits, or precedes a tapas lunch on our food guide route.",
-    body: [
-      "The market hall combines traditional stalls with casual counter dining where locals eat churros, fresh juice and small plates. Morning is the authentic window — stalls are fullest before noon and the atmosphere beats afternoon quiet. Allow 30–45 minutes for browsing; add 20 minutes if eating at a counter inside.",
-      "Walking from Muelle de Alfonso XII takes roughly 12–15 minutes through old-town lanes. The market sits near Calle Mayor — natural sequencing with Modernist architecture walks and tapas bars for later lunch. Tapas Local Food Experience excursions sometimes incorporate market stops when schedules align.",
-      "Markets reward curiosity without big budgets. Photograph respectfully — ask vendors before close-ups. Pair with ship-schedules planning: on late gangway days, head straight to Roman sites and save the market for post-castle descent toward lunch.",
-    ],
-    highlights: [
-      "Mercado de Santa Florentina — central covered market",
-      "Best visited morning before noon on port days",
-      "12–15 minute walk from Cartagena cruise terminal",
-      "Natural pairing with tapas lunch on Calle Mayor",
-      "Counter dining for quick local breakfast or snack",
-      "Murcian produce and seafood seasonal displays",
-    ],
-    tips: [
-      "Visit before Roman sites if gangway opens early — then theatre afterward",
-      "Carry small euros for counter snacks and coffee",
-      "Weekday mornings busier and more authentic than quiet Sundays",
-      "Combine with our food tapas guide for lunch sequencing",
-      "Keep 45–60 minutes before all-aboard after market and lunch combined",
-    ],
-    faqs: [
-      {
-        question: "What are Mercado de Santa Florentina opening hours?",
-        answer:
-          "Typically morning through early afternoon on weekdays — exact hours vary seasonally. Aim for before 12:00 on cruise days for the fullest experience.",
-      },
-      {
-        question: "Can I eat lunch inside the market?",
-        answer:
-          "Yes — several counters serve tapas-style plates and breakfasts. For fuller lunch, walk to Calle Mayor bars afterward.",
-      },
-      {
-        question: "Is the market worth it on a short port call?",
-        answer:
-          "On calls under 5 hours, skip the market and prioritise one Roman site. On standard days, a quick 30-minute browse fits before theatre tickets.",
-      },
-    ],
-    relatedGuideSlugs: ["cartagena-food-tapas-guide", "cartagena-old-town-walking-guide", "one-day-in-cartagena-from-a-cruise-ship"],
-    relatedExcursionSlugs: ["tapas-local-food-experience"],
-    imageKey: "market",
-  },
-  {
-    slug: "cartagena-maritime-history",
-    title: "Cartagena Maritime History — Cruise Passenger Guide",
-    seoTitle: "Cartagena Maritime History — Naval Heritage for Cruise Passengers",
-    metaDescription:
-      "Discover Cartagena's maritime and naval history on a cruise port day — harbour strategy, arsenals, submarines and waterfront context from Muelle de Alfonso XII.",
-    eyebrow: "Maritime heritage",
-    tagline: "Carthage wanted this bay. Rome fortified it. Modern Spain still builds warships here — understand the harbour you sail into.",
-    overview:
-      "Cartagena's harbour is not scenic backdrop — it is the reason 3,000 years of civilisations contested this coast. Cruise passengers berth at Muelle de Alfonso XII in a working naval city where arsenals, submarine history and strategic geography remain visible from the promenade and Castle of the Conception. This guide connects what you see from the gangway to what happened here.",
-    body: [
-      "Carthaginian founders chose the bay for depth and defensibility — the Punic Wall Experience preserves that earliest layer. Roman engineers expanded port infrastructure; the Forum quarter reveals urban life serving maritime trade. Medieval and Bourbon eras added fortifications culminating in the Castle of the Conception viewpoint where the full strategic picture clicks.",
-      "Modern Cartagena remains Spain's principal naval construction centre. Harbour walks pass military infrastructure that active-service signs remind you not to photograph carelessly. The Naval Museum and submarine-related sites (availability varies) deepen the story — Harbour Panoramic Tour excursions cover waterfront highlights with commentary when you prefer guided naval context.",
-      "Combine this guide with our harbour walking route for a self-guided maritime afternoon, or Roman sites for morning plus naval afternoon on long port days. Ship-schedules and cruise-port-guide pages explain terminal proximity to naval zones.",
-    ],
-    sections: [
-      {
-        heading: "What to notice from the promenade",
-        paragraphs: [
-          "Your ship berths inside the same bay that Punic and Roman fleets used — look toward the hills framing the entrance channel. Naval base infrastructure on the opposite shore explains Cartagena's continuing strategic role in the 21st century.",
-          "Castle of the Conception terraces label landmarks below — worth the lift ascent even if Roman sites filled your morning.",
+        title: "Stadium vs other Olympia priorities on tight timing",
+        headers: ["Sight", "Skip if rushed?", "Reason"],
+        rows: [
+          ["Olympic Stadium", "Never skip", "Defining experience"],
+          ["Temple of Zeus", "Brief visit only", "Ruins still impress quickly"],
+          ["Archaeological Museum", "Trim to 30 min", "Sacrifice depth, not entirely"],
+          ["Bouleuterion", "Skip", "Secondary civic building"],
+          ["Workshop ruins", "Skip", "For repeat visitors"],
         ],
       },
     ],
-    highlights: [
-      "3,000 years of harbour strategic importance",
-      "Working naval base visible from cruise terminal promenade",
-      "Castle of the Conception panoramic naval context",
-      "Naval Museum and waterfront interpretation",
-      "Harbour Panoramic Tour for guided commentary",
-      "Links Punic, Roman and modern Spanish naval story",
-    ],
-    tips: [
-      "Respect photography restrictions near active naval facilities",
-      "Read our harbour walking route before setting out independently",
-      "Pair with Punic Wall for Carthaginian naval origins",
-      "Naval Museum hours vary — check before port day",
-      "Afternoon harbour light suits photography from the promenade",
+    comparisonTables: [
+      {
+        title: "Experiencing the stadium — guided vs self-paced",
+        headers: ["Approach", "Pros", "Cons"],
+        rows: [
+          ["Licensed guide", "Rich athletic and religious context", "Paced to group"],
+          ["Audio guide", "Flexible timing", "Less narrative colour"],
+          ["Independent walk", "Freedom to linger at starting line", "Easy to miss context"],
+          ["Small-group tour", "Balance of depth and photo time", "Premium price"],
+        ],
+      },
     ],
     faqs: [
       {
-        question: "Why is Cartagena an important naval city today?",
+        question: "Can you run on the ancient Olympic track?",
         answer:
-          "Cartagena hosts major Spanish naval shipbuilding and base facilities — the harbour you cruise into remains militarily significant, not just historically decorative.",
+          "Visitors commonly jog or sprint short distances on the earthen surface. Be mindful of dust, heat and other guests. It is not a formal event track — treat it respectfully as an archaeological site.",
       },
       {
-        question: "Can I visit naval museums on a port day?",
+        question: "How long should I spend at the stadium?",
         answer:
-          "The Naval Museum and related sites are reachable from the old town — confirm opening hours seasonally. Harbour Panoramic Tour excursions incorporate waterfront naval highlights when available.",
+          "Twenty-five to thirty-five minutes is typical — enough for the tunnel, starting line and photographs. History enthusiasts may linger longer; rushed six-hour port itineraries may compress to fifteen minutes.",
       },
       {
-        question: "How does maritime history connect to Roman sites?",
+        question: "Is the stadium accessible for visitors with mobility issues?",
         answer:
-          "Roman Cartagena was a port city — Forum and theatre served a maritime colony. The Punic Wall predates Rome's naval victory that reshaped the Western Mediterranean.",
+          "The track surface is uneven earth with some slopes on the banks. The tunnel has a gradual incline. Many visitors with moderate mobility manage with assistance; wheelchairs are challenging on the track itself.",
+      },
+      {
+        question: "Where is the stadium within Ancient Olympia?",
+        answer:
+          "On the eastern side of the archaeological park, approached through the sacred Altis precinct. Your guide or site map routes you there after entry from the main gate.",
+      },
+      {
+        question: "Is the stadium included in the standard Olympia ticket?",
+        answer:
+          "Yes — it lies within the archaeological zone covered by the main site entrance. No separate ticket is required beyond the ruins pass or combined ruins-museum ticket.",
+      },
+      {
+        question: "What is the best season to photograph the stadium?",
+        answer:
+          "April–May and September–October offer softer light and milder temperatures. Summer visits work if scheduled before 11:00; midday sun creates harsh contrast on the open track.",
       },
     ],
-    relatedGuideSlugs: ["cartagena-harbour-walking-route", "punic-wall-experience", "castle-of-the-conception"],
-    relatedExcursionSlugs: ["harbour-panoramic-tour"],
-    imageKey: "maritime",
+    relatedGuideSlugs: [
+      "ancient-olympia-from-katakolon",
+      "temple-of-zeus-guide",
+      "archaeological-museum-guide",
+      "house-of-the-olympic-games-guide",
+    ],
+    relatedExcursionSlug: "olympia-small-group-tour",
+    imageKey: "olympia-stadium",
+    breadcrumbParent: PORT_GUIDE_PARENT,
   },
   {
-    slug: "cartagena-beaches",
-    title: "Cartagena Beaches — Cruise Port Day Guide",
-    seoTitle: "Cartagena Beaches — Best Beach Options from the Cruise Port",
+    slug: "temple-of-zeus-guide",
+    path: "/temple-of-zeus-guide",
+    title: "Temple of Zeus Guide — Ancient Olympia",
+    seoTitle: "Temple of Zeus at Olympia — Guide for Katakolon Cruise Visitors",
     metaDescription:
-      "Beach time from Cartagena cruise port — Cala Cortina, urban playas, taxi times from Muelle de Alfonso XII and when sand fits your port window.",
-    eyebrow: "Beach guide",
-    tagline: "Mediterranean water without a long transfer — Cartagena beaches when Roman history can wait.",
+      "Explore the Temple of Zeus ruins at Ancient Olympia from Katakolon — columns, pediments, the chryselephantine statue and what cruise passengers should know on a 35 km shore day.",
+    eyebrow: "Temple of Zeus",
+    tagline:
+      "Once home to one of the Seven Wonders — colossal gold-and-ivory Zeus watched over every ancient Olympic Games from this Doric sanctuary.",
     overview:
-      "Cartagena is primarily a history port — but Costa Cálida sunshine tempts passengers toward sand. Beaches near the city require short taxi rides rather than walking from Muelle de Alfonso XII. Cala Cortina, the closest quality cove, suits relaxed port days when you have seen Roman sites on a previous call or your ship offers an unusually long window.",
+      "The Temple of Zeus dominated the sacred Altis at Olympia for centuries. Though earthquake and river flooding left only collapsed columns and fractured pediment sculptures, the footprint still conveys the scale of ancient Greece's greatest religious architecture outside Athens. Cruise passengers reach it 35–45 minutes from Katakolon pier as part of the standard Olympia ruins circuit; the finest surviving sculptures now live in the Archaeological Museum metres away.",
     body: [
-      "Cala Cortina sits roughly 10 minutes by taxi from the cruise terminal — a sheltered cove with services, sunbed rental and clear water popular with locals. Urban playas along the bay offer alternatives if Cala Cortina crowds on peak summer cruise days. Allow 2–3 hours minimum for meaningful beach time plus 20-minute taxi each way.",
-      "Beach days trade archaeology for recovery — sensible on repeat visits or family sailings where children need sand more than Roman tiers. Family-Friendly Cartagena excursions sometimes combine gentle sightseeing with beach windows. Do not attempt full Roman circuit plus beach on standard 7-hour calls unless you accept rushing both.",
-      "Build 45–60 minutes before all-aboard after leaving the beach — shower, taxi and gangway queues add up. Check ship-schedules for early departures that eliminate afternoon beach plans. Our Cruise Planner surfaces beach-friendly timing when you select relaxed pacing.",
+      "Construction began around 470 BC and took roughly a decade to complete. The peripteral Doric temple housed Phidias's chryselephantine statue of Zeus — gold drapery over ivory skin, seated on a cedar throne decorated with ebony, ivory and precious stones. Ancient writers ranked it among the Seven Wonders. Nothing of the statue remains in situ; fragments and descriptions survive only through texts and later Roman copies. Standing among the fallen columns, you calibrate by imagination what pilgrims once saw.",
+      "The east and west pediments depicted the chariot race between Pelops and Oenomaus and the battle between Lapiths and Centaurs. Original marble groups are largely in the museum, where lighting and proximity reveal carving detail impossible to appreciate on weathered ruin fragments. A well-paced Olympia visit alternates outdoor temple footprints with indoor pediment study — they are halves of one story.",
+      "Summer sun bakes the temple terrace with little shade. Guides typically pause here for ten to twenty minutes, explaining Zeus's role as patron of the games and the temple's funding through Elis city-state politics. Photograph the column drums stacked like giant coins, then move toward the stadium or museum before midday heat peaks on exposed stone.",
     ],
+    tier: 2,
+    distanceFromPort: "35 km from Katakolon to Olympia",
+    travelTime: "35–45 min by coach",
+    timeNeeded: "15–25 min at temple; allow 2+ hours for full site",
     highlights: [
-      "Cala Cortina — closest quality cove, ~10 min taxi",
-      "Urban playas along Cartagena bay",
-      "2–3 hours minimum for worthwhile beach time",
-      "Best on repeat visits or family-focused port days",
-      "Family-Friendly Cartagena may combine light sights and sand",
-      "Costa Cálida clear Mediterranean water",
+      "Fallen Doric columns illustrating original temple scale",
+      "Temple terrace overlooking the Altis sanctuary",
+      "Connection to pediment sculptures in the museum",
+      "Centre of Zeus worship during ancient games",
+      "Photo opportunities with pine-clad hills beyond",
     ],
     tips: [
-      "Agree taxi fare or use official ranks at the terminal",
-      "Bring reef-safe sunscreen — Murcian sun is strong",
-      "Pack ship departure time in waterproof phone case",
-      "Rinse sand before taxi — drivers appreciate it",
-      "Skip beach plans on calls under 6 hours ashore",
+      "View pediment originals in the museum after the ruins visit",
+      "Morning light on column drums is softer than afternoon glare",
+      "Wear a hat — the temple terrace has minimal shade",
+      "Listen for guide context on the lost chryselephantine statue",
+      "Combine with stadium and Philippeion on the same loop",
+    ],
+    planningTables: [
+      {
+        title: "Temple of Zeus within Olympia routing",
+        headers: ["Stop", "Order", "Duration"],
+        rows: [
+          ["Site entrance", "1", "10 min"],
+          ["Temple of Zeus", "2", "15–25 min"],
+          ["Olympic Stadium", "3", "25–35 min"],
+          ["Philippeion", "4", "10–15 min"],
+          ["Archaeological Museum", "5", "60–75 min"],
+        ],
+      },
     ],
     faqs: [
       {
-        question: "Can I walk to the beach from the Cartagena cruise port?",
+        question: "What remains of the Temple of Zeus today?",
         answer:
-          "Quality swimming beaches require a short taxi — Cala Cortina is the usual choice, roughly 10 minutes from Muelle de Alfonso XII.",
+          "Collapsed Doric columns, parts of the stylobate and terrace platforms. The colossal statue and pediment sculptures are gone from the site — major pieces are displayed in the Archaeological Museum.",
       },
       {
-        question: "Is a beach day realistic with Roman sightseeing?",
+        question: "How long do I need at the temple itself?",
         answer:
-          "On standard 7-hour calls, choose one focus. On 9+ hour calls, morning Roman sites plus afternoon beach works with tight time discipline.",
+          "Fifteen to twenty-five minutes is typical within a guided circuit. Independent visitors photographing column details may stay longer.",
       },
       {
-        question: "Which beach do locals recommend near Cartagena?",
+        question: "Is the temple on every Olympia shore excursion?",
         answer:
-          "Cala Cortina for sheltered water and facilities — arrive early on busy summer cruise days for sunbed availability.",
+          "Yes — it is a core stop on any reputable ruins walk. Confirm your tour includes museum time to see the pediment sculptures that once crowned the building.",
+      },
+      {
+        question: "Why was the temple so important to the games?",
+        answer:
+          "Zeus was the divine patron of Olympia. Athletes and pilgrims made offerings here; victory was understood as favour from the gods, not merely athletic skill.",
+      },
+      {
+        question: "Can I visit the temple independently from Katakolon?",
+        answer:
+          "Yes with a taxi or rental car, but you still need Olympia site tickets and should track all-aboard time carefully. Organised excursions remain easier for cruise schedules.",
       },
     ],
-    relatedGuideSlugs: ["best-things-to-do-in-cartagena-from-a-cruise-ship", "kayaking-coastal-adventures", "best-cartagena-excursions-for-families"],
-    relatedExcursionSlugs: ["family-friendly-cartagena", "coastal-kayaking"],
-    imageKey: "beach",
+    relatedGuideSlugs: [
+      "ancient-olympia-from-katakolon",
+      "archaeological-museum-guide",
+      "olympic-stadium-guide",
+    ],
+    relatedExcursionSlug: "ancient-olympia-tour",
+    imageKey: "temple-zeus",
+    breadcrumbParent: PORT_GUIDE_PARENT,
   },
   {
-    slug: "kayaking-coastal-adventures",
-    title: "Kayaking & Coastal Adventures — Cartagena Guide",
-    seoTitle: "Kayaking Cartagena — Coastal Adventures from the Cruise Port",
+    slug: "archaeological-museum-guide",
+    path: "/archaeological-museum-guide",
+    title: "Archaeological Museum of Olympia — Visitor Guide",
+    seoTitle: "Olympia Archaeological Museum — Guide for Katakolon Cruise Passengers",
     metaDescription:
-      "Kayak Cartagena's coastline on a cruise port day — coastal routes, timing from Muelle de Alfonso XII, active alternatives to Roman sightseeing.",
-    eyebrow: "Active port day",
-    tagline: "Paddle the bay that Carthaginians and Romans contested — Cartagena from water level.",
+      "Plan your visit to the Archaeological Museum at Ancient Olympia — Hermes of Praxiteles, temple pediments, opening hours and timing tips for Katakolon cruise days.",
+    eyebrow: "Museum",
+    tagline:
+      "The sculptures that once crowned the Temple of Zeus and the masterpieces too fragile for open air now live in one of Greece's finest regional museums.",
     overview:
-      "Coastal kayaking offers a different Cartagena — coves, cliff lines and harbour perspectives impossible from the Roman Theatre tiers. Organised Coastal Kayaking excursions supply equipment, safety briefing and return timing aligned with Muelle de Alfonso XII. Active passengers on repeat visits or warm summer sailings find this refreshes a port that can feel museum-heavy on second calls.",
+      "The Archaeological Museum of Olympia sits adjacent to the ancient site, air-conditioned and logically arranged across twelve galleries. For cruise passengers who rode 35 km from Katakolon, the museum transforms ruins from abstract stone footprints into vivid classical art. The Hermes of Praxiteles, pediment figures from the Temple of Zeus and votive offerings from athlete dedications anchor a visit that deserves 60–75 minutes minimum — longer for serious art lovers.",
     body: [
-      "Typical routes explore sheltered sections of Cartagena's coastline with guides who know wind patterns and cruise schedules. Sessions run roughly 2–3 hours including briefing — less than a full Roman day, leaving room for harbour lunch if your window allows. Fitness requirement is moderate; beginners welcome on calm-day routes with reputable operators.",
-      "Combine kayaking only on 8+ hour port calls or when Roman sites are already familiar. Morning paddles beat afternoon heat and leave gangway buffer intact. Independent kayak rental exists but organised excursions integrate return transport — we recommend booked tours for first-time paddlers on port days.",
-      "Compare with beach guide for passive sand time versus active paddling. Shore excursions lists Coastal Kayaking availability; Cruise Planner surfaces it when you select active interests. Respect all-aboard — salt water and adrenaline do not excuse late gangway arrival.",
+      "Gallery sequencing generally moves from prehistoric Olympia through Geometric and Archaic periods into Classical and Roman layers. The Hermes of Praxiteles — carrying infant Dionysus — occupies a room of its own and draws quiet crowds even on busy ship days. Nearby, pediment fragments from the Temple of Zeus show the chariot race and Centauromachy with muscle and drapery detail that weathered outdoor marble cannot retain.",
+      "The museum is the correct midday refuge on summer cruise calls. Outdoor ruins between noon and 15:00 can feel punishing; indoor galleries let you recover while continuing to learn. Many shore excursions schedule museum time after the stadium and temples precisely for this reason. Combined ruins-and-museum tickets are standard — confirm inclusion when booking your Katakolon excursion.",
+      "Photography is permitted in most galleries without flash. Bags may be subject to inspection. The museum shop sells reputable reproductions and catalogues if you want memory aids beyond smartphone shots. Allow ten minutes walk from the furthest ruin zones to the museum entrance — guides handle this transition; independent visitors should not leave museum time to the final rushed minutes before coach pickup.",
     ],
+    tier: 2,
+    distanceFromPort: "35 km from Katakolon pier",
+    travelTime: "35–45 min drive; museum at site",
+    timeNeeded: "60–75 min minimum; 90 min for enthusiasts",
     highlights: [
-      "Coastal Kayaking excursion — equipment and guide included",
-      "2–3 hour sessions fit alongside harbour lunch",
-      "Harbour and cove perspectives unavailable on foot",
-      "Moderate fitness — beginners on calm routes",
-      "Best on 8+ hour port windows or repeat visits",
-      "Active contrast to Roman archaeology focus",
+      "Hermes of Praxiteles masterpiece",
+      "Temple of Zeus pediment sculptures",
+      "Nike of Paionios (Victory statue)",
+      "Bronze warrior helmet collections",
+      "Air-conditioned refuge during summer heat",
     ],
     tips: [
-      "Wear swimwear under clothes — changing facilities vary",
-      "Secure prescription glasses with strap or leave ashore",
-      "Apply sunscreen before briefing — on-water reflection intensifies UV",
-      "Book morning slots for calmer conditions and buffer time",
-      "Bring a dry bag for phone and ship card if provided",
+      "Schedule museum after outdoor ruins in summer",
+      "No flash photography — respect marble preservation",
+      "Combined ticket with ruins is better value than separate passes",
+      "Confirm seasonal closing times before leaving your ship",
+      "Guided commentary adds context labels alone cannot provide",
+    ],
+    planningTables: [
+      {
+        title: "Museum highlights — priority order for tight timing",
+        headers: ["Priority", "Gallery focus", "Time"],
+        rows: [
+          ["1", "Hermes of Praxiteles", "15–20 min"],
+          ["2", "Temple of Zeus pediments", "20–25 min"],
+          ["3", "Nike of Paionios", "10 min"],
+          ["4", "Bronze collection", "15 min"],
+          ["5", "Prehistoric galleries", "If time allows"],
+        ],
+      },
     ],
     faqs: [
       {
-        question: "Do I need kayaking experience for Cartagena coastal tours?",
+        question: "How long should cruise passengers spend in the museum?",
         answer:
-          "No on standard beginner routes — guides brief technique and stay with the group. Moderate fitness and comfort on water matter more than prior experience.",
+          "Sixty to seventy-five minutes covers the essential masterpieces. Art-focused visitors should push toward ninety minutes and may need a longer overall port day.",
       },
       {
-        question: "Can I kayak and visit Roman sites the same day?",
+        question: "Is the museum included on shore excursions?",
         answer:
-          "On 8+ hour calls with morning kayak and abbreviated Roman visit — possible but tight. Most passengers choose one active theme per port day.",
+          "Most comprehensive Olympia tours include it. Budget 'highlights only' excursions sometimes skip the museum — read inclusions carefully before booking.",
       },
       {
-        question: "Where do kayaking tours depart from relative to the cruise port?",
+        question: "Is the museum air-conditioned?",
         answer:
-          "Operators collect from near Muelle de Alfonso XII or designated waterfront points — confirm meeting location when booking through our shore excursions hub.",
+          "Yes — a significant advantage during June–September cruise calls when outdoor ruins are hottest.",
+      },
+      {
+        question: "Are bags allowed inside?",
+        answer:
+          "Small bags generally pass inspection. Large backpacks may need checking at reception — carry valuables with you.",
+      },
+      {
+        question: "Can I visit the museum without the ruins?",
+        answer:
+          "Separate museum tickets exist, but nearly all cruise itineraries combine both. Visiting museum-only is unusual on a port day given transfer time from Katakolon.",
       },
     ],
-    relatedGuideSlugs: ["cartagena-beaches", "cartagena-harbour-walking-route", "cartagena-maritime-history"],
-    relatedExcursionSlugs: ["coastal-kayaking", "harbour-panoramic-tour"],
-    imageKey: "kayaking",
+    relatedGuideSlugs: [
+      "ancient-olympia-from-katakolon",
+      "temple-of-zeus-guide",
+      "olympic-stadium-guide",
+    ],
+    relatedExcursionSlug: "ancient-olympia-and-museum-tour",
+    imageKey: "museum",
+    breadcrumbParent: PORT_GUIDE_PARENT,
+  },
+  {
+    slug: "house-of-the-olympic-games-guide",
+    path: "/house-of-the-olympic-games-guide",
+    title: "House of the Olympic Games — Visitor Guide",
+    seoTitle: "House of the Olympic Games Museum — Olympia & Katakolon Guide",
+    metaDescription:
+      "Visit the House of the Olympic Games near Ancient Olympia — interactive Olympic history, flame tradition and whether it fits your Katakolon cruise day schedule.",
+    eyebrow: "Olympic Heritage",
+    tagline:
+      "Modern storytelling meets ancient tradition — interactive exhibits bridge the stadium ruins and the Olympic Games the world watches today.",
+    overview:
+      "The House of the Olympic Games (often grouped with Olympic flame and heritage exhibits near modern Olympia village) presents the athletic tradition from antiquity through the modern revival. It complements rather than replaces the archaeological site: where ruins show stones, these galleries show context — torch relays, athlete stories and the cultural meaning of victory at Olympia. Cruise passengers with eight-hour-plus port calls can add it after the main museum; tighter schedules usually prioritise the stadium and Archaeological Museum instead.",
+    body: [
+      "Exhibits lean interpretive and multimedia — useful for families or passengers who want narrative connection between ancient foot races and contemporary opening ceremonies. The modern Olympic flame lighting at nearby ruins every two years ties directly to themes explored here. If you watched a torch relay on television, this museum explains the archaeological legitimacy of that ritual.",
+      "Time commitment runs 45–60 minutes for a focused visit. It sits outside the core archaeological ticket in some configurations — confirm whether your excursion includes entry or whether you purchase separately on private tours. Guides who specialise in sports history often rate this stop higher than general archaeology enthusiasts do.",
+      "On summer cruise days, treat this as an optional add-on after the Archaeological Museum if energy and schedule allow. Six-hour Olympia sprints should skip it entirely in favour of stadium and classical sculpture priorities. Return-to-ship buffers should never be funded by rushing through traffic from Olympia — plan backward from all-aboard.",
+    ],
+    tier: 2,
+    distanceFromPort: "35 km to Olympia area",
+    travelTime: "35–45 min from Katakolon",
+    timeNeeded: "45–60 min if included in your day",
+    highlights: [
+      "Modern Olympic history and revival narrative",
+      "Connection to flame-lighting tradition",
+      "Family-friendly interactive displays",
+      "Context for stadium ruins visited earlier",
+      "Supplement to Archaeological Museum classical focus",
+    ],
+    tips: [
+      "Prioritise Archaeological Museum if time is limited",
+      "Ideal for sports enthusiasts and families with teens",
+      "Confirm separate ticket requirements on private tours",
+      "Pair with stadium visit for maximum narrative payoff",
+      "Check opening hours — may differ from main ruins",
+    ],
+    planningTables: [
+      {
+        title: "Fitting the House of the Olympic Games into port day tiers",
+        headers: ["Port hours", "Include?", "Notes"],
+        rows: [
+          ["6h", "No", "Stadium and core museum only"],
+          ["8h", "Maybe", "If ruins+museum finish early"],
+          ["10h", "Yes", "Comfortable add-on"],
+          ["Private tour", "Your choice", "Flexible sequencing"],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is the House of the Olympic Games the same as the Archaeological Museum?",
+        answer:
+          "No — the Archaeological Museum holds ancient sculptures and excavated artefacts. The House of the Olympic Games focuses on athletic tradition and modern Olympic heritage with more interpretive displays.",
+      },
+      {
+        question: "Do I need extra time ashore to include it?",
+        answer:
+          "Allow 45–60 minutes plus any walking between venues. Eight-hour port calls can absorb it; six-hour calls generally cannot without sacrificing core sights.",
+      },
+      {
+        question: "Is it good for children?",
+        answer:
+          "Often more engaging than classical sculpture galleries for school-age kids interested in sports. Younger children may still prefer the stadium tunnel experience outdoors.",
+      },
+      {
+        question: "Is entry included on standard shore excursions?",
+        answer:
+          "Not always — many tours focus on ruins and the Archaeological Museum. Specialty sports-history or extended Olympia tours are more likely to include it.",
+      },
+    ],
+    relatedGuideSlugs: [
+      "olympic-stadium-guide",
+      "archaeological-museum-guide",
+      "ancient-olympia-from-katakolon",
+    ],
+    relatedExcursionSlug: "olympia-small-group-tour",
+    imageKey: "olympic-games-house",
+    breadcrumbParent: PORT_GUIDE_PARENT,
+  },
+  {
+    slug: "katakolon-guide",
+    path: "/katakolon-guide",
+    title: "Katakolon Port Village Guide",
+    seoTitle: "Katakolon Village Guide — Shops, Dining & Cruise Port Tips",
+    metaDescription:
+      "Explore Katakolon cruise port village — waterfront cafés, shopping lanes, beaches nearby and practical tips for passengers staying local instead of driving to Olympia.",
+    eyebrow: "Katakolon",
+    tagline:
+      "A pocket Ionian port where the pier opens onto seafood tavernas, souvenir lanes and fishing boats — Gateway to Ancient Olympia when you are ready to head inland.",
+    overview:
+      "Katakolon is a working Greek village that happens to host cruise ships, not a purpose-built terminal isolated from local life. The gangway deposits you minutes from jewellery shops, olive-oil boutiques and waterfront tables serving grilled octopus and horiatiki salad. Ancient Olympia lies 35 km inland, but Katakolon itself rewards passengers on short port calls, post-excursion free time or anyone who prefers a low-stress day without coach transfers.",
+    body: [
+      "The village stretches along a compact waterfront. Main shopping lanes run parallel to the quay — leather sandals, amber jewellery, packaged olive oil and ship-schedule-friendly souvenirs dominate, but you will also find pharmacies, ATMs and bakeries used by locals. Prices near the pier carry a cruise premium; quality varies. Reputable olive oil and honey sellers often offer tastings. Cafés serve iced coffee and beer with harbour views; lunch for two with wine typically runs modestly by Western European standards.",
+      "Beyond the immediate waterfront, Pyrgos is the regional capital and Olympia the heritage draw — but Katakolon's appeal is proximity. You can return to the ship between coffee and shopping without anxiety. Nearby Kourouta beach, roughly twenty minutes west, offers swim opportunities on longer village-focused days. Taxis queue when ships arrive; agree fares before departing for beach runs.",
+      "Summer afternoons bring heat, but sea breeze moderates the waterfront compared with inland Olympia. Shoulder-season calls in April–May or October feel especially pleasant for harbour strolling. When two ships share the port, lanes crowd between 09:00 and 13:00 — explore early or linger late if your departure allows.",
+    ],
+    tier: 2,
+    highlights: [
+      "Waterfront dining with harbour views",
+      "Shopping lanes steps from the pier",
+      "ATMs and practical services for cruise passengers",
+      "Optional taxi to Kourouta beach",
+      "Maximum return-to-ship confidence",
+    ],
+    tips: [
+      "Carry cash euros for small purchases and tips",
+      "Agree taxi fares to beach before departing",
+      "Shop early on dual-ship days before lanes crowd",
+      "Try local seafood — sardines, octopus, shrimp",
+      "Confirm ship departure time displayed at pier kiosks",
+    ],
+    planningTables: [
+      {
+        title: "Katakolon village half-day — no Olympia",
+        headers: ["Time", "Activity", "Notes"],
+        rows: [
+          ["0:00", "Disembark to waterfront", "Immediate access"],
+          ["0:30", "Harbour walk and photos", "Easy terrain"],
+          ["1:00", "Shopping lane browse", "Olive oil, jewellery"],
+          ["2:00", "Seated lunch at taverna", "Reserve peak days if possible"],
+          ["3:00", "Coffee or beach taxi optional", "Kourouta 20 min away"],
+          ["4:00+", "Return to pier buffer", "High confidence"],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is Katakolon worth visiting without going to Olympia?",
+        answer:
+          "Yes on short port calls or for passengers wanting a relaxed coastal day. The village is pleasant, practical and entirely walkable from the pier.",
+      },
+      {
+        question: "How far is the town from the cruise pier?",
+        answer:
+          "The main waterfront and shops begin within two to five minutes on foot of standard berths. There is no shuttle required for the village core.",
+      },
+      {
+        question: "Are prices tourist-heavy?",
+        answer:
+          "Shops near the pier price for cruise traffic. Quality olive oil and jewellery can still represent fair value — compare a few stalls and ask about origin labels on oil.",
+      },
+      {
+        question: "Is there a beach in Katakolon?",
+        answer:
+          "Small coastal access exists nearby, but Kourouta beach west of the port offers a better swim experience — roughly twenty minutes by taxi.",
+      },
+      {
+        question: "What currency do shops accept?",
+        answer:
+          "Euros. Cards work at many establishments; carry cash for small vendors and tips.",
+      },
+    ],
+    relatedGuideSlugs: [
+      "olympia-vs-katakolon-which-is-best-for-cruise-passengers",
+      "one-day-in-katakolon-from-a-cruise-ship",
+      "greek-food-guide",
+      "best-time-to-visit-katakolon",
+    ],
+    relatedExcursionSlug: "katakolon-highlights-tour",
+    imageKey: "katakolon-village",
+    breadcrumbParent: PORT_GUIDE_PARENT,
+  },
+  {
+    slug: "greek-food-guide",
+    path: "/greek-food-guide",
+    title: "Greek Food Guide — Katakolon & the Peloponnese",
+    seoTitle: "Greek Food in Katakolon — What Cruise Passengers Should Eat",
+    metaDescription:
+      "Eat well in Katakolon and the Peloponnese — souvlaki, seafood meze, Greek salad, local wine and where cruise passengers find authentic flavours on port day.",
+    eyebrow: "Food",
+    tagline:
+      "From harbour grilled octopus to inland taverna feasts — the Peloponnese table rewards passengers who eat beyond the ship buffet.",
+    overview:
+      "Katakolon may be small, but its waterfront tavernas serve honest Greek cooking tuned to cruise schedules — fast meze lunches, seafood platters and salads built from local tomatoes, feta and olive oil from Elis groves. Inland excursions add winery lunches and village spreads that showcase Peloponnese ingredients: lamb, horta greens, hand-rolled filo pies and wines rarely exported. Food-focused shore time pairs naturally with Olympia mornings or village-only afternoons.",
+    body: [
+      "Start at the waterfront if your day stays in port. Order horiatiki — village salad with thick feta slab, not crumbled — and share grilled sardines or octopus. Souvlaki and gyros from nearby counters suit faster schedules. Greek coffee (ellinikos) or freddo espresso at a harbour café costs little and anchors people-watching between shops. Tipping ten percent at sit-down meals is appreciated; rounding up on small tabs is fine.",
+      "Olympia-bound excursions sometimes include organised lunch at a countryside taverna or winery terrace. These set menus move efficiently for tour timing but can exceed harbour quality when the kitchen cares about regional produce. Private tours allow longer lunches — ask drivers for family-run recommendations away from coach parking lots. Summer heat makes midday seated meals sensible; schedule ruins before eating when possible.",
+      "Dietary needs are increasingly accommodated — vegetarian meze is easy (salads, dolmades, cheese pies, grilled vegetables), but confirm allergens in sauces and filo pastries. Cruise passengers with tight returns should tell servers your deadline; Greeks understand ship schedules in Katakolon. Packaged olive oil, honey and oregano make edible souvenirs if liquid allowances permit.",
+    ],
+    tier: 2,
+    highlights: [
+      "Waterfront seafood and meze in Katakolon village",
+      "Horiatiki salad with Elis olive oil",
+      "Winery terrace lunches on inland excursions",
+      "Souvlaki and gyros for quick port-day bites",
+      "Peloponnese wines paired with regional dishes",
+    ],
+    tips: [
+      "Lunch before 13:00 on busy dual-ship days to avoid taverna waits",
+      "Drink bottled water generously in summer alongside wine",
+      "Ask what fish is local today — menus adapt to catch",
+      "Carry euros for small tavernas that prefer cash",
+      "Ship food rules may restrict bringing leftovers aboard",
+    ],
+    planningTables: [
+      {
+        title: "Food experiences matched to port day style",
+        headers: ["Day type", "Best food experience", "Timing"],
+        rows: [
+          ["Village only", "Harbour taverna lunch", "Midday"],
+          ["Olympia tour", "Taverna en route or Katakolon return", "Post-ruins"],
+          ["Food excursion", "Cooking demo or meze spread", "Dedicated half-day"],
+          ["Winery combo", "Terrace lunch with tasting", "Afternoon"],
+        ],
+      },
+    ],
+    comparisonTables: [
+      {
+        title: "Where to eat — harbour vs inland",
+        headers: ["", "Katakolon waterfront", "Inland taverna/winery"],
+        rows: [
+          ["Convenience", "Steps from pier", "Requires transfer"],
+          ["Atmosphere", "Harbour bustle", "Countryside calm"],
+          ["Speed", "Fast to moderate", "Set menu pacing"],
+          ["Best for", "Short calls, post-tour snack", "Longer immersive days"],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What should I eat in Katakolon?",
+        answer:
+          "Grilled seafood, Greek salad, souvlaki and meze platters are reliable choices. Octopus and sardines showcase harbour proximity; horiatiki salad highlights local olive oil.",
+      },
+      {
+        question: "Are food-focused shore excursions worth it?",
+        answer:
+          "Yes if eating and drinking rank above archaeology for you, or if you have already visited Olympia on a previous call. They combine tastings with Peloponnese scenery.",
+      },
+      {
+        question: "Is tap water safe to drink?",
+        answer:
+          "Generally yes in Greece, but many visitors prefer bottled water — especially during hot cruise days. Bottled water is inexpensive at shops near the pier.",
+      },
+      {
+        question: "Can vegetarians eat well in Katakolon?",
+        answer:
+          "Absolutely — salads, cheese pies, grilled vegetables, dolmades and dips like tzatziki and melitzanosalata are widely available.",
+      },
+      {
+        question: "Do tavernas accept credit cards?",
+        answer:
+          "Many waterfront restaurants do, but carry cash for smaller establishments and tips.",
+      },
+    ],
+    relatedGuideSlugs: [
+      "katakolon-guide",
+      "local-winery-guide",
+      "olive-oil-guide",
+      "one-day-in-katakolon-from-a-cruise-ship",
+    ],
+    relatedExcursionSlug: "greek-food-experience",
+    imageKey: "food",
+    breadcrumbParent: PORT_GUIDE_PARENT,
+  },
+  {
+    slug: "olive-oil-guide",
+    path: "/olive-oil-guide",
+    title: "Olive Oil Guide — Elis & Katakolon",
+    seoTitle: "Peloponnese Olive Oil — Katakolon Cruise Visitor Guide",
+    metaDescription:
+      "Discover Elis olive oil near Katakolon — groves, tastings, PDO labels and how cruise passengers buy authentic bottles on Olympia and olive mill shore excursions.",
+    eyebrow: "Olive Oil",
+    tagline:
+      "The groves surrounding Olympia produce some of Greece's finest extra virgin oil — a taste of the Peloponnese you can bring home in your luggage.",
+    overview:
+      "Elis province around Katakolon is olive country. Hills inland from the Ionian coast hold groves of Koroneiki and other cultivars pressed into peppery, grassy extra virgin oil with protected designation status. Cruise passengers encounter olive oil three ways: tastings on dedicated excursions, bottles in Katakolon shops and dressing almost every salad at harbour tavernas. Understanding labels helps you buy legitimate PDO product instead of generic souvenir bottles.",
+    body: [
+      "Quality extra virgin olive oil is cold-pressed without excessive heat or chemical refinement. Elis (often labelled ΠΟΠ / PDO) oils carry geographic certification — look for harvest dates, producer names and dark glass bottles that protect against light. Tastings at cooperative mills or family estates teach you to notice bitterness and throat tickle — signs of polyphenols, not flaws. Excursions labelled olive oil experiences typically pair grove walks with bread-dipping sessions and optional purchasing.",
+      "Shop shelves in Katakolon stock decorative tins suited to gifts. Prices rise near the pier, but vacuum-sealed tins travel better than glass in luggage. Confirm airline weight limits and customs allowances for food products if you fly home after the cruise. Ship cabins store small bottles fine on sail-away days.",
+      "Olive oil pairs naturally with Olympia itineraries — groves lie between coast and sanctuary on some rural roads. Combined Olympia-and-olive-oil tours sequence ruins in cooler morning hours and tastings after lunch. Summer harvest activities peak in autumn; spring visits still offer warehouse tastings from prior season stock.",
+    ],
+    tier: 2,
+    highlights: [
+      "Elis PDO extra virgin olive oil",
+      "Grove visits and mill tastings on excursions",
+      "Authentic bottles versus souvenir packaging",
+      "Pairing with Greek salads and meze locally",
+      "Practical souvenir packing advice",
+    ],
+    tips: [
+      "Look for PDO/ΠΟΠ labels and harvest dates",
+      "Prefer dark glass or tins for quality preservation",
+      "Taste before buying large quantities on excursions",
+      "Ask about early-harvest versus mature-oil flavour profiles",
+      "Combine with winery stops on ten-hour port days",
+    ],
+    planningTables: [
+      {
+        title: "Olive oil experience types for cruise passengers",
+        headers: ["Format", "Duration", "Best port length"],
+        rows: [
+          ["Shop purchase only", "15 min", "Any"],
+          ["Tasting at mill", "45–60 min", "8h+"],
+          ["Olympia + olive combo", "7–8h total", "8–10h"],
+          ["Dedicated oil excursion", "4–5h", "8h+ without full Olympia"],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I visit an olive grove from Katakolon?",
+        answer:
+          "Yes via dedicated olive oil excursions or combined Olympia tours that stop at cooperating mills in the Elis countryside.",
+      },
+      {
+        question: "What is PDO olive oil?",
+        answer:
+          "Protected Designation of Origin certification guarantees geographic authenticity and production standards. Elis oils are among Greece's recognised PDO regions.",
+      },
+      {
+        question: "Is olive oil a good souvenir?",
+        answer:
+          "Excellent if you choose certified producer bottles or tins. Avoid unlabelled decorative packaging with unclear contents.",
+      },
+      {
+        question: "When is olive harvest season?",
+        answer:
+          "Typically October–December in the Peloponnese. Cruise calls outside harvest still include tastings from stored stock year-round.",
+      },
+      {
+        question: "Does olive oil pair with winery tours?",
+        answer:
+          "Naturally — many private drivers combine both on longer port days. Ask about combo excursions or customise a private itinerary.",
+      },
+    ],
+    relatedGuideSlugs: [
+      "greek-food-guide",
+      "local-winery-guide",
+      "one-day-in-katakolon-from-a-cruise-ship",
+    ],
+    relatedExcursionSlug: "olympia-and-olive-oil-experience",
+    imageKey: "olive-grove",
+    breadcrumbParent: PORT_GUIDE_PARENT,
+  },
+  {
+    slug: "local-winery-guide",
+    path: "/local-winery-guide",
+    title: "Local Winery Guide — Peloponnese from Katakolon",
+    seoTitle: "Wineries Near Katakolon — Tastings & Cruise Shore Excursions",
+    metaDescription:
+      "Visit Peloponnese wineries from Katakolon cruise port — Roditis and Mavrodaphne tastings, terrace lunches and combined Olympia winery shore excursions.",
+    eyebrow: "Wine",
+    tagline:
+      "Vineyards roll inland from the Ionian coast — uncork Peloponnese varieties most passengers have never seen on a wine list at home.",
+    overview:
+      "The Peloponnese produces distinctive wines — crisp Roditis whites, Agiorgitiko reds and sweet Mavrodaphne associated with nearby Patras. Wineries within twenty to forty minutes of Katakolon welcome cruise visitors for cellar tours, terrace tastings and lunches timed to afternoon ship schedules. Combined Olympia-and-winery excursions anchor heritage in the morning and uncork relaxation after ruins — a popular pattern on eight- to ten-hour port calls.",
+    body: [
+      "Family estates and modern cooperatives alike adapt to cruise traffic with English-speaking hosts and efficient tasting flights of three to five wines. Expect olive oil bread, local cheese and seasonal fruit alongside pours. Drivers on organised tours handle alcohol limits sensibly — tastings are modest, not pub crawls. If you prefer deeper oenology, book private tours with longer cellar access.",
+      "Winery terraces offer shaded seating superior to open ruins at midday summer heat. Scheduling wine after Olympia ruins is deliberate: you see the stadium when temperatures are lower, then retreat to hilltop breezes with a glass of Roditis. Return-to-ship timing remains secure on reputable excursions with pre-negotiated departure buffers.",
+      "Bottles purchased at estates ship home in luggage if airline rules allow. Some wineries ship internationally — ask about customs to your country. Non-drinkers still enjoy scenery, food pairings and grape-juice alternatives on many tours.",
+    ],
+    tier: 2,
+    highlights: [
+      "Roditis, Agiorgitiko and Mavrodaphne tastings",
+      "Terrace lunches overlooking vineyards",
+      "Combined Olympia and winery itineraries",
+      "Family-run estates in Elis and western Peloponnese",
+      "Afternoon scheduling after morning ruins",
+    ],
+    tips: [
+      "Eat before multi-pour tastings even on tour menus",
+      "Confirm excursion includes purchase time if buying bottles",
+      "Private tours allow slower pacing for wine enthusiasts",
+      "Check fly-cruise liquid restrictions before large purchases",
+      "Non-drinkers should still request food-forward pairings",
+    ],
+    planningTables: [
+      {
+        title: "Winery visit formats from Katakolon",
+        headers: ["Tour type", "Wine time", "Typical duration"],
+        rows: [
+          ["Olympia + winery combo", "60–75 min tasting/lunch", "7–8h total"],
+          ["Winery-focused half-day", "90+ min", "4–5h"],
+          ["Private custom route", "Flexible", "Varies"],
+          ["Village day only", "Harbour wine by glass", "1h"],
+        ],
+      },
+    ],
+    comparisonTables: [
+      {
+        title: "Wine excursion vs harbour dining",
+        headers: ["", "Winery excursion", "Katakolon taverna"],
+        rows: [
+          ["Wine education", "High", "Basic list"],
+          ["Scenery", "Vineyard hills", "Harbour views"],
+          ["Time required", "Half day or combo", "1–2 hours"],
+          ["Return risk", "Low on tours", "Very low"],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Are there wineries near Katakolon?",
+        answer:
+          "Yes — estates lie within twenty to forty minutes inland across the western Peloponnese, reachable on dedicated tours or combined Olympia itineraries.",
+      },
+      {
+        question: "Can I combine Olympia and a winery on one port day?",
+        answer:
+          "Yes — this is a popular eight- to ten-hour pattern. Morning ruins, afternoon tasting and lunch with timed return to the pier.",
+      },
+      {
+        question: "What wines should I try?",
+        answer:
+          "Roditis white is a regional staple. Red lovers should sample Agiorgitiko; sweet wine fans should taste Mavrodaphne at least once.",
+      },
+      {
+        question: "Is a winery tour suitable if I do not drink alcohol?",
+        answer:
+          "Many estates welcome non-drinkers with food, juice and scenery. Inform your operator when booking.",
+      },
+      {
+        question: "Will I have time to buy bottles?",
+        answer:
+          "Organised tours usually include brief shop time. Private tours offer more flexibility for shipping discussions.",
+      },
+    ],
+    relatedGuideSlugs: [
+      "greek-food-guide",
+      "olive-oil-guide",
+      "one-day-in-katakolon-from-a-cruise-ship",
+    ],
+    relatedExcursionSlug: "olympia-and-winery-tour",
+    imageKey: "winery",
+    breadcrumbParent: PORT_GUIDE_PARENT,
+  },
+  {
+    slug: "best-time-to-visit-katakolon",
+    path: "/best-time-to-visit-katakolon",
+    title: "Best Time to Visit Katakolon",
+    seoTitle: "Best Time to Visit Katakolon & Ancient Olympia — Cruise Calendar Guide",
+    metaDescription:
+      "When to visit Katakolon and Ancient Olympia — season, crowds, heat, ship schedules and month-by-month advice for Peloponnese cruise passengers.",
+    eyebrow: "When to Go",
+    tagline:
+      "Spring wildflowers, summer heat, autumn gold and quieter winter berths — timing shapes every Katakolon port day as much as your excursion choice.",
+    overview:
+      "Katakolon receives cruise ships from April through November, with peak volume June–September when Mediterranean itineraries run fullest. Ancient Olympia is open year-round, but summer temperatures on exposed ruins regularly exceed 35°C. Shoulder seasons offer the best balance of warmth, manageable crowds and comfortable walking. Your specific ship's arrival month matters as much as generic climate charts — this guide maps both.",
+    body: [
+      "April and May bring green hills, wildflowers and temperatures in the low twenties Celsius — ideal for Olympia walking without brutal sun. Crowds build from late May as schools break across Europe. June through August guarantee hot, dry days and the busiest coach convoys at the sanctuary gates. Morning departures become essential; the Archaeological Museum's air conditioning is strategic, not optional.",
+      "September and October remain warm enough for swimming at Kourouta beach while thinning cruise traffic slightly after peak summer. Olive harvest begins in autumn — a sensory bonus on oil-focused excursions. November calls are cooler and quieter; some tavernas reduce hours, but ruins remain accessible with layers and rain jackets handy.",
+      "Winter cruise calls are rare but occur on repositioning or specialty itineraries. Short daylight and rain possible — pack accordingly. Regardless of month, dual-ship days compress Katakolon lanes and Olympia parking; check scheduled callers online when planning independent travel.",
+    ],
+    tier: 2,
+    highlights: [
+      "April–May and September–October sweet spots",
+      "Summer morning Olympia departures essential",
+      "Autumn olive harvest season",
+      "Dual-ship crowd patterns in peak summer",
+      "Year-round museum refuge from heat or rain",
+    ],
+    tips: [
+      "Book morning Olympia tours June–August",
+      "Carry sun protection March through October",
+      "Check if your date has multiple ships in port",
+      "Shoulder season may offer better excursion availability",
+      "Winter visitors — confirm taverna hours in advance",
+    ],
+    planningTables: [
+      {
+        title: "Month-by-month cruise passenger snapshot",
+        headers: ["Period", "Weather", "Crowds", "Verdict"],
+        rows: [
+          ["Apr–May", "Mild, green", "Moderate", "Excellent"],
+          ["Jun–Aug", "Hot, dry", "High", "Good with early starts"],
+          ["Sep–Oct", "Warm, golden", "Moderate", "Excellent"],
+          ["Nov", "Cooler, some rain", "Lower", "Good for ruins, less beach"],
+          ["Dec–Mar", "Cool, variable", "Low", "Rare cruise calls"],
+        ],
+      },
+    ],
+    comparisonTables: [
+      {
+        title: "Seasonal priorities — Olympia vs village",
+        headers: ["Season", "Olympia", "Katakolon village/beach"],
+        rows: [
+          ["Spring", "Ideal walking weather", "Pleasant harbour strolls"],
+          ["Summer", "Morning only; heat risk", "Beach adds value"],
+          ["Autumn", "Comfortable all day", "Harvest flavours peak"],
+          ["Winter", "Mild ruins, cool breeze", "Quiet dining"],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the best month for a Katakolon cruise call?",
+        answer:
+          "April–May and September–October offer the best mix of comfortable temperatures and manageable crowds for Olympia and village days alike.",
+      },
+      {
+        question: "Is August too hot for Ancient Olympia?",
+        answer:
+          "Not if you tour in the morning and use the museum at midday. Afternoon-only ruins visits in August are uncomfortable and sometimes risky for heat-sensitive passengers.",
+      },
+      {
+        question: "When is Katakolon busiest?",
+        answer:
+          "July and August, especially when two large ships share the port on the same day. Disembark early or book morning excursions.",
+      },
+      {
+        question: "Does Olympia close in winter?",
+        answer:
+          "The site operates year-round with reduced winter hours. Confirm current schedules before a winter or shoulder-season call.",
+      },
+      {
+        question: "Is swimming possible on autumn cruises?",
+        answer:
+          "Often yes in September and early October when sea temperatures remain warm. November depends on personal tolerance for cooler water.",
+      },
+    ],
+    relatedGuideSlugs: [
+      "ancient-olympia-from-katakolon",
+      "katakolon-guide",
+      "is-ancient-olympia-worth-visiting-from-a-cruise-ship",
+    ],
+    relatedExcursionSlug: "katakolon-scenic-tour",
+    imageKey: "best-time",
+    breadcrumbParent: PORT_GUIDE_PARENT,
   },
   {
     slug: "independent-vs-cruise-line-excursions",
-    title: "Independent vs Cruise-Line Excursions in Cartagena",
-    seoTitle: "Independent vs Cruise-Line Excursions — Cartagena Cruise Port",
+    path: "/independent-vs-cruise-line-excursions",
+    title: "Independent vs Cruise Line Excursions — Katakolon",
+    seoTitle: "Independent vs Ship Excursions in Katakolon — What Cruise Passengers Should Know",
     metaDescription:
-      "Compare independent and cruise-line shore excursions in Cartagena, Spain — ship-waits guarantee, group size, Roman site time and return-to-ship confidence.",
-    eyebrow: "Planning comparison",
-    tagline: "The ship waits if the coach is late — but independent tours often win on pacing. Here is the honest Cartagena trade-off.",
+      "Compare cruise line shore excursions and independent tours in Katakolon — pricing, return guarantees, Olympia timing and when to book third-party operators.",
+    eyebrow: "Planning",
+    tagline:
+      "Ship-sponsored coaches promise the gangway will wait; independent operators often deliver smaller groups and better value — if you choose reputable companies.",
     overview:
-      "Cartagena's compact geography reduces some independent-tour risk — you are rarely 90 minutes inland when the gangway closes. But the ship still will not wait if you miss all-aboard on any independent booking. This guide compares cruise-line and independent options honestly so you choose with eyes open before spending your port day.",
+      "Every Katakolon port day forces a booking decision: stick with your cruise line's excursion desk or book independently with local operators meeting you at the pier. Both models work when vendors are licensed and track ship schedules. The trade-offs are price, group size, itinerary flexibility and the psychological comfort of the ship's implied guarantee versus explicit third-party return policies.",
     body: [
-      "Cruise-line excursions guarantee the vessel waits if the official tour runs late. That peace of mind matters in ports with long transfers. Cartagena is gentler — Muelle de Alfonso XII sits minutes from Roman sites — yet the guarantee still appeals to anxious first-timers and passengers on tight schedules.",
-      "Independent tours — including Roman Highlights, our Editor's Choice — typically offer smaller groups, better time at the Roman Theatre and Forum, and lower per-person cost for equivalent routing. The trade-off is punctuality: reputable operators build 45–60 minute buffers and track ship departure, but you must respect meeting times.",
-      "Both options face the same walkable Cartagena geography. The decision depends on risk tolerance, group-size preference and whether you value archaeological depth over delay insurance. Read why Roman Highlights earned Editor's Choice, then browse shore excursions and use the Cruise Planner to stress-test your window against ship-schedules.",
+      "Cruise line excursions bundle ticketing, guiding and coach logistics at a premium — sometimes forty to sixty percent above equivalent local tours. In return you receive familiar booking flows, onboard charging and the widely repeated assurance that the ship will delay departure if the official tour runs late (policies vary — read your cruise contract). Coaches are often full-capacity; photography stops and museum time may feel compressed on popular Olympia days.",
+      "Independent shore excursion operators specialising in Katakolon compete on smaller groups, longer museum stops and combinations like Olympia-plus-winery at lower prices. Reputable firms carry insurance, licensed guides and explicit return-to-ship guarantees mirroring cruise-line promises. Risk rises with unvetted taxi negotiations or no-show freelancers without offices. Research operators with verifiable reviews and physical meeting points inside the port.",
+      "Hybrid strategies work: book Olympia independently for value, stay in Katakolon village without a tour, or use ship excursions when your port call is unusually short and you want maximum simplicity. Whichever you choose, confirm all-aboard time in ship time zone, keep the operator's emergency contact on your phone and never cut the return buffer to squeeze extra shopping minutes.",
     ],
-    sections: [
+    tier: 2,
+    highlights: [
+      "Price versus convenience trade-offs explained",
+      "Return-to-ship guarantee comparisons",
+      "Small-group independent tour advantages",
+      "When ship excursions justify premium pricing",
+      "Red flags for unvetted port vendors",
+    ],
+    tips: [
+      "Verify independent operators guarantee on-time ship return",
+      "Meet points should be inside or immediately outside terminal",
+      "Keep printed or offline confirmation — mobile signal varies",
+      "Ship excursions fill first on dual-ship summer days",
+      "Travel insurance may differ by booking channel — check policy",
+    ],
+    planningTables: [
       {
-        heading: "Side-by-side: what you gain and lose",
-        paragraphs: [
-          "Cruise-line gain: delay guarantee, single-charge billing, no currency exchange ashore. Cruise-line loss: larger groups, less Roman site time, higher cost for equivalent content.",
-          "Independent gain: smaller groups, flexible pacing, better archaeology time, often lower cost. Independent loss: no delay guarantee, requires punctuality, research needed to find reputable operators.",
+        title: "Decision checklist before you book",
+        headers: ["Question", "Ship excursion", "Independent"],
+        rows: [
+          ["Is price top priority?", "Usually no", "Often yes"],
+          ["Want smallest group?", "Rarely", "Often"],
+          ["Short 6h port call?", "Safer default", "Only if vetted"],
+          ["Need winery custom combo?", "Limited menu", "More flexible"],
+          ["Worry about missing ship?", "Psychological ease", "Needs guarantee clause"],
         ],
       },
     ],
-    highlights: [
-      "Ship excursions guarantee the vessel waits if the tour is delayed",
-      "Independent tours offer smaller groups and better Roman site time",
-      "Roman Highlights — Editor's Choice independent option with 45–60 min buffer",
-      "Cartagena's walkable port reduces but does not eliminate timing risk",
-      "Both options access the same Roman Theatre and Forum geography",
-      "Decision depends on risk tolerance and group-size preference",
-    ],
-    tips: [
-      "Ask your cruise line how many guests are on their Roman coach",
-      "Compare per-person cost — independent is not always cheaper but often better value",
-      "Never book independent Murcia tours on calls under 8 hours",
-      "Carry the ship's pier contact number and all-aboard time on paper",
-      "Reputable operators track ship departure at Cartagena daily in season",
-    ],
-    faqs: [
+    comparisonTables: [
       {
-        question: "Will the ship leave without me on an independent tour?",
-        answer:
-          "Yes, if you miss all-aboard. Reputable Cartagena operators build generous buffers and track traffic. The risk is real but manageable on standard port days with professional tours.",
-      },
-      {
-        question: "Are cruise-line excursions better quality in Cartagena?",
-        answer:
-          "Not necessarily — they are safer on timing. Quality of guiding, group size and Roman site time often favour independent small-group tours like Roman Highlights.",
-      },
-      {
-        question: "Can I book independent and still have peace of mind?",
-        answer:
-          "Choose operators who publish return buffers and track ship schedules. Roman Highlights meets those criteria — which is why it earned Editor's Choice.",
-      },
-    ],
-    relatedGuideSlugs: ["why-roman-highlights-is-our-editors-choice", "best-things-to-do-in-cartagena-from-a-cruise-ship", "one-day-in-cartagena-from-a-cruise-ship"],
-    relatedExcursionSlugs: ["cartagena-roman-highlights"],
-    imageKey: "cartagena",
-  },
-  {
-    slug: "best-cartagena-excursions-for-first-time-visitors",
-    title: "Best Cartagena Excursions for First-Time Visitors",
-    seoTitle: "Best Cartagena Shore Excursions for First-Time Visitors",
-    metaDescription:
-      "First time in Cartagena, Spain on a cruise? Compare the best shore excursions for first-time visitors — Roman highlights, walking days and Murcia timing.",
-    eyebrow: "Audience guide",
-    tagline: "One port day, 3,000 years of history — where first-time Cartagena cruisers should start.",
-    overview:
-      "First-time visitors to Cartagena, Spain face a happy problem: Roman archaeology, harbour walks, tapas culture and optional Murcia all compete for one port day. The decision comes down to guided Roman sequencing versus confident DIY walking — both work in this compact Mediterranean port.",
-    body: [
-      "Most first-timers choose guided Roman focus. Roman Highlights is our Editor's Choice because it delivers the Roman Theatre, Forum quarter and Castle of the Conception in one well-paced small-group day — the essential Cartagena circuit without a premature Murcia transfer. The walk from Muelle de Alfonso XII makes independent exploration viable, but guides add layering first-timers miss on panels alone.",
-      "If you prefer zero tour cost and maximum flexibility, our old-town walking guide is the DIY answer — same geography, self-paced. Tapas Local Food Experience suits first-timers who prioritise food equally with history. Avoid Murcia on first calls unless your port window exceeds 8 hours.",
-      "Do not over-schedule. First-timers who attempt Roman sites, beach, kayaking and Murcia remember the taxi rides, not the theatre. Use the Cruise Planner and ship-schedules to match ambition to hours ashore.",
-    ],
-    sections: [
-      {
-        heading: "Decision framework for your first Cartagena call",
-        paragraphs: [
-          "Ask yourself: (1) Do I want guided Roman context? If yes → Roman Highlights. (2) Do I prefer independent walking? If yes → old-town walking guide. (3) Is food my main interest? If yes → Tapas Experience. (4) Is my call under 6 hours? If yes → harbour walk plus one Roman site only.",
-          "Murcia waits for repeat visits or exceptional port lengths — not first calls.",
+        title: "Ship excursion vs independent operator",
+        headers: ["Factor", "Cruise line", "Independent"],
+        rows: [
+          ["Typical group size", "40–50+", "8–20"],
+          ["Price", "Higher", "Lower"],
+          ["Booking", "Onboard or pre-cruise", "Online pre-book"],
+          ["Return policy", "Ship-linked", "Contractual guarantee"],
+          ["Itinerary flexibility", "Fixed", "Often customisable"],
+          ["Olympia museum time", "Sometimes tight", "Often longer"],
         ],
-      },
-    ],
-    highlights: [
-      "Roman Highlights — Editor's Choice for first-time Roman Cartagena",
-      "Old Town Walking Guide — DIY for confident explorers",
-      "Tapas Local Food Experience — food-forward first visits",
-      "One day in Cartagena itinerary for hour-by-hour planning",
-      "Independent vs cruise-line comparison for booking confidence",
-      "Murcia only on 8+ hour windows — skip on first calls",
-    ],
-    tips: [
-      "Read our Editor's Choice reasoning before booking Roman Highlights",
-      "Confirm port window via ship-schedules before choosing Murcia",
-      "Book early on peak summer sailings — small groups fill ahead",
-      "Wear comfortable shoes — Roman Cartagena involves cobbles and lifts",
-      "Use the Cruise Planner to generate a personalised first-timer shortlist",
-    ],
-    recommendations: [
-      {
-        title: "Roman Highlights",
-        description: "Our Editor's Choice for first-time visitors — theatre, Forum and castle with honest pacing from Muelle de Alfonso XII.",
-        excursionSlug: "cartagena-roman-highlights",
-        bestFor: "First-time visitors",
-      },
-      {
-        title: "Old Town Walking Guide",
-        description: "DIY loop when you prefer independent exploration — our recommended self-guided alternative.",
-        guideSlug: "cartagena-old-town-walking-guide",
-        bestFor: "DIY explorers",
       },
     ],
     faqs: [
       {
-        question: "What should I do on my first Cartagena cruise call?",
+        question: "Will the ship wait if an independent tour is late?",
         answer:
-          "Roman Highlights if you want guided Roman essentials. Old-town walking guide if you prefer DIY. Tapas Experience if food equals history on your priority list.",
+          "Ships generally will not delay for independent passengers. Reputable operators build buffers and contractually guarantee on-time return — unlicensed taxis do not.",
       },
       {
-        question: "Is it safe to book independent excursions as a first-timer?",
+        question: "Are independent excursions cheaper?",
         answer:
-          "Yes, with reputable operators who build return buffers. Cartagena's compact port reduces risk compared to long-transfer destinations. Read our independent vs cruise-line guide.",
+          "Usually yes for comparable Olympia itineraries — savings of thirty to fifty percent are common. Verify inclusions like museum tickets and lunch.",
       },
       {
-        question: "Should first-timers go to Murcia?",
+        question: "Where do independent tours meet passengers?",
         answer:
-          "No on standard first calls — see Roman Cartagena first. Murcia suits repeat visitors with 8+ hour port windows.",
-      },
-    ],
-    relatedGuideSlugs: ["why-roman-highlights-is-our-editors-choice", "one-day-in-cartagena-from-a-cruise-ship", "best-things-to-do-in-cartagena-from-a-cruise-ship"],
-    relatedExcursionSlugs: ["cartagena-roman-highlights", "tapas-local-food-experience", "harbour-panoramic-tour"],
-    imageKey: "roman-theatre",
-  },
-  {
-    slug: "best-cartagena-excursions-for-history-lovers",
-    title: "Best Cartagena Excursions for History Lovers",
-    seoTitle: "Best Cartagena Shore Excursions for History Lovers",
-    metaDescription:
-      "The best Cartagena shore excursions for history lovers — Roman Walking Tour, Punic Wall, Forum quarter and deep archaeology from the cruise port.",
-    eyebrow: "Audience guide",
-    tagline: "Punic foundations, Roman tiers and naval centuries — Cartagena for passengers who read the panels twice.",
-    overview:
-      "History lovers calling at Cartagena want depth, not drive-by photos. The Roman Theatre, Forum archaeological quarter and Punic Wall Experience reward unhurried commentary and chronological storytelling — exactly what the Roman Walking Tour delivers beyond standard highlights pacing.",
-    body: [
-      "Roman Walking Tour is our top pick for history lovers — extended time at the theatre, Forum lanes and Punic Wall with guides who connect Scipio, Augustus and Carthaginian defences into one narrative. Roman Highlights covers the same geography faster; choose Walking Tour when archaeology is the point of the port day, not a checkbox.",
-      "Castle of the Conception and our maritime history guide add strategic and naval layers after ancient sites. Harbour Panoramic Tour suits historians interested in modern naval Cartagena as much as Roman colonnades. Murcia's cathedral city offers baroque contrast on 8+ hour calls when Roman Cartagena is already familiar.",
-      "Independent visits work if you pre-study combined tickets and sequencing — but expert commentary transforms stones into story. Pair this guide with individual site pages for theatre, Forum and Punic Wall detail.",
-    ],
-    sections: [
-      {
-        heading: "Deep history vs highlights pacing",
-        paragraphs: [
-          "Roman Walking Tour: maximum site time, chronological depth, 6–7 hours. Roman Highlights: balanced overview with castle viewpoint, Editor's Choice for first-timers. Private Cartagena Experience: custom depth for specialists wanting museum or naval add-ons.",
-          "Book Walking Tour on 7+ hour calls — compressed windows frustrate archaeology enthusiasts.",
-        ],
-      },
-    ],
-    highlights: [
-      "Roman Walking Tour — our history-lover top pick",
-      "Punic Wall, Forum and theatre in chronological depth",
-      "Maritime history guide for naval strategic context",
-      "Castle of the Conception for harbour geography",
-      "Murcia cathedral — baroque contrast on long port days",
-      "Private Cartagena Experience for custom specialist routing",
-    ],
-    tips: [
-      "Buy combined archaeological tickets before peak-season queues",
-      "Read Punic Wall guide before port day for Carthaginian context",
-      "Morning theatre visits beat coach convoys",
-      "Skip beach and kayaking on dedicated history days",
-      "Ask guides about current excavation projects — Cartagena is active archaeologically",
-    ],
-    recommendations: [
-      {
-        title: "Roman Walking Tour",
-        description: "Extended Punic, Forum and theatre time with expert chronological commentary — our history-lover pick.",
-        excursionSlug: "roman-walking-tour",
-        bestFor: "History lovers",
+          "At designated points just outside the gangway or terminal exit. Confirm exact location and time on your voucher before disembarking.",
       },
       {
-        title: "Roman Highlights",
-        description: "Balanced Roman overview with castle — when you also want harbour panoramas in one day.",
-        excursionSlug: "cartagena-roman-highlights",
-        bestFor: "First-time visitors",
-      },
-    ],
-    faqs: [
-      {
-        question: "What is the best excursion for Roman archaeology depth?",
+        question: "Can I book independently and still use the ship if worried?",
         answer:
-          "Roman Walking Tour — more site time and narrative depth than Roman Highlights. Private Cartagena Experience for fully custom specialist interests.",
+          "Yes — many passengers book vetted third-party tours with strong track records at Katakolon. Carry the operator's phone number and monitor ship time.",
       },
       {
-        question: "Should history lovers visit Murcia instead of Cartagena?",
+        question: "When should I stick with the cruise line?",
         answer:
-          "No on first calls — Cartagena's Punic-Roman layers are the headline. Murcia adds baroque contrast on repeat visits with long port windows.",
+          "Very short port calls, first-time cruisers who value simplicity, or when independent options are sold out on dual-ship days.",
       },
       {
-        question: "Can I see all archaeological sites independently?",
+        question: "Are taxis a form of independent excursion?",
         answer:
-          "Yes with combined tickets and our site guides. Guided tours add connections between Punic, Roman and naval chapters that panels alone miss.",
+          "Taxis offer flexibility but lack guiding and guaranteed return unless you negotiate clearly. Fine for village days; Olympia needs agreed wait times and fares in writing when possible.",
       },
     ],
-    relatedGuideSlugs: ["roman-theatre-cartagena", "punic-wall-experience", "roman-forum-archaeological-quarter"],
-    relatedExcursionSlugs: ["roman-walking-tour", "cartagena-roman-highlights", "private-cartagena-experience"],
-    imageKey: "roman-forum",
-  },
-  {
-    slug: "best-cartagena-excursions-for-families",
-    title: "Best Cartagena Excursions for Families",
-    seoTitle: "Best Cartagena Shore Excursions for Families with Children",
-    metaDescription:
-      "The best Cartagena shore excursions for families — child-friendly pacing, beaches, harbour walks and Roman sites from Muelle de Alfonso XII.",
-    eyebrow: "Audience guide",
-    tagline: "Castles, harbour views and beach time — Cartagena port days that respect young attention spans.",
-    overview:
-      "Families with children need shorter walking loops, flexible bathroom breaks and activities that engage different ages — not seven-hour archaeology marathons in midday heat. Cartagena's compact port helps: Family-Friendly Cartagena excursions and harbour-focused days outperform long Murcia transfers for most families.",
-    body: [
-      "Family-Friendly Cartagena keeps pacing gentle — harbour promenade, castle lift viewpoints, abbreviated Roman Theatre visits and optional beach or park time. Guides understand snack stops and shade breaks matter more than checking every Forum panel.",
-      "Roman Highlights works for history-curious teens but may overwhelm younger children with museum galleries and cobbles. DIY old-town walking lets parents control duration — harbour route first, one Roman site if energy allows, then back to the ship.",
-      "Beach time at Cala Cortina suits families on repeat visits or long port windows — see our beaches guide. Avoid Murcia round trips with under-8s on standard calls; the 45–60 minute each-way transfer erodes patience before the cathedral appears.",
+    relatedGuideSlugs: [
+      "ancient-olympia-from-katakolon",
+      "one-day-in-katakolon-from-a-cruise-ship",
+      "is-ancient-olympia-worth-visiting-from-a-cruise-ship",
     ],
-    sections: [
-      {
-        heading: "Age-appropriate Cartagena choices",
-        paragraphs: [
-          "Under 8: harbour walk, Family-Friendly Cartagena, optional beach — skip deep Forum tours. Ages 8–14: Roman Highlights or family tour with theatre focus. Teens: Roman Walking Tour or kayaking on active sailings.",
-          "Strollers work on flat harbour promenades but struggle on old-town cobbles and theatre steps — baby carriers more practical for Roman tiers.",
-        ],
-      },
-    ],
-    highlights: [
-      "Family-Friendly Cartagena — paced for children with shade and snack breaks",
-      "Harbour walking route — flat and engaging for all ages",
-      "Castle Panoramic Lift — viewpoint excitement without long climbs",
-      "Cala Cortina beach — taxi-access sand on long port days",
-      "Roman Highlights — viable for teens, long for under-8s",
-      "Skip Murcia on standard family port windows",
-    ],
-    tips: [
-      "Pack snacks, water and sun protection — Murcian sun is intense for children",
-      "Book family-paced tours rather than standard coaches",
-      "Morning energy suits Roman sites — save harbour for afternoon",
-      "Keep 45–60 minutes return buffer — families move slower than couples",
-      "Use Cruise Planner with family party size for tailored suggestions",
-    ],
-    faqs: [
-      {
-        question: "Is Roman Highlights suitable for children?",
-        answer:
-          "Teens yes — theatre and castle engage them. Younger children may find the full day long and hot. Family-Friendly Cartagena is the gentler alternative.",
-      },
-      {
-        question: "What is the best excursion for toddlers?",
-        answer:
-          "Harbour promenade walk or Family-Friendly Cartagena with minimal cobbles. Avoid long Forum tours and Murcia transfers.",
-      },
-      {
-        question: "Are there child discounts on Cartagena excursions?",
-        answer:
-          "Policies vary by operator — enquire when booking through our shore excursions hub. Family-Friendly Cartagena pricing depends on party size.",
-      },
-    ],
-    relatedGuideSlugs: ["cartagena-beaches", "cartagena-harbour-walking-route", "one-day-in-cartagena-from-a-cruise-ship"],
-    relatedExcursionSlugs: ["family-friendly-cartagena", "cartagena-roman-highlights", "harbour-panoramic-tour"],
-    imageKey: "beach",
-  },
-  {
-    slug: "best-cartagena-excursions-for-food-lovers",
-    title: "Best Cartagena Excursions for Food Lovers",
-    seoTitle: "Best Cartagena Shore Excursions for Food Lovers",
-    metaDescription:
-      "The best Cartagena shore excursions for food lovers — tapas experiences, market visits, Calle Mayor bars and Murcian cuisine from the cruise port.",
-    eyebrow: "Audience guide",
-    tagline: "Michirones, marinera and market counters — Cartagena port days built around Murcian flavour.",
-    overview:
-      "Food lovers calling at Cartagena want guided bar hopping, market context and regional dishes they would not order alone. Tapas Local Food Experience is our top pick — morning Roman context or old-town orientation followed by curated tapas stops with local explanation.",
-    body: [
-      "Tapas Local Food Experience sequences Cartagena's culinary geography — Mercado de Santa Florentina where schedules allow, Calle Mayor bars and harbour-side cañas with guides who explain Murcian ingredients and ordering culture. You eat well without sacrificing return-to-ship confidence.",
-      "Independent food days work using our tapas and market guides — research bars ahead, lunch 13:00–14:30, harbour walk return. Roman Highlights plus self-guided tapas lunch suits food lovers who also want theatre time without a dedicated food tour.",
-      "Murcia offers inland tapas contrast on 8+ hour calls — cathedral plaza bars differ from coastal Cartagena seasoning. Do not sacrifice a first Cartagena food experience for Murcia unless the port window is exceptional.",
-    ],
-    sections: [
-      {
-        heading: "Food-first port day frameworks",
-        paragraphs: [
-          "Dedicated food tour: Tapas Local Food Experience — guided bars, market stop optional, 5–6 hours. Hybrid: morning Roman Theatre, self-guided tapas lunch via our guides, harbour return. Repeat visitors: Cartagena-Murcia for inland culinary contrast.",
-          "Book food tours early — small groups and popular bars require advance coordination on peak cruise days.",
-        ],
-      },
-    ],
-    highlights: [
-      "Tapas Local Food Experience — our food-lover top pick",
-      "Mercado de Santa Florentina morning browsing",
-      "Calle Mayor tapas cluster walkable from cruise port",
-      "Murcian seafood and inland agricultural flavours",
-      "Hybrid Roman morning plus tapas lunch option",
-      "Murcia inland dining on 8+ hour repeat-visit calls",
-    ],
-    tips: [
-      "Mention dietary restrictions when booking food excursions",
-      "Carry cash for traditional bars — cards not universal",
-      "Do not start tapas tours hungry — breakfast lightly before gangway",
-      "Avoid heavy caldero rice if walking Roman sites afterward",
-      "Link to ship-schedules — late gangway compresses food tour value",
-    ],
-    recommendations: [
-      {
-        title: "Tapas Local Food Experience",
-        description: "Guided tapas route with local context — the excursion we recommend for food-focused Cartagena port days.",
-        excursionSlug: "tapas-local-food-experience",
-        bestFor: "Food lovers",
-      },
-      {
-        title: "Cartagena Food & Tapas Guide",
-        description: "Independent bar research and lunch timing when you prefer DIY dining.",
-        guideSlug: "cartagena-food-tapas-guide",
-        bestFor: "DIY diners",
-      },
-    ],
-    faqs: [
-      {
-        question: "What is the best food excursion in Cartagena?",
-        answer:
-          "Tapas Local Food Experience — curated bars, ordering guidance and cruise-timed returns. Our food tapas guide supports independent equivalents.",
-      },
-      {
-        question: "Can food lovers skip Roman sites entirely?",
-        answer:
-          "Yes on repeat visits — market, tapas and harbour walk fill a satisfying port day. First-timers usually want at least the Roman Theatre alongside food.",
-      },
-      {
-        question: "Is Murcia better for food than Cartagena?",
-        answer:
-          "Different rather than better — Murcia's inland tapas culture contrasts coastal seafood Cartagena. Worth a long port day on repeat visits, not instead of first-call Cartagena dining.",
-      },
-    ],
-    relatedGuideSlugs: ["cartagena-food-tapas-guide", "cartagena-market-guide", "one-day-in-cartagena-from-a-cruise-ship"],
-    relatedExcursionSlugs: ["tapas-local-food-experience", "cartagena-murcia"],
-    imageKey: "tapas",
+    relatedExcursionSlug: "private-olympia-tour",
+    imageKey: "independent",
+    breadcrumbParent: PORT_GUIDE_PARENT,
   },
 ];
 
-export function getGuideBySlug(slug: string): GuidePage | undefined {
+export function getGuideBySlug(slug: string) {
   return guides.find((g) => g.slug === slug);
 }
 
-export function getAllGuideSlugs(): string[] {
+export function getGuideByPath(path: string) {
+  return guides.find((g) => g.path === path);
+}
+
+export function getAllGuideSlugs() {
   return guides.map((g) => g.slug);
+}
+
+export function getTier1Guides() {
+  return guides.filter((g) => g.tier === 1);
 }

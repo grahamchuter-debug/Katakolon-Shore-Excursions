@@ -1,44 +1,49 @@
 import type { FAQ } from "./types";
+import { getHomepageFaqs } from "./homepage";
 
-export const siteFaqs: FAQ[] = [
+export const extraFaqs: FAQ[] = [
   {
-    question: "What makes Cartagena one of the Mediterranean's easiest cruise ports?",
+    question: "How far is Ancient Olympia from Katakolon cruise port?",
     answer:
-      "The cruise terminal at Muelle Alfonso XII sits on the waterfront, roughly 10–15 minutes on foot from Calle Mayor, the Roman Theatre and the compact old town. You can see world-class Roman archaeology without a long coach transfer — rare among Mediterranean ports.",
+      "About 35 km inland — roughly 35–45 minutes each way by road. Organised shore excursions remove the guesswork of taxis and timing on a port day.",
   },
   {
-    question: "How long do I need in port to see the Roman Theatre?",
+    question: "Where do cruise ships dock in Katakolon?",
     answer:
-      "Allow 2.5–3.5 hours including the museum and auditorium, plus 10–15 minutes walking from the terminal. A focused Roman morning pairs well with tapas lunch on a standard 6–8 hour port call. See our Roman Theatre guide and One Day in Cartagena planner.",
+      "Cruise ships berth along the Katakolon waterfront, steps from the village centre. See our Katakolon Cruise Port Guide for Olympia transfer times.",
   },
   {
-    question: "What is Roman Highlights and why is it your Editor's Choice?",
+    question: "Is Katakolon the same as Olympia?",
     answer:
-      "Cartagena Roman Highlights is our flagship small-group excursion covering the Roman Theatre, Forum district and harbour viewpoints. We name it Editor's Choice after comparing ship tours, DIY routes and independent operators — it balances Roman sequencing with honest return-to-ship buffers.",
+      "No — Katakolon is the cruise port village on the Ionian coast. Ancient Olympia is the archaeological site 35 km inland where the Olympic Games began.",
   },
   {
-    question: "Can I visit Murcia on a Cartagena port day?",
+    question: "Should I book Olympia tours in advance?",
     answer:
-      "Yes, on longer calls with 8+ usable hours ashore. Murcia is approximately 45–60 minutes each way by road — a full day, not a morning add-on. See our Murcia from Cartagena guide before booking.",
+      "Yes on busy summer cruise days. Pre-booking secures coach seats and aligns return timing with your ship. Walk-up taxis exist but are risky on tight schedules.",
   },
   {
-    question: "Can I walk from the Cartagena cruise port to the old town?",
+    question: "What currency and language should I expect?",
     answer:
-      "Yes — the historic centre is compact and walkable from Muelle Alfonso XII. Calle Mayor, the Roman Theatre and harbour promenade are 10–20 minutes on foot. See our Old Town Walking Guide for a self-guided route.",
+      "Greece uses the euro. Greek is the local language; English is widely spoken at Olympia, major sights and on organised excursions.",
   },
   {
-    question: "Should I book a cruise-line excursion or go independent?",
+    question: "Is it safe to eat in Katakolon village?",
     answer:
-      "Ship excursions guarantee the vessel waits if you are delayed. Independent tours offer smaller groups and more flexibility — but you must respect all-aboard times. See our Independent vs Cruise Line Excursions guide.",
+      "Yes — harbour-side restaurants and cafés cater to cruise passengers daily. See our Greek food guide for cruise-day dining advice.",
   },
   {
-    question: "What is the best Cartagena excursion for first-time visitors?",
+    question: "What if I have mobility limitations at Olympia?",
     answer:
-      "Roman Highlights — our Editor's Choice — sequences the Theatre, Forum area and harbour views for passengers who want the essential Roman story without DIY guesswork. History lovers may prefer the Roman Walking Tour; food lovers the Tapas Experience; confident walkers our Old Town Walking Guide.",
+      "The site involves uneven ancient stone and limited shade. A private tour allows pacing control; very limited mobility may be better served staying in Katakolon village.",
   },
   {
-    question: "How much return-to-ship buffer should I allow in Cartagena?",
+    question: "Are your excursions and services bookable now?",
     answer:
-      "45 minutes for old-town walking and Roman sights near the port. 60–75 minutes for Murcia or coastal kayaking. Always confirm your ship's all-aboard time in the cruise line app the night before.",
+      "We are an independent Katakolon cruise planning resource. Our guides help you choose the right options for your port day; use the enquiry form for personalised advice.",
   },
 ];
+
+export function getAllFaqs(): FAQ[] {
+  return [...getHomepageFaqs(), ...extraFaqs];
+}

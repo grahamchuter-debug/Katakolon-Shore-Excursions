@@ -6,9 +6,10 @@ import { siteImages } from "@/lib/images";
 
 const navItems = [
   { href: "/shore-excursions", label: "Shore Excursions" },
-  { href: "/cruise-port-guide", label: "Port Guide" },
-  { href: "/cruise-planner", label: "Cruise Planner" },
-  { href: "/ship-schedules", label: "Ship Schedules" },
+  { href: "/ancient-olympia-from-katakolon", label: "Ancient Olympia" },
+  { href: "/katakolon-cruise-port-guide", label: "Port Guide" },
+  { href: "/katakolon-cruise-planner", label: "Cruise Planner" },
+  { href: "/katakolon-cruise-ship-schedule", label: "Ship Schedules" },
   { href: "/faq", label: "FAQ" },
 ];
 
@@ -26,8 +27,8 @@ export function Header() {
             height={40}
           />
           <div className="hidden sm:block">
-            <div className="font-display text-lg font-bold text-coastal-800 leading-tight">Cartagena Shore</div>
-            <div className="text-xs text-gray-500 -mt-0.5">Excursions &amp; Cruise Planner</div>
+            <div className="font-display text-lg font-bold text-coastal-800 leading-tight">Katakolon Shore</div>
+            <div className="text-xs text-gray-500 -mt-0.5">Gateway to Ancient Olympia</div>
           </div>
         </Link>
         <nav className="hidden xl:flex items-center gap-1" aria-label="Main navigation">

@@ -9,7 +9,7 @@ const path = "/terms";
 
 export const metadata = buildMetadata({
   title: "Terms of Use",
-  description: "Terms of use for Cartagena Shore Excursions — the basis on which we provide our Mediterranean cruise planning guides and information.",
+  description: "Terms of use for Katakolon Shore Excursions — the basis on which we provide our Katakolon cruise planning guides and information.",
   path,
   noindex: true,
 });
@@ -22,7 +22,7 @@ const breadcrumbs = [
 export default function TermsPage() {
   return (
     <>
-      <JsonLd data={[breadcrumbSchema(breadcrumbs), webPageSchema({ title: "Terms of Use", description: "Terms of use for Cartagena Shore Excursions.", path })]} />
+      <JsonLd data={[breadcrumbSchema(breadcrumbs), webPageSchema({ title: "Terms of Use", description: "Terms of use for Katakolon Shore Excursions.", path })]} />
       <PageHero title="Terms of Use" subtitle="The basis on which we provide this information." compact />
       <section className="section-padding">
         <div className="container-wide max-w-3xl">
@@ -30,7 +30,7 @@ export default function TermsPage() {
           <div className="prose-body">
             <p>Last updated: {new Date().getFullYear()}</p>
             <h2>Information only</h2>
-            <p>{SITE.name} provides planning information and guidance for cruise passengers calling at Cartagena, Spain. It is offered in good faith for general guidance and does not constitute professional travel advice.</p>
+            <p>{SITE.name} provides planning information and guidance for cruise passengers calling at Katakolon. It is offered in good faith for general guidance and does not constitute professional travel advice.</p>
             <h2>No guarantee of accuracy</h2>
             <p>Cruise schedules, terminal assignments, transfer times, prices and opening hours change frequently and can vary by operator and season. Ship schedules and timings shown are indicative. Always confirm critical details &mdash; especially all-aboard times &mdash; directly with your cruise line and service providers.</p>
             <h2>Third-party services</h2>

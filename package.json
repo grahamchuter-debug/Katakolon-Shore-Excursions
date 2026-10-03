@@ -11,7 +11,7 @@
     "seo-qa": "node scripts/seo-qa.mjs",
     "download-images": "node scripts/download-images.mjs",
     "deploy": "npm run build && wrangler deploy",
-    "pages:deploy": "npm run build && wrangler pages deploy out --project-name=cartagena-shore-excursions"
+    "pages:deploy": "npm run build && wrangler pages deploy out --project-name=katakolon-shore-excursions"
   },
   "engines": {
     "node": ">=20"
@@ -29,6 +29,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
+    "sharp": "^0.33.5",
     "tailwindcss": "^4",
     "typescript": "^5",
     "wrangler": "^4.106.0"

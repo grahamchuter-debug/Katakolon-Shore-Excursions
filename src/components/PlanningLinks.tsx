@@ -1,19 +1,16 @@
 import Link from "next/link";
-import { SITE } from "@/lib/site";
 
 const LINKS = [
   { href: "/shore-excursions", label: "Shore Excursions" },
-  { href: "/shore-excursions/cartagena-roman-highlights", label: "Roman Highlights" },
-  { href: "/cruise-port-guide", label: "Cruise Port Guide" },
-  { href: "/cruise-planner", label: "Cruise Planner" },
-  { href: "/one-day-in-cartagena-from-a-cruise-ship", label: "One Day in Cartagena" },
-  { href: "/roman-theatre-cartagena", label: "Roman Theatre" },
-  { href: "/murcia-from-cartagena-cruise-port", label: "Murcia from Cartagena" },
-  { href: "/ship-schedules", label: "Ship Schedules" },
+  { href: "/ancient-olympia-from-katakolon", label: "Ancient Olympia Guide" },
+  { href: "/katakolon-cruise-port-guide", label: "Cruise Port Guide" },
+  { href: "/katakolon-cruise-planner", label: "Cruise Planner" },
+  { href: "/katakolon-cruise-ship-schedule", label: "Ship Schedules" },
+  { href: "/one-day-in-katakolon-from-a-cruise-ship", label: "One Day in Katakolon" },
   { href: "/faq", label: "FAQ" },
 ];
 
-export function PlanningLinks({ heading = "Keep planning your Cartagena cruise" }: { heading?: string }) {
+export function PlanningLinks({ heading = "Keep planning your Katakolon cruise" }: { heading?: string }) {
   return (
     <section className="rounded-2xl border border-coastal-100 bg-coastal-50/60 p-6 sm:p-8">
       <h2 className="font-display text-xl font-semibold text-gray-900">{heading}</h2>
