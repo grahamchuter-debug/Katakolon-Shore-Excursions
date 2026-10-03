@@ -1,8 +1,23 @@
 # Canonical host redirect: www -> non-www (301). Cloudflare Pages supports
 # absolute-URL sources in _redirects for host normalisation.
-https://www.izmirshoreexcursions.com/*  https://izmirshoreexcursions.com/:splat  301!
-http://www.izmirshoreexcursions.com/*   https://izmirshoreexcursions.com/:splat  301!
+https://www.katakolonshoreexcursions.com/*  https://katakolonshoreexcursions.com/:splat  301!
+http://www.katakolonshoreexcursions.com/*   https://katakolonshoreexcursions.com/:splat  301!
 
 # HTTP -> HTTPS on the apex is handled automatically by Cloudflare
 # ("Always Use HTTPS"). Kept here as a defensive fallback.
-http://izmirshoreexcursions.com/*       https://izmirshoreexcursions.com/:splat  301!
+http://katakolonshoreexcursions.com/*       https://katakolonshoreexcursions.com/:splat  301!
+
+# Generic URLs served by the incorrect Sept 2026 build -> genuine Katakolon pages.
+/cruise-planner /katakolon-cruise-planner/ 301
+/cruise-planner/ /katakolon-cruise-planner/ 301
+/cruise-port-guide /katakolon-cruise-port-guide/ 301
+/cruise-port-guide/ /katakolon-cruise-port-guide/ 301
+/ship-schedules /katakolon-cruise-ship-schedule/ 301
+/ship-schedules/ /katakolon-cruise-ship-schedule/ 301
+/ship-schedules/katakolon /katakolon-cruise-ship-schedule/ 301
+/ship-schedules/katakolon/ /katakolon-cruise-ship-schedule/ 301
+/best-things-to-do-in-cartagena-from-a-cruise-ship /things-to-do-in-katakolon-from-a-cruise-ship/ 301
+/best-things-to-do-in-cartagena-from-a-cruise-ship/ /things-to-do-in-katakolon-from-a-cruise-ship/ 301
+/one-day-in-cartagena-from-a-cruise-ship /one-day-in-katakolon-from-a-cruise-ship/ 301
+/one-day-in-cartagena-from-a-cruise-ship/ /one-day-in-katakolon-from-a-cruise-ship/ 301
+/ship-schedules/katakolon/* /katakolon-cruise-ship-schedule/:splat 301

@@ -5,6 +5,7 @@ import { PlanningLinks } from "@/components/PlanningLinks";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema, webPageSchema } from "@/lib/schema";
 import { SITE } from "@/lib/site";
+import { EnquiryFormShell } from "@/components/EnquiryFormShell";
 
 const path = "/enquire";
 
@@ -27,25 +28,32 @@ export default function EnquirePage() {
       <section className="section-padding">
         <div className="container-wide max-w-xl">
           <Breadcrumbs items={breadcrumbs} />
-          <form className="card-feature space-y-4" action={`mailto:${SITE.email}`} method="post" encType="text/plain">
+          <EnquiryFormShell
+            siteId="katakolon"
+            fallbackEmail={SITE.email}
+            className="card-feature space-y-4"
+            submitClassName="btn-primary w-full sm:w-auto"
+            submitLabel="Send enquiry"
+            successTitle="Thank you — we've received your enquiry"
+            successBody="We'll reply by email, usually within one working day."
+          >
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-              <input id="name" name="name" type="text" required className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" />
+              <input id="name" name="name" type="text" required maxLength={100} autoComplete="name" className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" />
             </div>
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-              <input id="email" name="email" type="email" required className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" />
+              <input id="email" name="email" type="email" required maxLength={254} autoComplete="email" className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" />
             </div>
             <div>
               <label htmlFor="ship" className="block text-sm font-medium text-gray-700 mb-1">Ship &amp; sailing date</label>
-              <input id="ship" name="ship" type="text" className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" />
+              <input id="ship" name="cruise_date_and_ship" type="text" maxLength={200} className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" />
             </div>
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-              <textarea id="message" rows={5} placeholder="Tell us your port window, interests (Olympia, museum, food, winery…) and any mobility needs." className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" />
+              <textarea id="message" name="message" rows={5} required maxLength={5000} placeholder="Tell us your port window, interests (Olympia, museum, food, winery…) and any mobility needs." className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" />
             </div>
-            <button type="submit" className="btn-primary w-full sm:w-auto">Send enquiry</button>
-          </form>
+          </EnquiryFormShell>
           <p className="mt-4 text-xs text-gray-500">Enquiry only — we will respond by email. No online booking yet.</p>
           <div className="mt-12"><PlanningLinks /></div>
         </div>

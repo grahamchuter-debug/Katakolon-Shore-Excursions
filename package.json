@@ -9,7 +9,6 @@
     "lint": "eslint",
     "check-links": "node scripts/check-links.mjs",
     "seo-qa": "node scripts/seo-qa.mjs",
-    "download-images": "node scripts/download-images.mjs",
     "deploy": "npm run build && wrangler deploy",
     "pages:deploy": "npm run build && wrangler pages deploy out --project-name=katakolon-shore-excursions"
   },
