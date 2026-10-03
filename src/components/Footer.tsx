@@ -44,6 +44,7 @@ export function Footer() {
           <Link href="/faq" className="hover:text-white">FAQ</Link>
           <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>
           <Link href="/terms" className="hover:text-white">Terms</Link>
+          <Link href="/image-credits" className="hover:text-white">Photo credits</Link>
           <span className="ml-auto">{SITE.email}</span>
         </div>
       </div>

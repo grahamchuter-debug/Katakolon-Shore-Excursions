@@ -7,99 +7,99 @@ const B = "/images";
 
 export const siteImages = {
   hero: {
-    src: `${B}/hero-home.jpg`,
-    alt: "The ancient Olympic Stadium at Olympia — starting line and stone seating in the Peloponnese",
+    src: `${B}/olympia-stadium-krypte.jpg`,
+    alt: "The vaulted Krypte tunnel leading into the ancient Stadium at Olympia",
   },
   ogDefault: {
     src: `${B}/og-default.jpg`,
-    alt: "Ancient Olympia and the Olympic Stadium — Katakolon shore excursion planning",
+    alt: "The vaulted Krypte tunnel leading into the ancient Stadium at Olympia",
   },
   logo: {
     src: `${B}/logo-mark.svg`,
     alt: "Katakolon Shore Excursions",
   },
   port: {
-    src: `${B}/cruise-port.jpg`,
-    alt: "Katakolon cruise port village on the Ionian coast of the Peloponnese",
+    src: `${B}/katakolon-cruise-port.jpg`,
+    alt: "A cruise ship berthed in Katakolon harbour, with the wooded coast of the Peloponnese behind",
   },
 } as const;
 
 export const subjectImages: Record<string, SiteImage> = {
   "ancient-olympia": {
-    src: `${B}/olympia-site.jpg`,
-    alt: "Panoramic view of the Ancient Olympia archaeological site in the Peloponnese",
+    src: `${B}/ancient-olympia-aerial.jpg`,
+    alt: "Aerial view of the archaeological site of Ancient Olympia among pine and olive trees",
   },
   "olympia-stadium": {
-    src: `${B}/hero-home.jpg`,
-    alt: "The ancient Olympic Stadium at Olympia with the vaulted entrance and starting line",
+    src: `${B}/olympia-stadium-track.jpg`,
+    alt: "The ancient Stadium at Olympia: the earth running track between grassy embankments",
   },
   "temple-zeus": {
-    src: `${B}/temple-zeus.jpg`,
-    alt: "Ruins of the Temple of Zeus at Ancient Olympia",
+    src: `${B}/temple-of-zeus-olympia.jpg`,
+    alt: "The re-erected Doric column and stone foundations at the west end of the Temple of Zeus, Olympia",
   },
   museum: {
-    src: `${B}/museum.jpg`,
-    alt: "Artefacts in the Archaeological Museum of Olympia",
+    src: `${B}/hermes-of-praxiteles-olympia-museum.jpg`,
+    alt: "The marble Hermes carrying the infant Dionysus, attributed to Praxiteles, in the Archaeological Museum of Olympia",
   },
   "olympic-games-house": {
-    src: `${B}/museum.jpg`,
-    alt: "House of the Olympic Games museum near Ancient Olympia",
+    src: `${B}/museum-history-olympic-games-antiquity.jpg`,
+    alt: "The neoclassical building of the Museum of the History of the Olympic Games in Antiquity, Olympia",
   },
   "katakolon-village": {
-    src: `${B}/katakolon-village.jpg`,
-    alt: "Shops and cafés along the waterfront in Katakolon village",
+    src: `${B}/katakolon-esplanade.jpg`,
+    alt: "Fishing boats and waterfront tavernas on the Katakolon esplanade",
   },
   food: {
-    src: `${B}/food.jpg`,
-    alt: "Greek meze and local dishes in the Peloponnese",
+    src: `${B}/greek-salad-tzatziki.jpg`,
+    alt: "A Greek salad with feta, served with tzatziki and bread",
   },
   "olive-grove": {
-    src: `${B}/olive-grove.jpg`,
-    alt: "Olive groves in the Elis region near Katakolon",
+    src: `${B}/olive-trees-ancient-olympia.jpg`,
+    alt: "Old olive trees growing among the ruins of Ancient Olympia",
   },
   winery: {
-    src: `${B}/winery.jpg`,
-    alt: "Vineyards and winery estate in the Peloponnese near Olympia",
+    src: `${B}/monemvasia-vineyards.jpg`,
+    alt: "Vineyards below the hills at Monemvasia in the southern Peloponnese",
   },
   "one-day": {
-    src: `${B}/olympia-site.jpg`,
-    alt: "Planning one day in Katakolon from a cruise ship",
+    src: `${B}/ancient-olympia-aerial.jpg`,
+    alt: "Aerial view of the archaeological site of Ancient Olympia among pine and olive trees",
   },
   "worth-it": {
-    src: `${B}/hero-home.jpg`,
-    alt: "Ancient Olympia for cruise passengers — is it worth the drive from Katakolon",
+    src: `${B}/olympia-stadium-krypte.jpg`,
+    alt: "The vaulted Krypte tunnel leading into the ancient Stadium at Olympia",
   },
   "olympia-vs-katakolon": {
-    src: `${B}/katakolon-village.jpg`,
-    alt: "Comparing Ancient Olympia and Katakolon village for cruise passengers",
+    src: `${B}/katakolon-esplanade.jpg`,
+    alt: "Fishing boats and waterfront tavernas on the Katakolon esplanade",
   },
   highlights: {
-    src: `${B}/olympia-site.jpg`,
-    alt: "Katakolon shore excursion highlights — Ancient Olympia and the Peloponnese",
+    src: `${B}/ancient-olympia-aerial.jpg`,
+    alt: "Aerial view of the archaeological site of Ancient Olympia among pine and olive trees",
   },
   coast: {
-    src: `${B}/coast.jpg`,
-    alt: "Ionian coast scenery near Katakolon",
+    src: `${B}/katakolon-coastline.jpg`,
+    alt: "The wooded coastline and harbour front of Katakolon seen from the sea",
   },
   "private-tour": {
-    src: `${B}/private-tour.jpg`,
-    alt: "Private guided tour from Katakolon cruise port to Ancient Olympia",
+    src: `${B}/philippeion-olympia.jpg`,
+    alt: "The circular Philippeion memorial with its restored Ionic columns at Ancient Olympia",
   },
   planner: {
-    src: `${B}/olympia-site.jpg`,
-    alt: "Planning a Katakolon cruise port day",
+    src: `${B}/ancient-olympia-aerial.jpg`,
+    alt: "Aerial view of the archaeological site of Ancient Olympia among pine and olive trees",
   },
   "best-time": {
-    src: `${B}/olympia-site.jpg`,
-    alt: "Best time to visit Katakolon and Ancient Olympia on a cruise",
+    src: `${B}/ancient-olympia-aerial.jpg`,
+    alt: "Aerial view of the archaeological site of Ancient Olympia among pine and olive trees",
   },
   independent: {
-    src: `${B}/olympia-site.jpg`,
-    alt: "Independent versus cruise line shore excursions from Katakolon",
+    src: `${B}/ancient-olympia-aerial.jpg`,
+    alt: "Aerial view of the archaeological site of Ancient Olympia among pine and olive trees",
   },
   beach: {
-    src: `${B}/coast.jpg`,
-    alt: "Kourouta Beach on the Ionian coast near Katakolon",
+    src: `${B}/kourouta-beach-sunset.jpg`,
+    alt: "Sunset over the Ionian Sea at Kourouta beach in the western Peloponnese",
   },
 };
 
